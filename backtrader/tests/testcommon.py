@@ -9,7 +9,8 @@
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# This program is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be use
+# ful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -174,7 +175,6 @@ class TestStrategy(bt.Strategy):
         chkpts = [0, -l + mp, (-l + mp) // 2]
 
         if self.p.main:
-            print('----------------------------------------')
             print('len ind %d == %d len self' % (l, len(self)))
             print('minperiod %d' % self.chkmin)
             print('self.p.chknext %d nextcalls %d'

@@ -47,12 +47,10 @@ class TestStrategy(bt.Strategy):
             print('---------- %s' % (txt))
 
     def notify_trade(self, trade):
-        print("00000000000000000")
         if trade.isclosed:
             self.tradecount += 1
 
     def notify_order(self, order):
-        print(order, '1111111111111')
         if order.status in [bt.Order.Submitted, bt.Order.Accepted]:
             return  # Await further notifications
 
@@ -150,7 +148,8 @@ chkdatas = 1
 
 def test_run(main=False):
     datas = [testcommon.getdata(i) for i in range(chkdatas)]
-
+    print(testcommon, '--------')
+    print("datas", datas, '==========')
     for maxtrades in [None, 0, 1]:
         cerebros = testcommon.runtest(datas,
                                       TestStrategy,
@@ -163,6 +162,7 @@ def test_run(main=False):
 
         for cerebro in cerebros:
             strat = cerebro.runstrats[0][0]  # no optimization, only 1
+            print("strat", strat, '-----------')
             analyzer = strat.analyzers[0]  # only 1
             analysis = analyzer.get_analysis()
             if main:

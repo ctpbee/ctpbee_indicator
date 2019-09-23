@@ -647,6 +647,7 @@ class MetaCSVDataBase(DataBase.__class__):
 
 class CSVDataBase(with_metaclass(MetaCSVDataBase, DataBase)):
     '''
+    打开csvDate文件
     Base class for classes implementing CSV DataFeeds
 
     The class takes care of opening the file, reading the lines and

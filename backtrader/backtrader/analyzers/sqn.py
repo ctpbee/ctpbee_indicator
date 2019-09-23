@@ -35,19 +35,19 @@ class SQN(Analyzer):
       - 1.6 - 1.9 Below average
       - 2.0 - 2.4 Average
       - 2.5 - 2.9 Good
-      - 3.0 - 5.0 Excellent
-      - 5.1 - 6.9 Superb
+      - 3.0 - 5.0 Excellent //杰出的
+      - 5.1 - 6.9 Superb  //极好的
       - 7.0 -     Holy Grail?
 
-    The formula:
-
+    The formula:(公式)
+        交易数字平方根*交易利润平均数/标准偏差交易利润
       - SquareRoot(NumberTrades) * Average(TradesProfit) / StdDev(TradesProfit)
 
     The sqn value should be deemed reliable when the number of trades >= 30
 
     Methods:
 
-      - get_analysis
+      - get_analysis 分析
 
         Returns a dictionary with keys "sqn" and "trades" (number of
         considered trades)
