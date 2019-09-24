@@ -53,7 +53,10 @@ class OptReturn(object):
 
 
 class Cerebro(with_metaclass(MetaParams, object)):
-    '''Params:
+
+    '''
+    Cerebro 大脑 控制中心
+    Params:
 
       - ``preload`` (default: ``True``)
 
@@ -759,7 +762,9 @@ class Cerebro(with_metaclass(MetaParams, object)):
 
         self.datas.append(data)
         self.datasbyname[data._name] = data
+        print("data", data)
         feed = data.getfeed()
+        print("feed", feed)
         if feed and feed not in self.feeds:
             self.feeds.append(feed)
 
@@ -912,6 +917,7 @@ class Cerebro(with_metaclass(MetaParams, object)):
         can be referenced
         '''
         self.strats.append([(strategy, args, kwargs)])
+        print(len(self.strats)-1)
         return len(self.strats) - 1
 
     def setbroker(self, broker):
@@ -934,9 +940,10 @@ class Cerebro(with_metaclass(MetaParams, object)):
     broker = property(getbroker, setbroker)
 
     def plot(self, plotter=None, numfigs=1, iplot=True, start=None, end=None,
-             width=16, height=9, dpi=300, tight=True, use=None,
+             width=50, height=100, dpi=300, tight=True, use=None,
              **kwargs):
         '''
+        显示画版
         Plots the strategies inside cerebro
 
         If ``plotter`` is None a default ``Plot`` instance is created and

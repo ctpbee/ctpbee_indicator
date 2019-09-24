@@ -103,6 +103,7 @@ class YahooFinanceCSVData(feed.CSVDataBase):
 
         f = io.StringIO(newline=None)
         f.writelines(dq)
+        print(f, '00000')
         f.seek(0)
         self.f.close()
         self.f = f
@@ -195,6 +196,7 @@ class YahooFinanceCSV(feed.CSVFeedBase):
 
 class YahooFinanceData(YahooFinanceCSVData):
     '''
+    Yahoo请求的数据
     Executes a direct download of data from Yahoo servers for the given time
     range.
 
@@ -301,7 +303,7 @@ class YahooFinanceData(YahooFinanceCSVData):
 
         # Try to download
         urld = '{}/{}'.format(self.p.urldown, self.p.dataname)
-
+        print(urld, '------')
         urlargs = []
         posix = date(1970, 1, 1)
         if self.p.todate is not None:
@@ -338,6 +340,7 @@ class YahooFinanceData(YahooFinanceCSVData):
             try:
                 # r.encoding = 'UTF-8'
                 f = io.StringIO(resp.text, newline=None)
+                print(f)
             except Exception:
                 continue  # try again if possible
 

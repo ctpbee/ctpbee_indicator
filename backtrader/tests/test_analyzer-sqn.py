@@ -51,6 +51,11 @@ class TestStrategy(bt.Strategy):
             self.tradecount += 1
 
     def notify_order(self, order):
+        """
+        333333
+        :param order: obj
+        :return: None
+        """
         if order.status in [bt.Order.Submitted, bt.Order.Accepted]:
             return  # Await further notifications
 
@@ -84,6 +89,10 @@ class TestStrategy(bt.Strategy):
         self.cross = btind.CrossOver(self.data.close, self.sma, plot=True)
 
     def start(self):
+        """
+        111111
+        :return: None
+        """
         if not self.p.stocklike:
             self.broker.setcommission(commission=2.0, mult=10.0, margin=1000.0)
 
@@ -101,16 +110,23 @@ class TestStrategy(bt.Strategy):
         self.tradecount = 0
 
     def stop(self):
+        """
+        4444444
+        :return:None
+        """
         tused = time.clock() - self.tstart
         if self.p.printdata:
             self.log('Time used: %s' % str(tused))
             self.log('Final portfolio value: %.2f' % self.broker.getvalue())
             self.log('Final cash value: %.2f' % self.broker.getcash())
-            self.log('-------------------------')
         else:
             pass
 
     def next(self):
+        """
+        22222
+        :return: None
+        """
         if self.p.printdata:
             self.log(
                 'Open, High, Low, Close, %.2f, %.2f, %.2f, %.2f, Sma, %f' %
@@ -166,7 +182,6 @@ def test_run(main=False):
             analyzer = strat.analyzers[0]  # only 1
             analysis = analyzer.get_analysis()
             if main:
-                print(analysis, '=================')
                 print(analysis)
                 print(str(analysis.sqn))
             else:

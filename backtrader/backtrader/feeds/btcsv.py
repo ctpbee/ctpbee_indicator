@@ -38,7 +38,7 @@ class BacktraderCSVData(feed.CSVDataBase):
 
     def _loadline(self, linetokens):
         itoken = iter(linetokens)
-
+        print(itoken)
         dttxt = next(itoken)  # Format is YYYY-MM-DD - skip char 4 and 7
         dt = date(int(dttxt[0:4]), int(dttxt[5:7]), int(dttxt[8:10]))
 
@@ -55,7 +55,6 @@ class BacktraderCSVData(feed.CSVDataBase):
         self.lines.close[0] = float(next(itoken))
         self.lines.volume[0] = float(next(itoken))
         self.lines.openinterest[0] = float(next(itoken))
-
         return True
 
 

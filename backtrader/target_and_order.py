@@ -28,11 +28,15 @@ cerebro = bt.Cerebro()  # create a "Cerebro" engine instance
 
 # Create a data feed
 data = bt.feeds.YahooFinanceData(dataname='MSFT',
-                                 fromdate=datetime(2011, 1, 1),
-                                 todate=datetime(2012, 12, 31))
+                                 fromdate=datetime(2016, 1, 1),
+                                 todate=datetime(2017, 12, 31))
 
+print(data)
 cerebro.adddata(data)  # Add the data feed
 
 cerebro.addstrategy(SmaCross)  # Add the trading strategy
-cerebro.run()  # run it all
+ret = cerebro.run()  # run it all
+print(ret, '---------')
+for i in ret[0]:
+    print(i, '---')
 cerebro.plot()  # and plot it with a single command

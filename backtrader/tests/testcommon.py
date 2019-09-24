@@ -37,6 +37,7 @@ import backtrader.utils.flushfile
 modpath = os.path.dirname(os.path.abspath(__file__))
 dataspath = '../datas'
 datafiles = [
+    '2006-day-002.txt',
     '2006-day-001.txt',
     '2006-week-001.txt',
 ]
@@ -44,7 +45,7 @@ datafiles = [
 DATAFEED = bt.feeds.BacktraderCSVData
 
 FROMDATE = datetime.datetime(2006, 1, 1)
-TODATE = datetime.datetime(2006, 12, 31)
+TODATE = datetime.datetime(2006, 10, 31)
 
 
 def getdata(index, fromdate=FROMDATE, todate=TODATE):
