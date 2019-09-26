@@ -197,6 +197,7 @@ class YahooFinanceCSV(feed.CSVFeedBase):
 class YahooFinanceData(YahooFinanceCSVData):
     '''
     Yahoo请求的数据
+
     Executes a direct download of data from Yahoo servers for the given time
     range.
 

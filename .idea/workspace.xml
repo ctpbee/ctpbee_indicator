@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backtrader/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backtrader/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backtrader/test3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backtrader/test4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backtrader/test5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backtrader/test6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +20,40 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/backtrader/backtrader/broker.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="598">
-                    <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+                  <state relative-caret-position="-198">
+                    <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+                    <folding>
+                      <element signature="e#2249#2331#0" />
+                      <element signature="e#2379#2460#0" />
+                      <element signature="e#2509#2718#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="1546">
+                    <caret line="768" column="35" lean-forward="true" selection-start-line="768" selection-start-column="35" selection-end-line="768" selection-end-column="35" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feed.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="286">
+                    <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+                    <folding>
+                      <element signature="e#916#1024#0" expanded="true" />
+                      <element signature="e#15630#18296#0" />
+                      <element signature="e#20129#20934#0" />
+                      <element signature="e#20984#21374#0" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -40,38 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/tests/testcommon.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="138" column="67" lean-forward="true" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
-              <folding>
-                <element signature="n#!!doc" />
-                <element signature="e#913#1021#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/target_and_order.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backtrader/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state>
               <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#4#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backtrader/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="682">
               <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="e#0#108#0" expanded="true" />
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backtrader/test3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            <state relative-caret-position="814">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
               <folding>
                 <element signature="e#0#108#0" expanded="true" />
               </folding>
@@ -103,8 +101,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backtrader/test4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="1100">
+              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="132" column="43" lean-forward="true" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
               <folding>
                 <element signature="e#0#108#0" expanded="true" />
               </folding>
@@ -113,31 +123,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
+        <entry file="file://$PROJECT_DIR$/backtrader/test6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="354">
+              <caret line="154" column="32" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2089">
+              <caret line="343" column="24" lean-forward="true" selection-start-line="343" selection-start-column="24" selection-end-line="343" selection-end-column="24" />
               <folding>
-                <element signature="e#0#108#0" expanded="true" />
+                <element signature="e#916#1024#0" expanded="true" />
+                <element signature="e#1347#2579#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
+        <entry file="file://$PROJECT_DIR$/backtrader/backtrader/analyzers/annualreturn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
-            </state>
+            <state relative-caret-position="-1254" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_kst.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="-8">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -155,7 +173,9 @@
     <findStrings>
       <find>Cerebro</find>
       <find>YahooFinanceData</find>
+      <find>addstrategy</find>
       <find>adddata</find>
+      <find>YahooFinanceCSVData</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,7 +194,6 @@
         <option value="$PROJECT_DIR$/backtrader/tests/testcommon.py" />
         <option value="$PROJECT_DIR$/backtrader/backtrader/plot/plot.py" />
         <option value="$PROJECT_DIR$/backtrader/target_and_order.py" />
-        <option value="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" />
         <option value="$PROJECT_DIR$/backtrader/backtrader/cerebro.py" />
         <option value="$PROJECT_DIR$/backtrader/backtrader/feeds/btcsv.py" />
         <option value="$PROJECT_DIR$/backtrader/tests/test_analyzer-sqn.py" />
@@ -183,20 +202,23 @@
         <option value="$PROJECT_DIR$/backtrader/test3.py" />
         <option value="$PROJECT_DIR$/backtrader/test4.py" />
         <option value="$PROJECT_DIR$/backtrader/test5.py" />
+        <option value="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" />
+        <option value="$PROJECT_DIR$/backtrader/test6.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="878" />
-    <option name="y" value="144" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="249" />
+    <option name="y" value="133" />
     <option name="width" value="1587" />
-    <option name="height" value="937" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,17 +231,43 @@
               <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
               <item name="backtrader" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="analyzers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="indicators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
+              <item name="plot" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DJango/Website/Website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ctpbee" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -244,29 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test5">
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ctpbee_indicator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test6">
     <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -355,13 +381,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test6" />
         <item itemvalue="Python.test5" />
         <item itemvalue="Python.test4" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.test2" />
-        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -379,24 +427,25 @@
       <workItem from="1569203717750" duration="22128000" />
       <workItem from="1569287018487" duration="20913000" />
       <workItem from="1569338682918" duration="631000" />
-      <workItem from="1569376892485" duration="11142000" />
+      <workItem from="1569376892485" duration="11579000" />
+      <workItem from="1569461952157" duration="11623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63529000" />
+    <option name="totallyTimeSpent" value="75589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="878" y="144" width="1587" height="937" extended-state="0" />
+    <frame x="249" y="133" width="1587" height="931" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21247563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16829109" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Alibaba Cloud Explorer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998747" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32371393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2085967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,6 +464,32 @@
       <window_info anchor="right" id="Alibaba Log Console" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21507472" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Alibaba Cloud Explorer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998747" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32575756" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Alibaba Log Console" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -440,6 +515,7 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_multiframe.coverage" NAME="test_data_multiframe Coverage Results" MODIFIED="1569327557928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1569488564243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_trade.coverage" NAME="test_trade Coverage Results" MODIFIED="1569206993041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569223479812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -450,7 +526,7 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569324619181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_resample.coverage" NAME="test_data_resample Coverage Results" MODIFIED="1569327940272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569421879182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569463945171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$ksignal.coverage" NAME="ksignal Coverage Results" MODIFIED="1569293525122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/samples/kselrsi" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
@@ -460,30 +536,6 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_aroonoscillator.coverage" NAME="test_ind_aroonoscillator Coverage Results" MODIFIED="1569327971808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/pandas-0.25.1-py3.7-linux-x86_64.egg/pandas/compat/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/buy_and_sell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/matplotlib/ticker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="1806" selection-start-line="1806" selection-end-line="1806" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/strategies/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -562,28 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2249">
-          <caret line="255" column="30" selection-start-line="255" selection-start-column="28" selection-end-line="255" selection-end-column="30" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-            <element signature="e#15630#18296#0" />
-            <element signature="e#20129#20934#0" />
-            <element signature="e#20984#21374#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/plot/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -597,16 +627,6 @@
           <caret line="428" column="12" lean-forward="true" selection-start-line="428" selection-start-column="12" selection-end-line="428" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="348" column="14" selection-start-line="348" selection-start-column="13" selection-end-line="348" selection-end-column="14" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/tests/test_analyzer-sqn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -764,13 +777,6 @@
         <state relative-caret-position="-462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/broker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/btcsv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
@@ -781,24 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_kst.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/tests/testcommon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="138" column="67" lean-forward="true" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
+        <state relative-caret-position="2596">
+          <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
           <folding>
             <element signature="n#!!doc" />
             <element signature="e#913#1021#0" expanded="true" />
@@ -808,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/target_and_order.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="242">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -818,17 +810,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state>
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#4#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="682">
           <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
             <element signature="e#0#108#0" expanded="true" />
@@ -838,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        <state relative-caret-position="814">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding>
             <element signature="e#0#108#0" expanded="true" />
           </folding>
@@ -848,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="1100">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding>
             <element signature="e#0#108#0" expanded="true" />
           </folding>
@@ -858,10 +847,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="223">
+          <caret line="132" column="43" lean-forward="true" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
           <folding>
             <element signature="e#0#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/datas/orcl-2014.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/broker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding>
+            <element signature="e#2249#2331#0" />
+            <element signature="e#2379#2460#0" />
+            <element signature="e#2509#2718#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1546">
+          <caret line="768" column="35" lean-forward="true" selection-start-line="768" selection-start-column="35" selection-end-line="768" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <folding>
+            <element signature="e#916#1024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_kst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2089">
+          <caret line="343" column="24" lean-forward="true" selection-start-line="343" selection-start-column="24" selection-end-line="343" selection-end-column="24" />
+          <folding>
+            <element signature="e#916#1024#0" expanded="true" />
+            <element signature="e#1347#2579#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/analyzers/annualreturn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/test6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="154" column="32" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding>
+            <element signature="e#916#1024#0" expanded="true" />
+            <element signature="e#15630#18296#0" />
+            <element signature="e#20129#20934#0" />
+            <element signature="e#20984#21374#0" />
           </folding>
         </state>
       </provider>
