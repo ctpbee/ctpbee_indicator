@@ -5,9 +5,461 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backtrader/test6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lru/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lru/lru.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/always_open.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/calendar_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/calendar_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/common_holidays.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_bvmf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_cmes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_iepa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xasx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xbog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xbom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xbru.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xbud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xcbf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xcse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xdub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xfra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xhel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xhkg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xkrx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xlim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xlis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xlon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xmad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xmex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xmil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xnys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xnze.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xosl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xpar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xpra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xsgo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xshg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xsto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xswx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xtks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xtse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xwar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/exchange_calendar_xwbo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/precomputed_trading_calendar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/trading_calendar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/us_futures_calendar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/us_holidays.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/utils/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/utils/memoize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/utils/pandas_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/utils/preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/weekday_calendar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trading_calendars/xtks_holidays.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/_protocol.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/_protocol.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/api.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/_assets.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/_assets.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/asset_db_migrations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/asset_db_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/asset_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/assets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/continuous_futures.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/exchange_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/futures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/roll_finder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/assets/synthetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/country.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/_adjustments.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/_equities.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/_minute_bar_internal.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/_resample.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/adjustments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bar_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bcolz_daily_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/benchmarks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bundles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bundles/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bundles/csvdir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/bundles/quandl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/continuous_future_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/data_portal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/dispatch_bar_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/hdf5_daily_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/history_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/in_memory_daily_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/minute_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/resample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/session_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/treasuries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/data/treasuries_can.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/dispatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/deploy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/notebooks/tutorial.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/appendix.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/beginner-tutorial.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/bundles.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/dev-doc-message.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/development-guidelines.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/install.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/release-process.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/releases.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/risk-and-perf-metrics.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/trading-calendars.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/tutorial_files/tutorial_11_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/tutorial_files/tutorial_22_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.6.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.7.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.8.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.8.3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.8.4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/0.9.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.0.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.0.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.0.2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.1.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.1.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.2.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.3.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/1.3.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/docs/source/whatsnew/skeleton.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/conda_build_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/create_authors_file.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/dev-install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/docker_cmd.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/gen_type_stubs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/git-hooks/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/goodies.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/ordered_pip.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/rebuild-cython.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/requirements_blaze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/requirements_dev.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/requirements_docs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/etc/requirements_talib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/buy_and_hold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/buyapple.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/buyapple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/dual_ema_talib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/dual_moving_average.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/momentum_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/examples/olmar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/_finance_ext.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/asset_restrictions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/blotter/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/blotter/blotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/blotter/simulation_blotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/cancel_policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/commission.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/controls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/ledger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/metrics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/metrics/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/metrics/metric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/metrics/tracker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/shared.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/slippage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/trading.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/finance/transaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/gens/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/gens/composites.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/gens/sim_engine.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/gens/tradesimulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/gens/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_factorize.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_float64window.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_int64window.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_labelwindow.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_uint8window.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/_windowtemplate.pxi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/adjusted_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/adjustment.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/adjustment.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/labelarray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/normalize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/quantiles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/lib/rank.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/api_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/classifiers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/classifiers/classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/data/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/data/equity_pricing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/data/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/domain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/downsample_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/dtypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/expression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/factor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/statistical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/factors/technical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/filters/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/filters/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/filters/smoothing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/delegate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/iface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/no.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/progress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/hooks/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/_core.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/estimates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/blaze/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/earnings_estimates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/equity_pricing_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/frame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/synthetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/loaders/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/sentinels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/term.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/pipeline/visualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/market_data/SPY_benchmark.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/market_data/treasury_curves.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20120913/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20120913/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20120919/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20120919/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20121012/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20121012/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20130605/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20130605/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20130916/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20130916/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131002/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131002/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131009/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131009/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131121/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131121/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131227/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20131227/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20140410/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20140410/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20140923/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20140923/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20141119/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20141119/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20141226/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20141226/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20150123/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20150123/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20160826/add" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/resources/security_lists/leveraged_etf_list/20020103/20160826/delete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/sources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/sources/benchmark_source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/sources/requests_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/sources/test_source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/debug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/fixtures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/pipeline_terms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/predicates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/testing/slippage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/bundles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/bundles/test_core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/bundles/test_csvdir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/bundles/test_quandl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_adjustments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_daily_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_dispatch_bar_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_hdf5_daily_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_minute_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/data/test_resample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/events/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/events/test_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/events/test_events_cme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/events/test_events_nyse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/test_cancel_policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/test_commissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/test_risk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/test_slippage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/finance/test_transaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/history/generate_csvs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/metrics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/metrics/test_core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/metrics/test_metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_adjusted_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_adjustment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_alias.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_blaze.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_column.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_domain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_downsampling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_dtypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_factor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_frameload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_international_markets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_multidimensional_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_numerical_expression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_pipeline_algo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_quarters_estimates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_slice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_statistical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_technical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_term.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/pipeline/test_us_equity_pricing_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/csvdir_samples/csvdir/daily/AAPL.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/csvdir_samples/csvdir/daily/IBM.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/csvdir_samples/csvdir/daily/KO.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/csvdir_samples/csvdir/daily/MSFT.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/example_data.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/fetcher_inputs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/fetcher_inputs/fetcher_test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/pipeline_inputs/AAPL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/pipeline_inputs/BRK-A.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/pipeline_inputs/MSFT.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/pipeline_inputs/generate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/quandl_samples/QUANDL_ARCHIVE.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/quandl_samples/metadata.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/quandl_samples/rebuild_samples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/rebuild_example_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/AAPL.adjustments.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/AAPL.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/IBM.adjustments.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/IBM.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/MSFT.adjustments.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/MSFT.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/resources/yahoo_samples/rebuild_samples" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_api_shim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_assets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_bar_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_blotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_clock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_cmdline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_continuous_futures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_data_portal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_examples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_execution_styles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_fetcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_finance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_labelarray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_memoize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_ordering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_registration_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_restrictions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_security_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/test_tradesimulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/daily_bar_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_argcheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_date_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_math_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_metautils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_numpy_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_pandas_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_sentinel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/tests/utils/test_sharedoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/algo_instance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/api_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/argcheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/calendars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/classproperty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/context_tricks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/date_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/deprecate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/dummy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/enum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/exploding_object.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/formatting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/functional.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/idbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/input_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/math_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/memoize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/metautils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/numpy_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/pandas_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/paths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/run_algo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/security_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/sentinel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/sharedoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/sqlite_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/string_formatting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/utils/tradingcalendar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipline/zipline_warnings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ctpbee_indicator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ctpbee_indicator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,147 +467,75 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader/backtrader/broker.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-198">
-                    <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-                    <folding>
-                      <element signature="e#2249#2331#0" />
-                      <element signature="e#2379#2460#0" />
-                      <element signature="e#2509#2718#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1546">
-                    <caret line="768" column="35" lean-forward="true" selection-start-line="768" selection-start-column="35" selection-end-line="768" selection-end-column="35" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feed.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="286">
-                    <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-                    <folding>
-                      <element signature="e#916#1024#0" expanded="true" />
-                      <element signature="e#15630#18296#0" />
-                      <element signature="e#20129#20934#0" />
-                      <element signature="e#20984#21374#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/test1.py">
+        <entry file="file://$PROJECT_DIR$/zipline/tests/test_tradesimulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/test2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="154">
+              <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
               <folding>
-                <element signature="e#0#108#0" expanded="true" />
+                <element signature="e#583#602#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/test3.py">
+        <entry file="file://$PROJECT_DIR$/zipline/data/loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/test4.py">
+        <entry file="file://$PROJECT_DIR$/trading_calendars/trading_calendar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
+        <entry file="file://$PROJECT_DIR$/lru/lru.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="132" column="43" lean-forward="true" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="44">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backtrader/test6.py">
+        <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="154" column="32" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="32" />
+            <state relative-caret-position="123">
+              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py">
+        <entry file="file://$PROJECT_DIR$/zipline/tests/test_api_shim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2089">
-              <caret line="343" column="24" lean-forward="true" selection-start-line="343" selection-start-column="24" selection-end-line="343" selection-end-column="24" />
-              <folding>
-                <element signature="e#916#1024#0" expanded="true" />
-                <element signature="e#1347#2579#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/backtrader/analyzers/annualreturn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1254" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_kst.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            <state relative-caret-position="44">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -176,6 +556,8 @@
       <find>addstrategy</find>
       <find>adddata</find>
       <find>YahooFinanceCSVData</find>
+      <find>BackTester</find>
+      <find>LRU</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,12 +586,23 @@
         <option value="$PROJECT_DIR$/backtrader/test5.py" />
         <option value="$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py" />
         <option value="$PROJECT_DIR$/backtrader/test6.py" />
+        <option value="$PROJECT_DIR$/ultrafinance-master/examples/backTester.py" />
+        <option value="$PROJECT_DIR$/ultrafinance/examples/backTester.py" />
+        <option value="$PROJECT_DIR$/ultrafinance/ultrafinance/backTester.py" />
+        <option value="$PROJECT_DIR$/ultrafinance/ultrafinance/designPattern/singleton.py" />
+        <option value="$PROJECT_DIR$/ultrafinance/ultrafinance/ufConfig/pyConfig.py" />
+        <option value="$PROJECT_DIR$/ultrafinance/backTester.py" />
+        <option value="$PROJECT_DIR$/zipline/setup.py" />
+        <option value="$PROJECT_DIR$/lru/lru.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/lru-0.1/lru.py" />
+        <option value="$PROJECT_DIR$/trading_calendars/trading_calendar.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="249" />
-    <option name="y" value="133" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="69" />
+    <option name="y" value="77" />
     <option name="width" value="1587" />
     <option name="height" value="931" />
   </component>
@@ -218,7 +611,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,58 +618,31 @@
               <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
               <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="analyzers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="indicators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="backtrader" type="462c0819:PsiDirectoryNode" />
-              <item name="plot" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ctpbee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backtrader" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/zipline/zipline" />
+      <recent name="$PROJECT_DIR$/ultrafinance/ultrafinance" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zipline" />
+      <recent name="$PROJECT_DIR$/ultrafinance" />
+      <recent name="$PROJECT_DIR$/backtrader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,8 +657,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test6">
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test1">
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,12 +666,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lru-0.1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lru-0.1/setup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,7 +680,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,12 +688,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,7 +702,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_tradesimulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,12 +710,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zipline/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zipline/tests/test_tradesimulation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,7 +724,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="trading_calendar" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,12 +732,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trading_calendars" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trading_calendars/trading_calendar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -381,35 +746,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in test_api_shim.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zipline/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader/test6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/zipline/tests/test_api_shim.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test6" />
-        <item itemvalue="Python.test5" />
-        <item itemvalue="Python.test4" />
-        <item itemvalue="Python.test3" />
-        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.test_tradesimulation" />
+        <item itemvalue="Python.trading_calendar" />
+        <item itemvalue="Python.setup" />
+        <item itemvalue="Python tests.Unittests in test_api_shim.py" />
       </list>
     </recent_temporary>
   </component>
@@ -429,40 +787,73 @@
       <workItem from="1569338682918" duration="631000" />
       <workItem from="1569376892485" duration="11579000" />
       <workItem from="1569461952157" duration="11623000" />
+      <workItem from="1569548662113" duration="21130000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_testing_TestParameterSpace - 2019.09.27 at 12h 41m 34s.xml">
+      <configuration name="Unittests for test_testing.TestParameterSpace" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 21h 50m 30s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 21h 50m 34s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_lru_py - 2019.09.27 at 22h 43m 57s.xml">
+      <configuration name="Unittests in lru.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_lru_py - 2019.09.27 at 22h 44m 16s.xml">
+      <configuration name="Unittests in lru.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 49m 50s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 50m 06s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 56m 53s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 23h 01m 08s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 23h 02m 59s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75589000" />
+    <option name="totallyTimeSpent" value="96719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="249" y="133" width="1587" height="931" extended-state="1" />
+    <frame x="69" y="77" width="1587" height="931" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16829109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20987654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Alibaba Cloud Explorer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998747" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2085967" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32869786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38558787" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32996207" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32869786" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32996207" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Alibaba Log Console" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32977587" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21507472" />
@@ -506,362 +897,57 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_lru_py.coverage" NAME="Unittests in lru.py Coverage Results" MODIFIED="1569595456616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$signals.coverage" NAME="signals Coverage Results" MODIFIED="1569222442746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1569591618859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/docs" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1569420213475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_for_test_testing_TestParameterSpace.coverage" NAME="Unittests for test_testing.TestParameterSpace Coverage Results" MODIFIED="1569559294246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline-master/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_strategy_unoptimized.coverage" NAME="test_strategy_unoptimized Coverage Results" MODIFIED="1569337765992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_study_fractal.coverage" NAME="test_study_fractal Coverage Results" MODIFIED="1569378503980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_replay.coverage" NAME="test_data_replay Coverage Results" MODIFIED="1569327896238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1569399826926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1569598608188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__1_.coverage" NAME="backTester (1) Coverage Results" MODIFIED="1569563637547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$googleCrawler.coverage" NAME="googleCrawler Coverage Results" MODIFIED="1569574414524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance/module" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_multiframe.coverage" NAME="test_data_multiframe Coverage Results" MODIFIED="1569327557928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$make_conda_packages.coverage" NAME="make_conda_packages Coverage Results" MODIFIED="1569591658059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/ci" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1569488564243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_blotter.coverage" NAME="test_blotter Coverage Results" MODIFIED="1569575993656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_trade.coverage" NAME="test_trade Coverage Results" MODIFIED="1569206993041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569223479812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_temaosc.coverage" NAME="test_ind_temaosc Coverage Results" MODIFIED="1569378620133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation.coverage" NAME="test_tradesimulation Coverage Results" MODIFIED="1569597289641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1569420113420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_highest.coverage" NAME="test_ind_highest Coverage Results" MODIFIED="1569378480892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$teststrader.coverage" NAME="teststrader Coverage Results" MODIFIED="1569204763887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester.coverage" NAME="backTester Coverage Results" MODIFIED="1569562870733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance-master/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569324619181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_resample.coverage" NAME="test_data_resample Coverage Results" MODIFIED="1569327940272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569463945171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$ksignal.coverage" NAME="ksignal Coverage Results" MODIFIED="1569293525122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/samples/kselrsi" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$trading_calendar.coverage" NAME="trading_calendar Coverage Results" MODIFIED="1569597142354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trading_calendars" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation__1_.coverage" NAME="test_tradesimulation (1) Coverage Results" MODIFIED="1569591892853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/zipline" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_test_api_shim_py.coverage" NAME="Unittests in test_api_shim.py Coverage Results" MODIFIED="1569596578901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1569400473070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__2_.coverage" NAME="backTester (2) Coverage Results" MODIFIED="1569575621686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_algorithm.coverage" NAME="test_algorithm Coverage Results" MODIFIED="1569563803687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$setup.coverage" NAME="setup Coverage Results" MODIFIED="1569597030507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru-0.1" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_ema.coverage" NAME="test_ind_ema Coverage Results" MODIFIED="1569378435094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_bar_data.coverage" NAME="test_bar_data Coverage Results" MODIFIED="1569574281798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_writer.coverage" NAME="test_writer Coverage Results" MODIFIED="1569378543588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_aroonoscillator.coverage" NAME="test_ind_aroonoscillator Coverage Results" MODIFIED="1569327971808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_finance.coverage" NAME="test_finance Coverage Results" MODIFIED="1569578259530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/strategies/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/strategies/sma_crossover.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/utils/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/2006-week-001.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/samples/kselrsi/ksignal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2437">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/indicator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/nvda-2014.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/bidask.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/2006-day-001-optix.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/2006-day-002.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/analyzers/sqn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/2006-day-001.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/plot/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/plot/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="428" column="12" lean-forward="true" selection-start-line="428" selection-start-column="12" selection-end-line="428" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/brokers/oandabroker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="155" column="25" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="25" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_analyzer-timereturn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1031">
-          <caret line="101" column="69" selection-start-line="101" selection-start-column="69" selection-end-line="101" selection-end-column="69" />
-          <folding>
-            <element signature="e#910#1018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_comminfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/ibdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2272">
-          <caret line="262" column="8" selection-start-line="262" selection-start-column="8" selection-end-line="262" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/strategy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="576" column="45" selection-start-line="576" selection-start-column="45" selection-end-line="576" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#919#1027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/stores/vcstore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="216" column="23" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_strategy_unoptimized.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_data_replay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="57" selection-start-line="57" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_data_resample.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_aroonoscillator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="e#910#1018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_analyzer-sqn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#910#1018#0" expanded="true" />
-            <element signature="e#1172#1302#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_cci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_temaosc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-745">
-          <folding>
-            <element signature="e#910#1018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#1271#2143#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_data_multiframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_study_fractal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_highest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_ema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/indicators/dema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/btcsv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/testcommon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
-          <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#913#1021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/target_and_order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="132" column="43" lean-forward="true" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/datas/orcl-2014.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/broker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+        <state relative-caret-position="132">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding>
             <element signature="e#2249#2331#0" />
             <element signature="e#2379#2460#0" />
@@ -872,67 +958,377 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/cerebro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1546">
-          <caret line="768" column="35" lean-forward="true" selection-start-line="768" selection-start-column="35" selection-end-line="768" selection-end-column="35" />
+        <state relative-caret-position="16412">
+          <caret line="768" column="35" selection-start-line="768" selection-start-column="35" selection-end-line="768" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/zipline/ci/travis/install_miniconda.sh">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/__init__.py">
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_continuous_futures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-34681">
+          <caret line="207" column="52" lean-forward="true" selection-start-line="207" selection-start-column="52" selection-end-line="207" selection-end-column="52" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/tests/test_ind_kst.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feeds/yahoo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2089">
-          <caret line="343" column="24" lean-forward="true" selection-start-line="343" selection-start-column="24" selection-end-line="343" selection-end-column="24" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-            <element signature="e#1347#2579#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader/backtrader/analyzers/annualreturn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/test6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="154" column="32" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="32" />
+        <state relative-caret-position="125">
+          <caret line="136" column="34" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/setupCommand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/examples/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/examples/backTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_bar_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7045">
+          <caret line="361" column="18" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3118">
+          <caret line="812" selection-start-line="812" selection-end-line="812" />
+          <folding>
+            <element signature="e#4087#5158#0" />
+            <element signature="e#5231#24110#0" />
+            <element signature="e#24185#26332#0" />
+            <element signature="e#26397#34597#0" />
+            <element signature="e#34671#46148#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_data_portal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <folding>
+            <element signature="e#1361#22134#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#29#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/module/googleCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2052">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/module/backTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="241" column="23" lean-forward="true" selection-start-line="241" selection-start-column="23" selection-end-line="241" selection-end-column="23" />
+          <folding>
+            <element signature="e#46#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/designPattern/singleton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/ufConfig/pyConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/backTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#47#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultrafinance/ultrafinance/pyTaLib/indicator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <folding>
+            <element signature="e#783#1331#0" />
+            <element signature="e#1370#1973#0" />
+            <element signature="e#2005#2524#0" />
+            <element signature="e#2527#3316#1" />
+            <element signature="e#3344#3963#0" />
+            <element signature="e#3993#4522#0" />
+            <element signature="e#4548#5338#0" />
+            <element signature="e#5364#5544#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/_protocol.pxd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/AUTHORS">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/zipline_warnings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="298" column="6" selection-start-line="298" selection-start-column="6" selection-end-line="298" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/docs/source/whatsnew/0.6.1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2574" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/docs/deploy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#22#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/docs/make.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/ci/make_conda_packages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/etc/ordered_pip.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_history.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47054" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/zipline/test_algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1714">
+          <folding>
+            <element signature="e#3233#3251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/zipline/test_tradesimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/versioneer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2772" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_finance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_blotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="134" column="25" lean-forward="true" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrader/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backtrader/backtrader/feed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="572">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#916#1024#0" expanded="true" />
             <element signature="e#15630#18296#0" />
             <element signature="e#20129#20934#0" />
             <element signature="e#20984#21374#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#582#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lru/lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/pandas-0.25.1-py3.7-linux-x86_64.egg/pandas/core/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="470" column="11" lean-forward="true" selection-start-line="470" selection-start-column="11" selection-end-line="470" selection-end-column="11" />
+          <folding>
+            <element signature="e#112#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trading_calendars/utils/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lru/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lru/lru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trading_calendars/trading_calendar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_tradesimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+          <folding>
+            <element signature="e#583#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/data/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipline/tests/test_api_shim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>

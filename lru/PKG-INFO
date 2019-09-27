@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: lru
+Version: 0.1
+Summary: A simple LRU cache implementation
+Home-page: http://github.com/luckythetourist/lru
+Author: Jared Kuolt
+Author-email: luckythetourist@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
