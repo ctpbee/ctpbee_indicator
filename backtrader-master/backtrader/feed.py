@@ -670,6 +670,7 @@ class CSVDataBase(with_metaclass(MetaCSVDataBase, DataBase)):
             if hasattr(self.p.dataname, 'readline'):
                 self.f = self.p.dataname
             else:
+                # 打开文件读取文件信息
                 # Let an exception propagate to let the caller know
                 self.f = io.open(self.p.dataname, 'r')
 

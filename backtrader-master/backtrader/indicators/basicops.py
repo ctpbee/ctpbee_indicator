@@ -354,14 +354,16 @@ class Average(PeriodN):
     def next(self):
         self.line[0] = \
             math.fsum(self.data.get(size=self.p.period)) / self.p.period
-
+        print(self.line[0], '333333333333333333333333')
     def once(self, start, end):
         src = self.data.array
         dst = self.line.array
         period = self.p.period
 
         for i in range(start, end):
+
             dst[i] = math.fsum(src[i - period + 1:i + 1]) / period
+            print(dst[i], '---------------------------------')
 
 
 class ExponentialSmoothing(Average):

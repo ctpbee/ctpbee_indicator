@@ -40,6 +40,7 @@ class MovingAverageSimple(MovingAverageBase):
     def __init__(self):
         # Before super to ensure mixins (right-hand side in subclassing)
         # can see the assignment operation and operate on the line
+        print(self.data, Average(self.data, period=self.p.period), '4444444444444444444444444')
         self.lines[0] = Average(self.data, period=self.p.period)
 
         super(MovingAverageSimple, self).__init__()

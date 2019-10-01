@@ -29,12 +29,12 @@ class TestStrategy(bt.Strategy):
         self.order = None
         self.buyprice = None
         self.buycomm = None
-        print(self.datas[0], '555555555555555555555')
-        # Add a MovingAverageSimple indicator
-        self.sma = bt.indicators.SimpleMovingAverage(
-            self.datas[0], period=self.params.maperiod)
 
-        print(self.sma, '7777777777777777777777777')
+        # Add a MovingAverageSimple indicator
+        # self.sma = bt.indicators.SimpleMovingAverage(
+        #     self.datas[0], period=self.params.maperiod)
+
+
         # Indicators for the plotting show
 
         # bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
@@ -94,26 +94,26 @@ class TestStrategy(bt.Strategy):
             return
 
         # Check if we are in the market
-        if not self.position:
-
-            # Not yet ... we MIGHT BUY if ...
-            print(self.dataclose[0], self.sma[0], '-' * 80)
-            if self.dataclose[0] > self.sma[0]:
-
-                # BUY, BUY, BUY!!! (with all possible default parameters)
-                self.log('BUY CREATE, %.2f' % self.dataclose[0])
-
-                # Keep track of the created order to avoid a 2nd order
-                self.order = self.buy()
-
-        else:
-
-            if self.dataclose[0] < self.sma[0]:
-                # SELL, SELL, SELL!!! (with all possible default parameters)
-                self.log('SELL CREATE, %.2f' % self.dataclose[0])
-
-                # Keep track of the created order to avoid a 2nd order
-                self.order = self.sell()
+        # if not self.position:
+        #
+        #     # Not yet ... we MIGHT BUY if ...
+        #     print(self.dataclose[0], self.sma[0], '-' * 80)
+        #     if self.dataclose[0] > self.sma[0]:
+        #
+        #         # BUY, BUY, BUY!!! (with all possible default parameters)
+        #         self.log('BUY CREATE, %.2f' % self.dataclose[0])
+        #
+        #         # Keep track of the created order to avoid a 2nd order
+        #         self.order = self.buy()
+        #
+        # else:
+        #
+        #     if self.dataclose[0] < self.sma[0]:
+        #         # SELL, SELL, SELL!!! (with all possible default parameters)
+        #         self.log('SELL CREATE, %.2f' % self.dataclose[0])
+        #
+        #         # Keep track of the created order to avoid a 2nd order
+        #         self.order = self.sell()
 
 
 if __name__ == '__main__':

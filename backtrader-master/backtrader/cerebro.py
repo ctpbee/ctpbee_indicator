@@ -751,6 +751,7 @@ class Cerebro(with_metaclass(MetaParams, object)):
         If ``name`` is not None it will be put into ``data._name`` which is
         meant for decoration/plotting purposes.
         '''
+        print(data, '9999999999999')
         if name is not None:
             data._name = name
 
@@ -765,7 +766,7 @@ class Cerebro(with_metaclass(MetaParams, object)):
 
         if data.islive():
             self._dolive = True
-
+        print(data, '88888888888')
         return data
 
     def chaindata(self, *args, **kwargs):

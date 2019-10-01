@@ -191,7 +191,7 @@ class OrderData(object):
         self.exbits.append(exbit)
 
         self.remsize -= exbit.size
-
+        print('==============', exbit.price, exbit.closed)
         self.dt = exbit.dt
         oldvalue = self.size * self.price
         newvalue = exbit.size * exbit.price
