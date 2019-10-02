@@ -452,6 +452,7 @@ class LineSeries(with_metaclass(MetaLineSeries, LineMultiple)):
 
     @property
     def array(self):
+
         return self.lines[0].array
 
     def __getattr__(self, name):
@@ -464,6 +465,7 @@ class LineSeries(with_metaclass(MetaLineSeries, LineMultiple)):
         return len(self.lines)
 
     def __getitem__(self, key):
+
         return self.lines[0][key]
 
     def __setitem__(self, key, value):

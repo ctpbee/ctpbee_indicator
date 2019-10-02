@@ -442,6 +442,9 @@ class MetaLineSeries(LineMultiple.__class__):
 
 
 class LineSeries(with_metaclass(MetaLineSeries, LineMultiple)):
+    """
+    线列
+    """
     plotinfo = dict(
         plot=True,
         plotmaster=None,
@@ -458,12 +461,14 @@ class LineSeries(with_metaclass(MetaLineSeries, LineMultiple)):
         # to refer to line by name directly if the attribute was not found
         # in this object if we set an attribute in this object it will be
         # found before we end up here
+        print(self.lines[0].array, '++++++++++++++++++++++++++++++')
         return getattr(self.lines, name)
 
     def __len__(self):
         return len(self.lines)
 
     def __getitem__(self, key):
+        print("key==================", key)
         return self.lines[0][key]
 
     def __setitem__(self, key, value):
