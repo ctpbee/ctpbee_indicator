@@ -29,7 +29,7 @@ class TestStrategy(bt.Strategy):
         self.order = None
         self.buyprice = None
         self.buycomm = None
-        print(self.datas[0], '555555555555555555555')
+        print(self.datas[0], '555555555555555555555===================')
         # Add a MovingAverageSimple indicator
         self.sma = bt.indicators.SimpleMovingAverage(
             self.datas[0], period=self.params.maperiod)
@@ -94,10 +94,11 @@ class TestStrategy(bt.Strategy):
             return
 
         # Check if we are in the market
+        self.log('%s %s ====================='% (self.dataclose[0], self.sma[0]))
         if not self.position:
 
             # Not yet ... we MIGHT BUY if ...
-            print(self.dataclose[0], self.sma[0], '-' * 80)
+
             if self.dataclose[0] > self.sma[0]:
 
                 # BUY, BUY, BUY!!! (with all possible default parameters)

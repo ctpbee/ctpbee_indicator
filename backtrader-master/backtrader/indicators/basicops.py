@@ -65,7 +65,7 @@ class OperationN(PeriodN):
         src = self.data.array
         period = self.p.period
         func = self.func
-
+        print(start, end, 'start =======================')
         for i in range(start, end):
             dst[i] = func(src[i - period + 1: i + 1])
 
@@ -361,13 +361,10 @@ class Average(PeriodN):
         dst = self.line.array
         period = self.p.period
         print(src, '999999999999999999999')
-        alist = []
         for i in range(start, end):
-            alist.append(src[i])
             # 更改这条线的值
             dst[i] = math.fsum(src[i - period + 1:i + 1]) / period
             # print(dst[i], '---------------------------------')
-        print(alist, '==============================')
 
 
 class ExponentialSmoothing(Average):
