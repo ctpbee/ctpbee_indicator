@@ -29,7 +29,7 @@ class indicator:
         self.ret_data = data[startTime:endTime]
         return self.ret_data
 
-    def sma(self, period:int, data:object):
+    def SimpleMovingAverage(self, data:object,  period:int):
         """
         简单移动平均线        print(self.lines[0].array, '++++++++++++++++++++++++++++++')
         :param period:距离
@@ -45,6 +45,14 @@ class indicator:
         print(len(self.new_data), self.new_data['Close'])
         print(sum(self.new_data['Close'])/end)
 
+    def sma(self):
+        for c in self.ret_data['Close']:
+            yield c
+
+    def CloseValue(self):
+        for i in self.new_data['Close']:
+            yield i
+
     def calculate(self):
         """
         计算指标
@@ -53,7 +61,28 @@ class indicator:
         pass
 
 
+    def ExponentialMovingAverage(self, data:object,  period:int):
+        pass
+
+
+    def WeightedMovingAverage(self, data:object,  period:int):
+        pass
+
+    def StochasticSlow(self, data:object,  period:int):
+        pass
+
+    def MACDHisto(self, data:object,  period:int):
+        pass
+
+    def RSI(self, data:object,  period:int):
+        pass
+
+    def SmoothedMovingAverage(self, data:object,  period:int):
+        pass
+
+    def ATR(self, data:object,  period:int):
+        pass
 
 s = indicator()
 ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
-s.sma(15, ret)
+s.SimpleMovingAverage(15, ret)

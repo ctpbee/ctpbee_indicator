@@ -37,7 +37,7 @@ class TestStrategy(bt.Strategy):
         print(self.sma, '7777777777777777777777777')
         # Indicators for the plotting show
 
-        # bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
+        bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
         # bt.indicators.WeightedMovingAverage(self.datas[0], period=25,
         #                                    subplot=True)
         self.log("%s, %s, %s, %s, %s" % (self.datas[0].open[0], self.datas[0].high[0], self.datas[0].low[0], self.datas[0].close[0], self.datas[0].volume))
