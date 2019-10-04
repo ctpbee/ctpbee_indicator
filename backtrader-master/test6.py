@@ -31,20 +31,21 @@ class TestStrategy(bt.Strategy):
         self.buycomm = None
         print(self.datas[0], '555555555555555555555===================')
         # Add a MovingAverageSimple indicator
-        self.sma = bt.indicators.SimpleMovingAverage(
-            self.datas[0], period=self.params.maperiod)
+        # self.sma = bt.indicators.SimpleMovingAverage(
+        #     self.datas[0], period=self.params.maperiod)
 
-        print(self.sma, '7777777777777777777777777')
+        # print(self.sma, '7777777777777777777777777')
         # Indicators for the plotting show
 
-        bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
+        self.sma = bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
         # bt.indicators.WeightedMovingAverage(self.datas[0], period=25,
         #                                    subplot=True)
+        print(self.sma, '-----------------')
         self.log("%s, %s, %s, %s, %s" % (self.datas[0].open[0], self.datas[0].high[0], self.datas[0].low[0], self.datas[0].close[0], self.datas[0].volume))
-        # bt.indicators.StochasticSlow(self.datas[0])
-        # bt.indicators.MACDHisto(self.datas[0])
-        # rsi = bt.indicators.RSI(self.datas[0])
-        # bt.indicators.SmoothedMovingAverage(rsi, period=10)
+        ## bt.indicators.StochasticSlow(self.datas[0])
+        ## bt.indicators.MACDHisto(self.datas[0])
+        rsi = bt.indicators.RSI(self.datas[0])
+        bt.indicators.SmoothedMovingAverage(rsi, period=10)
         # bt.indicators.ATR(self.datas[0], plot=False)
 
     def notify_order(self, order):
@@ -94,7 +95,8 @@ class TestStrategy(bt.Strategy):
             return
 
         # Check if we are in the market
-        self.log('%s %s ====================='% (self.dataclose[0], self.sma[0]))
+        # self.log('%s %s ====================='% (self.dataclose[0], self.sma[0]))
+
         if not self.position:
 
             # Not yet ... we MIGHT BUY if ...

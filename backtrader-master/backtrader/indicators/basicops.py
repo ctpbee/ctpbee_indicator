@@ -398,6 +398,7 @@ class ExponentialSmoothing(Average):
 
     def next(self):
         self.line[0] = self.line[-1] * self.alpha1 + self.data[0] * self.alpha
+        print(self.line[0], '000000000000000')
 
     def oncestart(self, start, end):
         # Fetch the seed value from the base class calculation
@@ -408,9 +409,12 @@ class ExponentialSmoothing(Average):
         larray = self.line.array
         alpha = self.alpha
         alpha1 = self.alpha1
+        print(alpha, alpha1, self.line[0], '-----------------')
+
 
         # Seed value from SMA calculated with the call to oncestart
         prev = larray[start - 1]
+        print(start, prev, darray[start-1], '===========')
         for i in range(start, end):
             larray[i] = prev = prev * alpha1 + darray[i] * alpha
 
@@ -483,7 +487,9 @@ class WeightedAverage(PeriodN):
     def next(self):
         data = self.data.get(size=self.p.period)
         dataweighted = map(operator.mul, data, self.p.weights)
+        print(data, dataweighted, '||||||||||||||||||||')
         self.line[0] = self.p.coef * math.fsum(dataweighted)
+        print(self.line[0])
 
     def once(self, start, end):
         darray = self.data.array
@@ -491,7 +497,8 @@ class WeightedAverage(PeriodN):
         period = self.p.period
         coef = self.p.coef
         weights = self.p.weights
-
+        print(weights, start, end, '---------------------')
         for i in range(start, end):
             data = darray[i - period + 1: i + 1]
             larray[i] = coef * math.fsum(map(operator.mul, data, weights))
+        print(larray, '===================')

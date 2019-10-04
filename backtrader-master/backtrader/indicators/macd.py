@@ -57,12 +57,14 @@ class MACD(Indicator):
 
     def __init__(self):
         super(MACD, self).__init__()
+        print(self.data, '-------------')
         me1 = self.p.movav(self.data, period=self.p.period_me1)
         me2 = self.p.movav(self.data, period=self.p.period_me2)
-        print(me1-me2)
         self.lines.macd = me1 - me2
         self.lines.signal = self.p.movav(self.lines.macd,
                                          period=self.p.period_signal)
+        print(self.lines.macd, self.lines.signal, '==0000===')
+
 
 
 class MACDHisto(MACD):

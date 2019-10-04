@@ -462,7 +462,9 @@ class WeightedAverage(PeriodN):
     def next(self):
         data = self.data.get(size=self.p.period)
         dataweighted = map(operator.mul, data, self.p.weights)
+
         self.line[0] = self.p.coef * math.fsum(dataweighted)
+
 
     def once(self, start, end):
         darray = self.data.array
