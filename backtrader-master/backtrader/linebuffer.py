@@ -667,9 +667,10 @@ class _LineDelay(LineActions):
         dst = self.array
         src = self.a.array
         ago = self.ago
-
+        print(ago, '====2222=====')
         for i in range(start, end):
             dst[i] = src[i + ago]
+
 
 
 class _LineForward(LineActions):

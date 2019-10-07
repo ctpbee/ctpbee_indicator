@@ -1,150 +1,86 @@
-import os
-import sys
-import datetime
-import pandas as pd
-import datetime
-import numpy as np
-import math
-import operator
-from copy import deepcopy
+from indicator.exprs import exprenv
+
+class Indicator:
+    def __init__(self):
+        self._exprEnv = exprenv.ExprEnv()
+        self._rid = 0
+        self._params = []
+        self._assigns = []
+        self._outputs = []
+
+    def addParameter(self, expr):
+        self._params.append(expr)
+
+    def addAssign(self, expr):
+        self._assigns.append(expr)
+
+    def addOutput(self, expr):
+        self._outputs.append(expr)
+
+    def getParamterCount(self):
+        return len(self._params)
+
+    def getParameterAt(self, index):
+        return self._params[index]
+
+    def getOutputCount(self):
+        return len(self._outputs)
+
+    def getOutputAt(self, index):
+        return self._outputs[index]
+
+    def clear(self):
+        self._exprEnv.setFirstIndex(-1)
+        cnt = len(self._assigns)
+        for i in range(cnt):
+            self._assigns[i].clear()
+        cnt = len(self._outputs)
+        for i in range(cnt):
+            self._outputs.clear()
+
+    def reserve(self, count):
+        self._rid += 1
+        cnt = len(self._assigns)
+        for i in range(cnt):
+            self._assigns[i].reserve(self._rid, count)
+        cnt = len(self._outputs)
+        for i in range(cnt):
+            self._outputs[i].reserve(self._rid, count)
+
+    def execute(self, ds, index):
+        if index < 0:
+            return
+        self._exprEnv.setDataSource(ds)
+
+        exprenv.ExprEnv.set(self._exprEnv)
+
+        try:
+            cnt = len(self._assigns)
+
+            for i in range(cnt):
+                self._assigns[i].assign(index)
+            cnt = len(self._outputs)
+
+            for i in range(cnt):
+                self._outputs[i].assign(index)
+
+            if self._exprEnv.getFirstIndex() < 0:
+                self._exprEnv.setFirstIndex(index)
+
+        except Exception as e:
+            if self._exprEnv.getFirstIndex() >= 0:
+                print(e)
 
 
-class indicator:
-    pass
+    def getParameters(self):
+        params = []
+        cnt = len(self._params)
+        for i in range(cnt):
+            params.append(self._params[i].getValue())
 
-    # @property
-    def open(self, file:str, startTime:str, endTime:str):
-        """
-        读取文件
-        :param file: 文件名
-        :param startTime: 开始读取时间
-        :param endTime: 结束时间
-        :return: dataframe对象
-        """
-        modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
-        # datapath = os.path.join(modpath, './datas/orcl-2014.txt')
-        datapath = os.path.join(modpath, file)
-        data = pd.read_csv(datapath, index_col=0, parse_dates=True)  # , index_col=0
-        print(data, type(data))
-        print(data['2014-01-01':'2014-01-08'])
-        self.ret_data = data[startTime:endTime]
-        # self.close_data = self.ret_data['Close']
-        return self.ret_data
+        return params
 
-    def SimpleMovingAverage(self, data:object,  period=15):
-        """
-        简单移动平均线        print(self.lines[0].array, '++++++++++++++++++++++++++++++')
-        :param period:距离
-        :param data:数据 object
-        :return:计算值
-        """
-        self.sma_data = deepcopy(data)
-        end = len(data['Close'])
-        close_line = data['Close'].tolist()
-        for i in range(period, end):
-            self.sma_data['Close'][i] = sum(close_line[i - period + 1:i + 1]) / period
-        print(len(close_line), close_line)
-        print(len(self.sma_data), self.sma_data['Close'].tolist())
-        print(sum(self.sma_data['Close'])/end)
-        return self.sma_data['Close']
-
-    def sma(self):
-        for c in self.ret_data['Close']:
-            yield c
-
-    def CloseValue(self):
-        for i in self.sma_data['Close']:
-            yield i
-
-    def calculate(self):
-        """
-        计算指标
-        :return:
-        """
-        pass
-
-    def ExponentialMovingAverage(self, data:object, period:int, alpha=None):
-        """
-        指数移动平均
-            - self.smfactor -> 2 / (1 + period)
-            - self.smfactor1 -> `1 - self.smfactor`
-            - movav = prev * (1.0 - smoothfactor) + newdata * smoothfactor
-        :param data:
-        :param period:
-        :return:
-        """
-        self.ema_data = deepcopy(data)
-        end = len(data['Close'])
-        close_line = data['Close'].tolist()
-        self.alpha = alpha
-        if self.alpha is None:
-            self.alpha = 2.0 / (1.0 + period)
-        self.alpha1 = 1.0 - self.alpha
-
-        prev = close_line[period-1]
-        for i in range(period, end):
-            self.ema_data['Close'][i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
-        print(len(close_line), close_line)
-        print(self.ema_data['Close'].tolist())
-        print(sum(self.ema_data['Close'][period:end]) / (end - period))
-        return self.ema_data['Close']
-
-    def WeightedMovingAverage(self, data:object, period=30):
-        '''
-        加权移动平均线
-            A Moving Average which gives an arithmetic weighting to values with the
-            newest having the more weight
-
-            Formula:
-              - weights = range(1, period + 1)
-              - coef = 2 / (period * (period + 1))
-              - movav = coef * Sum(weight[i] * data[period - i] for i in range(period))
-            '''
-        self.wma_data = deepcopy(data)
-        end = len(data['Close'])
-        close_line = data['Close'].tolist()
-        coef = 2.0 / (period * (period + 1.0))
-        weights = tuple(float(x) for x in range(1, period + 1))
-        for i in range(period, end):
-            data = close_line[i - period + 1: i + 1]
-            self.wma_data['Close'][i] = coef * math.fsum(map(operator.mul, data, weights))
-        print(len(close_line), close_line)
-        print(self.wma_data['Close'].tolist())
-        print(sum(self.wma_data['Close'][period:end])/(end-period))
-        return self.wma_data['Close']
-
-
-    def StochasticSlow(self, data:object, period:int):
-        pass
-
-    def MACDHisto(self, data:object, period_me1=12, period_me2=26, period_signal=9):
-        """
-        移动平均趋同/偏离
-        Formula:
-            - histo = macd - signal
-        :param data:
-        :param period:
-        :return:
-        """
-
-        me1 = self.ExponentialMovingAverage(data, period=period_me1)
-        me2 = self.ExponentialMovingAverage(data, period=period_me2)
-        self.macd = me1 - me2
-        self.signal = self.p.movav(self.macd, period=period_signal)
-        self.histo = self.macd - self.signal
-        return
-
-    def RSI(self, data:object,  period:int):
-        pass
-
-    def SmoothedMovingAverage(self, data:object,  period:int):
-        pass
-
-    def ATR(self, data:object,  period:int):
-        pass
-
-s = indicator()
-ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
-s.SimpleMovingAverage(ret, 15)
-s.WeightedMovingAverage(ret, 25)
-s.WeightedMovingAverage(ret, 25)
+    def setParameters(self, params):
+        if isinstance(params, list) and len(params) == len(self._params):
+            for i in self._params:
+                self._params[i].setValue(params[i])
