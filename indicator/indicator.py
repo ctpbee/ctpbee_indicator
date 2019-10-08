@@ -84,3 +84,58 @@ class Indicator:
         if isinstance(params, list) and len(params) == len(self._params):
             for i in self._params:
                 self._params[i].setValue(params[i])
+
+
+class MAIndicator(Indicator):
+    def __init__(self):
+        super().__init__()
+        self.M1 = exprenv.ParameterExpr("M1", 2, 1000, 7)
+        self.M2 = exprenv.ParameterExpr("M2", 2, 1000, 30)
+        self.M3 = exprenv.ParameterExpr("M3", 2, 1000, 0)
+        self.M4 = exprenv.ParameterExpr("M4", 2, 1000, 0)
+        self.M5 = exprenv.ParameterExpr("M5", 2, 1000, 0)
+        self.M6 = exprenv.ParameterExpr("M6", 2, 1000, 0)
+        self.addParameter(self.M1)
+        self.addParameter(self.M2)
+        self.addParameter(self.M3)
+        self.addParameter(self.M4)
+        self.addParameter(self.M5)
+        self.addParameter(self.M6)
+
+    def getName(self):
+        return "MA"
+
+
+class EMAIndicator(Indicator):
+    def __init__(self):
+        super().__init__()
+        self.M1 = exprenv.ParameterExpr("M1", 2, 1000, 7)
+        self.M2 = exprenv.ParameterExpr("M2", 2, 1000, 30)
+        self.M3 = exprenv.ParameterExpr("M3", 2, 1000, 0)
+        self.M4 = exprenv.ParameterExpr("M4", 2, 1000, 0)
+        self.M5 = exprenv.ParameterExpr("M5", 2, 1000, 0)
+        self.M6 = exprenv.ParameterExpr("M6", 2, 1000, 0)
+        self.addParameter(self.M1)
+        self.addParameter(self.M2)
+        self.addParameter(self.M3)
+        self.addParameter(self.M4)
+        self.addParameter(self.M5)
+        self.addParameter(self.M6)
+
+    def getName(self):
+        return "EMA"
+
+
+class VOLUMEIndicator(Indicator):
+    def __init__(self):
+        super().__init__()
+        self.M1 = exprenv.ParameterExpr("M1", 2, 500, 5)
+        self.M2 = exprenv.ParameterExpr("M2", 2, 500, 10)
+        self.addParameter(self.M1)
+        self.addParameter(self.M2)
+
+    def getName(self):
+        return "VOLUME"
+
+
+class MACDIndicator(Indicator):

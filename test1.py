@@ -58,6 +58,7 @@ class A:
     def __init__(self, b1):
         self.a = 2
         self._b = b1
+        print(self._b, '---')
 
     @property
     def b(self):
@@ -67,8 +68,9 @@ print(A(3).a, A(3)._b)
 
 class B(A):
     def __init__(self, c):
-        super()
-        print(A(2).b, c)
+        super().__init__(c)
         self.c = c
-
-B(4)
+    def name(self):
+        print(self.a)
+        print(self._b)
+B(4).name()
