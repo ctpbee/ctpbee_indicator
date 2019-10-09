@@ -667,10 +667,12 @@ class _LineDelay(LineActions):
         dst = self.array
         src = self.a.array
         ago = self.ago
-        print(ago, '====2222=====')
+        print('age===', ago)
+        print('start and end', start, end)
         for i in range(start, end):
             dst[i] = src[i + ago]
-
+        print('src ----', src)
+        print('dst ----', dst)
 
 
 class _LineForward(LineActions):
@@ -698,7 +700,6 @@ class _LineForward(LineActions):
         dst = self.array
         src = self.a.array
         ago = self.ago
-
         for i in range(start, end):
             dst[i - ago] = src[i]
 
@@ -825,6 +826,5 @@ class LineOwnOperation(LineActions):
         dst = self.array
         srca = self.a.array
         op = self.operation
-
         for i in range(start, end):
             dst[i] = op(srca[i])

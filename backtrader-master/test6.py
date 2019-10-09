@@ -43,10 +43,10 @@ class TestStrategy(bt.Strategy):
         print(self.sma, '-----------------')
         self.log("%s, %s, %s, %s, %s" % (self.datas[0].open[0], self.datas[0].high[0], self.datas[0].low[0], self.datas[0].close[0], self.datas[0].volume))
         ## bt.indicators.StochasticSlow(self.datas[0])
-        ## bt.indicators.MACDHisto(self.datas[0])
-        # rsi = bt.indicators.RSI(self.datas[0])
+        # bt.indicators.MACDHisto(self.datas[0])
+        rsi = bt.indicators.RSI(self.datas[0])
         # bt.indicators.SmoothedMovingAverage(rsi, period=10)
-        bt.indicators.ATR(self.datas[0], plot=False)
+        # bt.indicators.ATR(self.datas[0], plot=False)
 
     def notify_order(self, order):
         if order.status in [order.Submitted, order.Accepted]:

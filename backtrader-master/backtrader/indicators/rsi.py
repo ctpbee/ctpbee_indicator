@@ -44,9 +44,9 @@ class UpDay(Indicator):
 
     def __init__(self):
         self.lines.upday = Max(self.data - self.data(-self.p.period), 0.0)
-
-        print(self.data, self.data(-self.p.period), '44444444====================')
-        print(Max(self.data - self.data(-self.p.period), 0.0))
+        for i in self.data.close:
+            print('i0000', i)
+        print(self.data, self.data(-self.p.period), 0.0)
         super(UpDay, self).__init__()
 
 
@@ -196,8 +196,6 @@ class RelativeStrengthIndex(Indicator):
     def _rscalc(self, rsi):
         try:
             rs = (-100.0 / (rsi - 100.0)) - 1.0
-
-            print(rs, '0000000=============')
         except ZeroDivisionError:
             return float('inf')
 

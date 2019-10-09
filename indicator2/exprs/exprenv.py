@@ -48,27 +48,27 @@ class Expr:
 
 class OpenExpr(Expr):
     def execute(self, index):
-        return ExprEnv.get()._ds.getDataAt(index).open
+        return ExprEnv.get._ds[index].open
 
 
 class HighExpr(Expr):
     def execute(self, index):
-        return ExprEnv.get()._ds.getDataAt(index).high
+        return ExprEnv.get()._ds[index].high
 
 
 class LowExpr(Expr):
     def execute(self, index):
-        return ExprEnv.get()._ds.getDataAt(index).low
+        return ExprEnv.get()._ds[index].low
 
 
 class CloseExpr(Expr):
     def execute(self, index):
-        return ExprEnv.get()._ds.getDataAt(index).volume
+        return ExprEnv.get()._ds[index].volume
 
 
 class VolumeExpr(Expr):
     def execute(self, index):
-        return ExprEnv.get()._ds.getDataAt(index).volume
+        return ExprEnv.get()._ds[index].volume
 
 
 class ConstExpr(Expr):
