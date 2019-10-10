@@ -1,4 +1,4 @@
-from indicator.exprs import exprenv
+from indicator2.exprs import exprenv
 
 class Indicator:
     def __init__(self):
@@ -16,6 +16,7 @@ class Indicator:
 
     def addOutput(self, expr):
         self._outputs.append(expr)
+        print(self._outputs)
 
     def getParamterCount(self):
         return len(self._params)
@@ -139,4 +140,26 @@ class VOLUMEIndicator(Indicator):
 
 
 class MACDIndicator(Indicator):
-    pass
+    def __init__(self):
+        super().__init__()
+
+        SHORT = exprenv.ParameterExpr("SHORT", 2, 200, 12)
+        LONG = exprenv.ParameterExpr("LONG", 2, 200, 26)
+        MID = exprenv.ParameterExpr("MID", 2, 200, 9)
+        self.addParameter(SHORT)
+        self.addParameter(LONG)
+        self.addParameter(MID)
+        DIF = exprenv.OutputExpr("DIF", exprenv.SubExpr(exprenv.EmaExpr(exprenv.CloseExpr(), SHORT), exprenv.EmaExpr(exprenv.CloseExpr(), LONG)))
+        self.addOutput(DIF)
+        DEA = exprenv.OutputExpr("DEA", exprenv.EmaExpr(DIF, MID))
+        self.addOutput(DEA)
+        MACD = exprenv.OutputExpr("MACD", exprenv.MulExpr(exprenv.SubExpr(DIF, DEA), exprenv.ConstExpr(2)))
+        self.addOutput(MACD)
+
+from indicator2.data.data_sources import *
+from indicator2.exprs.exprenv import *
+m = MainDataSource().update(data)
+ExprEnv().setDataSource(m)
+ExprEnv._ds = data
+n = Indicator().setParameters(m)
+MACDIndicator()

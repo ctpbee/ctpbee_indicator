@@ -77,7 +77,7 @@
 import numpy as np
 data = [2,5,6,7]
 data1 = [3,4,5,6]
-n = np.array(data) / np.array(data1)
+n = np.array(data) - 1
 for i in n:
     print(i)
 print(n, sum(n))

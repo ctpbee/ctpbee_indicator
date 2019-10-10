@@ -34,7 +34,8 @@ class indicator:
 
     def SimpleMovingAverage(self, data:object,  period=15):
         """
-        简单移动平均线        print(self.lines[0].array, '++++++++++++++++++++++++++++++')
+        sma
+        简单移动平均线
         :param period:距离
         :param data:数据 object
         :return:计算值
@@ -63,6 +64,7 @@ class indicator:
 
     def ExponentialMovingAverage(self, data:object, period:int, alpha=None):
         """
+        ema
         指数移动平均
             - self.smfactor -> 2 / (1 + period)
             - self.smfactor1 -> `1 - self.smfactor`
@@ -105,9 +107,33 @@ class indicator:
             self.wma_data[i] = coef * math.fsum(map(operator.mul, data, weights))
         return self.wma_data
 
+    def StochasticSlow(self, data:object, period:int, period_dfast=3):
+        """
+        随机振荡器
+            The regular (or slow version) adds an additional moving average layer and
+            thus:
 
-    def StochasticSlow(self, data:object, period:int):
-        pass
+              - The percD line of the StochasticFast becomes the percK line
+              - percD becomes a  moving average of period_dslow of the original percD
+
+            Formula:
+              - k = k
+              - d = d
+              - d = MovingAverage(d, period_dslow)
+            :param data:
+            :param period:
+            :return:
+        """
+        highest = max(self.ret_high[period:])
+        lowest = min(self.ret_low[period:])
+        knum = np.array(data[period:]) - lowest
+        kden = highest - lowest
+        self.k = 100 * (knum/kden)
+        self.k = [0]*period+self.k.tolist()
+        self.d = self.SmoothedMovingAverage(self.k, period=period_dfast)
+        self.stochastic = self.SimpleMovingAverage(self.d, period=period_dfast)
+        print('====', self.stochastic)
+        return self.stochastic
 
     def MACDHisto(self, data:object, period_me1=12, period_me2=26, period_signal=9):
         """
@@ -160,8 +186,6 @@ class indicator:
         downday = downday + [0] * period
         for i in range(period+1, end):
             downday.append(max(data[i-1]-data[i], 0.0))
-        print("up", upday)
-        print("down", downday)
         maup = self.SmoothedMovingAverage(upday, period=period)
         madown = self.SmoothedMovingAverage(downday, period=period)
         rs = np.array(maup) / np.array(madown)
@@ -175,6 +199,7 @@ class indicator:
     def SmoothedMovingAverage(self, data:object,  period:int, alpha=15):
         """
         smma 平滑移动平均值
+        SmoothedMovingAverage
         :param data:
         :param period:
         :return:
@@ -213,9 +238,99 @@ class indicator:
         atr = self.SimpleMovingAverage(tr, period=period)
         return atr
 
+    def BollingerBands(self, data:object, period:int):
+        """
+        布林带
+        Formula:
+          - midband = SimpleMovingAverage(close, period)
+          - topband = midband + devfactor * StandardDeviation(data, period)
+          - botband = midband - devfactor * StandardDeviation(data, period)
+
+        See:
+          - http://en.wikipedia.org/wiki/Bollinger_Bands
+        :param data:
+        :param period:
+        :return:
+        """
+
+    def AroonIndicator(self, data:object, period:int):
+        """
+        Formula:
+          - up = 100 * (period - distance to highest high) / period
+          - down = 100 * (period - distance to lowest low) / period
+        See:
+            - http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:aroon
+        :param data:
+        :param period:
+        :return:
+        """
+
+    def UltimateOscillator(self, data: object, period: int):
+        '''
+            Formula:
+              # Buying Pressure = Close - TrueLow
+              BP = Close - Minimum(Low or Prior Close)
+
+              # TrueRange = TrueHigh - TrueLow
+              TR = Maximum(High or Prior Close)  -  Minimum(Low or Prior Close)
+
+              Average7 = (7-period BP Sum) / (7-period TR Sum)
+              Average14 = (14-period BP Sum) / (14-period TR Sum)
+              Average28 = (28-period BP Sum) / (28-period TR Sum)
+
+              UO = 100 x [(4 x Average7)+(2 x Average14)+Average28]/(4+2+1)
+
+            See:
+
+              - https://en.wikipedia.org/wiki/Ultimate_oscillator
+              - http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:ultimate_oscillator
+        '''
+        pass
+
+    def Trix(self, data: object, period: int, rocperiod=1):
+        '''
+            技术分析
+           Defined by Jack Hutson in the 80s and shows the Rate of Change (%) or slope
+           of a triple exponentially smoothed moving average
+
+           Formula:
+             - ema1 = EMA(data, period)
+             - ema2 = EMA(ema1, period)
+             - ema3 = EMA(ema2, period)
+             - trix = 100 * (ema3 - ema3(-1)) / ema3(-1)
+
+             The final formula can be simplified to: 100 * (ema3 / ema3(-1) - 1)
+
+           The moving average used is the one originally defined by Wilder,
+           the SmoothedMovingAverage
+
+           See:
+             - https://en.wikipedia.org/wiki/Trix_(technical_analysis)
+             - http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:trix
+        '''
+        ema1 = self.ExponentialMovingAverage(data, period=period)
+        ema2 = self.ExponentialMovingAverage(ema1, period=period)
+        ema3 = self.ExponentialMovingAverage(ema2, period=period)
+        self.trix = 100.0 * (np.array(ema3)/ema3[-rocperiod] - 1.0)
+        print(self.trix)
+        return self.trix
+
+    def ROC(self, data: object, period: int):
+        pass
+
+    def Momentum(self, data: object, period: int):
+        pass
+
+    def DMA(self, data: object, period: int):
+        pass
+
+    def TEMA(self, data: object, period: int):
+        pass
 s = indicator()
 ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
 s.SimpleMovingAverage(ret, 15)
 s.WeightedMovingAverage(ret, 25)
-s.RSI(ret, 14)
+# s.RSI(ret, 14)
 # s.ATR(ret, 14)
+# s.StochasticSlow(ret, 14)
+s.Trix(ret, 15)

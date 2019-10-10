@@ -803,6 +803,7 @@ class LinesOperation(LineActions):
 
         for i in range(start, end):
             dst[i] = op(srca, srcb[i])
+        print('dddddd', dst)
 
 
 class LineOwnOperation(LineActions):

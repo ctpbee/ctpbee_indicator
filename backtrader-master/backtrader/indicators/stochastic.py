@@ -111,7 +111,9 @@ class Stochastic(_StochasticBase):
     def __init__(self):
         super(Stochastic, self).__init__()
         self.lines.percK = self.d
+        print(self.lines.percK, self.l.percK, '---')
         self.l.percD = self.p.movav(self.l.percK, period=self.p.period_dslow)
+        print(self.l.percD, '-2332')
 
 
 class StochasticFull(_StochasticBase):

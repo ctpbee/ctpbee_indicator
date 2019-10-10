@@ -42,11 +42,25 @@ class TestStrategy(bt.Strategy):
         #                                    subplot=True)
         print(self.sma, '-----------------')
         self.log("%s, %s, %s, %s, %s" % (self.datas[0].open[0], self.datas[0].high[0], self.datas[0].low[0], self.datas[0].close[0], self.datas[0].volume))
-        ## bt.indicators.StochasticSlow(self.datas[0])
+
         # bt.indicators.MACDHisto(self.datas[0])
-        rsi = bt.indicators.RSI(self.datas[0])
+        # rsi = bt.indicators.RSI(self.datas[0])
+        # bt.indicators.Stochastic(self.datas[0])
         # bt.indicators.SmoothedMovingAverage(rsi, period=10)
         # bt.indicators.ATR(self.datas[0], plot=False)
+
+        # bt.indicators.BollingerBands(self.datas[0], period=25)
+        # bt.indicators.UltimateOscillator(self.datas[0])
+        bt.indicators.Trix(self.datas[0], period=25)
+        # bt.indicators.ADXR(self.datas[0])
+        # bt.indicators.KAMA(self.datas[0], period=25)
+        # bt.indicators.DEMA(self.datas[0], period=25)
+        # bt.indicators.PPO(self.datas[0], _movav=bt.indicators.SMA)
+        # bt.indicators.TEMA(self.datas[0], period=25)
+        # bt.indicators.ROC(self.datas[0], period=12)
+        # bt.indicators.Momentum(self.datas[0], period=12)
+        # bt.indicators.MomentumOscillator(self.datas[0], period=12)
+        # bt.indicators.WilliamsR(self.datas[0])
 
     def notify_order(self, order):
         if order.status in [order.Submitted, order.Accepted]:

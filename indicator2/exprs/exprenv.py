@@ -343,8 +343,9 @@ class AssignExpr(OpAExpr):
 
 
 class OutputExpr(AssignExpr):
-    def __init__(self, name, a, style, color):
+    def __init__(self, name, a):
         super().__init__(name, a)
+
 
     def getStyle(self):
         pass

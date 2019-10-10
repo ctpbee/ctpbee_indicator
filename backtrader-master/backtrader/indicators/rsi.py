@@ -44,6 +44,7 @@ class UpDay(Indicator):
 
     def __init__(self):
         self.lines.upday = Max(self.data - self.data(-self.p.period), 0.0)
+        print(self.data, self.lines.upday, '===---09999')
         for i in self.data.close:
             print('i0000', i)
         print(self.data, self.data(-self.p.period), 0.0)
@@ -185,12 +186,18 @@ class RelativeStrengthIndex(Indicator):
         madown = self.p.movav(downday, period=self.p.period)
         if not self.p.safediv:
             rs = maup / madown
+            print(rs)
         else:
             highrs = self._rscalc(self.p.safehigh)
             lowrs = self._rscalc(self.p.safelow)
             rs = DivZeroByZero(maup, madown, highrs, lowrs)
-
+        print('rs----', rs)
+        for i in rs:
+            print('rs', i)
         self.lines.rsi = 100.0 - 100.0 / (1.0 + rs)
+        print('rsi----', self.lines.rsi)
+        for i in self.lines.rsi:
+            print('rsi', i)
         super(RelativeStrengthIndex, self).__init__()
 
     def _rscalc(self, rsi):
