@@ -41,6 +41,7 @@ class Momentum(Indicator):
     plotinfo = dict(plothlines=[0.0])
 
     def __init__(self):
+        print("99900000", self.data, self.data(-self.p.period))
         self.l.momentum = self.data - self.data(-self.p.period)
         super(Momentum, self).__init__()
 
@@ -81,7 +82,7 @@ class RateOfChange(Indicator):
     Measures the ratio of change in prices over a period
 
     Formula:
-      - roc = (data - data_period) / data_period
+      - roc = (data - data_period) / data_periodr
 
     See:
       - http://en.wikipedia.org/wiki/Momentum_(technical_analysis)

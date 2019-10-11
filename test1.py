@@ -77,7 +77,6 @@
 import numpy as np
 data = [2,5,6,7]
 data1 = [3,4,5,6]
-n = np.array(data) - 1
-for i in n:
-    print(i)
-print(n, sum(n))
+n = np.array(data)
+m = pow(n, 2)
+print(m)

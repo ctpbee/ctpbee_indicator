@@ -51,7 +51,7 @@ class TestStrategy(bt.Strategy):
 
         # bt.indicators.BollingerBands(self.datas[0], period=25)
         # bt.indicators.UltimateOscillator(self.datas[0])
-        bt.indicators.Trix(self.datas[0], period=25)
+        # bt.indicators.Trix(self.datas[0], period=25)
         # bt.indicators.ADXR(self.datas[0])
         # bt.indicators.KAMA(self.datas[0], period=25)
         # bt.indicators.DEMA(self.datas[0], period=25)
@@ -60,7 +60,7 @@ class TestStrategy(bt.Strategy):
         # bt.indicators.ROC(self.datas[0], period=12)
         # bt.indicators.Momentum(self.datas[0], period=12)
         # bt.indicators.MomentumOscillator(self.datas[0], period=12)
-        # bt.indicators.WilliamsR(self.datas[0])
+        bt.indicators.WilliamsR(self.datas[0])
 
     def notify_order(self, order):
         if order.status in [order.Submitted, order.Accepted]:

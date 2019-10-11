@@ -57,6 +57,7 @@ class StandardDeviation(Indicator):
 
     def __init__(self):
         if len(self.datas) > 1:
+            print(self.datas, self.data1)
             mean = self.data1
         else:
             mean = self.p.movav(self.data, period=self.p.period)
