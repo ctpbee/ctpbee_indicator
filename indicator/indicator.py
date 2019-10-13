@@ -10,9 +10,14 @@ from copy import deepcopy
 
 
 class indicator:
-    pass
+    def __init__(self):
+        self.ret_data = list
+        self.ret_low = list
+        self.ret_high = list
+        self.ret_date = list
+        self.ret_volume = list
 
-    # @property
+        # @property
     def open(self, file:str, startTime:str, endTime:str):
         """
         读取文件
@@ -27,7 +32,8 @@ class indicator:
         data = pd.read_csv(datapath, index_col=0, parse_dates=True)  # , index_col=0
         print(data, type(data))
         self.ret_data = data[startTime:endTime]
-        # self.close_data = self.ret_data['Close']
+        self.ret_date = self.ret_data.index
+        self.ret_volume = self.ret_data['Volume']
         self.ret_low = self.ret_data['Low']
         self.ret_high = self.ret_data['High']
         return self.ret_data['Close']
@@ -432,10 +438,11 @@ class indicator:
         print(self.percR)
         return self.percR
 
-s = indicator()
-ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
-s.SimpleMovingAverage(ret, 15)
-s.WeightedMovingAverage(ret, 25)
+# s = indicator()
+# ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
+# SMA = s.SimpleMovingAverage(ret, 15)
+# WMA = s.WeightedMovingAverage(ret, 25)
+#print(s.ret_date)
 # s.RSI(ret, 14)
 # s.ATR(ret, 14)
 # s.StochasticSlow(ret, 14)
@@ -443,4 +450,4 @@ s.WeightedMovingAverage(ret, 25)
 # s.ROC(ret)
 # s.BollingerBands(ret)
 # s.TEMA(ret, 25)
-s.WilliamsR(ret)
+# WR = s.WilliamsR(ret)
