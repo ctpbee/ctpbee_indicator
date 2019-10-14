@@ -986,7 +986,9 @@ class Cerebro(with_metaclass(MetaParams, object)):
 
         figs = []
         for stratlist in self.runstrats:
+            print("====000====", stratlist)
             for si, strat in enumerate(stratlist):
+                print("===111====", si, strat)
                 rfig = plotter.plot(strat, figid=si * 100,
                                     numfigs=numfigs, iplot=iplot,
                                     start=start, end=end, use=use)

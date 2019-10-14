@@ -99,6 +99,7 @@ class Plot_OldSync(with_metaclass(MetaParams, object)):
 
     def __init__(self, **kwargs):
         for pname, pvalue in kwargs.items():
+            print("-----999999", kwargs)
             setattr(self.p.scheme, pname, pvalue)
 
     def drawtag(self, ax, x, y, facecolor, edgecolor, alpha=0.9, **kwargs):
@@ -116,6 +117,7 @@ class Plot_OldSync(with_metaclass(MetaParams, object)):
     def plot(self, strategy, figid=0, numfigs=1, iplot=True,
              start=None, end=None, **kwargs):
         # pfillers={}):
+        print("===2222===", strategy.datas)
         if not strategy.datas:
             return
 

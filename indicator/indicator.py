@@ -1,57 +1,22 @@
 import os
 import sys
-import datetime
 import pandas as pd
-import datetime
 import numpy as np
+from readfile import File
 import math
 import operator
 from copy import deepcopy
 
 
-class indicator:
+class Indicator(File):
     def __init__(self):
-        self.ret_data = list
-        self.ret_low = list
-        self.ret_high = list
-        self.ret_date = list
-        self.ret_volume = list
-
-        # @property
-    def open(self, file:str, startTime:str, endTime:str):
-        """
-        读取文件
-        :param file: 文件名
-        :param startTime: 开始读取时间
-        :param endTime: 结束时间
-        :return: dataframe对象
-        """
-        modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
-        # datapath = os.path.join(modpath, './datas/orcl-2014.txt')
-        datapath = os.path.join(modpath, file)
-        data = pd.read_csv(datapath, index_col=0, parse_dates=True)  # , index_col=0
-        print(data, type(data))
-        self.ret_data = data[startTime:endTime]
-        self.ret_date = self.ret_data.index
-        self.ret_volume = self.ret_data['Volume']
-        self.ret_low = self.ret_data['Low']
-        self.ret_high = self.ret_data['High']
-        return self.ret_data['Close']
-
-    def SimpleMovingAverage(self, data:object,  period=15):
-        """
-        sma
-        简单移动平均线
-        :param period:距离
-        :param data:数据 object
-        :return:计算值
-        """
-        self.sma_data = deepcopy(data)
-        end = len(data)
-        close_line = data
-        for i in range(period, end):
-            self.sma_data[i] = sum(close_line[i - period + 1:i + 1]) / period
-        return self.sma_data
+        super().__init__()
+        # self.count = self.counts
+        # self.ret_data = self.ret_data
+        # self.ret_low = self.ret_low
+        # self.ret_high = self.ret_high
+        # self.ret_date = self.ret_date
+        # self.ret_volume = self.ret_volume
 
     def sma(self):
         for c in self.ret_data:
@@ -68,6 +33,23 @@ class indicator:
         """
         pass
 
+    @classmethod
+    def SimpleMovingAverage(self, data:object,  period=15):
+        """
+        sma
+        简单移动平均线
+        :param period:距离
+        :param data:数据 object
+        :return:计算值
+        """
+        self.sma_data = deepcopy(data)
+        end = len(data)
+        close_line = data
+        for i in range(period, end):
+            self.sma_data[i] = sum(close_line[i - period + 1:i + 1]) / period
+        return self.sma_data
+
+    @classmethod
     def ExponentialMovingAverage(self, data:object, period:int, alpha=None):
         """
         ema
@@ -92,6 +74,7 @@ class indicator:
             self.ema_data[i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
         return self.ema_data
 
+    @classmethod
     def WeightedMovingAverage(self, data:object, period=30):
         '''
         加权移动平均线
@@ -113,6 +96,7 @@ class indicator:
             self.wma_data[i] = coef * math.fsum(map(operator.mul, data, weights))
         return self.wma_data
 
+    @classmethod
     def StochasticSlow(self, data:object, period:int, period_dfast=3):
         """
         随机振荡器 随机指标(KD) : K给出预期信号，以底部或之前的 D给出周转信号，以 D-Slow给出周转确认信号
@@ -151,6 +135,7 @@ class indicator:
         self.percD = self.SimpleMovingAverage(self.d, period=period_dfast)
         return self.percD
 
+    @classmethod
     def MACDHisto(self, data:object, period_me1=12, period_me2=26, period_signal=9):
         """
         移动平均趋同/偏离(异同移动平均线)
@@ -168,8 +153,9 @@ class indicator:
         self.macd = np.array(me1) - np.array(me2)
         self.signal = self.ExponentialMovingAverage(self.macd.tolist(), period=period_signal)
         self.histo = np.array(self.macd) - np.array(self.signal)
-        return self.histo.tolist()
+        return self.histo
 
+    @classmethod
     def RSI(self, data:object,  period=14, lookback=1):
         """
         rsi 相对强度指数
@@ -209,6 +195,7 @@ class indicator:
             self.rsi_list.append(rsi)
         return self.rsi_list
 
+    @classmethod
     def SmoothedMovingAverage(self, data:object, period:int, alpha=15):
         """
         smma 平滑移动平均值
@@ -230,6 +217,7 @@ class indicator:
             self.ema_data[i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
         return self.ema_data
 
+    @classmethod
     def ATR(self, data:object, period=14):
         """
         平均真实范围
@@ -251,6 +239,7 @@ class indicator:
         atr = self.SimpleMovingAverage(tr, period=period)
         return atr
 
+    @classmethod
     def StandardDeviation(self, data:object, period=20):
         """
         StandardDeviation 标准偏差 (StdDev)
@@ -273,6 +262,7 @@ class indicator:
         self.stddev = pow(np.array(meansquared)-np.array(squaredmean), 0.5)
         return self.stddev
 
+    @classmethod
     def BollingerBands(self, data:object, period=20, devfactor=2):
         """
         布林带 ( boll  。中轨为股价的平均成本，上轨和下轨可分别视为股价的压力线和支撑线。)
@@ -294,6 +284,7 @@ class indicator:
         print(self.mid.tolist())
         print(self.bot)
 
+    @classmethod
     def AroonIndicator(self, data:object, period:int):
         """
         Formula:
@@ -307,6 +298,7 @@ class indicator:
         """
         pass
 
+    @classmethod
     def UltimateOscillator(self, data: object, period: int):
         '''
             终极振荡器
@@ -330,6 +322,7 @@ class indicator:
         '''
         pass
 
+    @classmethod
     def Trix(self, data: object, period: int, rocperiod=1):
         '''
             三重指数平滑移动平均 技术分析(Triple Exponentially Smoothed Moving Average) TR
@@ -361,6 +354,7 @@ class indicator:
         print(self.trix_list)
         return self.trix_list
 
+    @classmethod
     def ROC(self, data: object, period=12):
         """
         Formula:
@@ -378,6 +372,7 @@ class indicator:
             self.roc_list[i] = (data[i] - data[i-period]) / data[i-period]
         return self.roc_list
 
+    @classmethod
     def Momentum(self, data: object, period: int):
         """
         动量指标(MTM)
@@ -391,10 +386,12 @@ class indicator:
         :return:
         """
         self.momentum_list = data.tolist()
-        for i in range(period, len(data)):
+        end = len(data)
+        for i in range(period, end):
             self.momentum_list[i] = data[i] - data[i-period]
         return self.momentum_list
 
+    @classmethod
     def TEMA(self, data: object, period: int):
         """
          TripleExponentialMovingAverage(TEMA 试图减少与移动平均数相关的固有滞后)
@@ -413,6 +410,7 @@ class indicator:
         self.tema = 3 * np.array(ema1) - 3 * ema2 + ema3
         return self.tema
 
+    @classmethod
     def WilliamsR(self, data:object, period=14):
         """
 
@@ -451,3 +449,4 @@ class indicator:
 # s.BollingerBands(ret)
 # s.TEMA(ret, 25)
 # WR = s.WilliamsR(ret)
+# print(dir(Indicator))
