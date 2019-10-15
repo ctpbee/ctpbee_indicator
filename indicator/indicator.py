@@ -6,17 +6,70 @@ from readfile import File
 import math
 import operator
 from copy import deepcopy
+from functools import wraps
+
+
+def getAverageName(func):
+    """
+    此装饰器是获取平均平均值参数名
+    :param func:
+    :return:
+    """
+    @wraps(func)
+    def wrapper(self, *args, **kwargs):
+        print(func, '----=====')
+        line = func(self, *args, **kwargs)
+        func_name = func.__name__
+        self.average_message[func_name] = line
+        return line
+    return wrapper
+
+
+def getIndicatorName(func):
+    """
+    此装饰器是获取其他指标值参数名
+    :param func:
+    :return:
+    """
+    @wraps(func)
+    def wrapper(self, *args, **kwargs):
+        line = func(self, *args, **kwargs)
+        func_name = func.__name__
+        if func_name == "MACDHisto":
+            self.indicator_message["macd"] = self.macd
+            self.indicator_message["signal"] = self.signal
+            self.indicator_message[func_name] = line
+        elif func_name == "StochasticSlow":
+            self.indicator_message["K"] = self.k
+            self.indicator_message["D"] = line
+        elif func_name == "BollingerBands":
+            self.indicator_message["mid"] = self.mid
+            self.indicator_message["top"] = self.top
+            self.indicator_message["bottom"] = self.bottom
+        else:
+            self.indicator_message[func_name] = line
+        return line
+    return wrapper
 
 
 class Indicator(File):
     def __init__(self):
         super().__init__()
-        # self.count = self.counts
-        # self.ret_data = self.ret_data
-        # self.ret_low = self.ret_low
-        # self.ret_high = self.ret_high
-        # self.ret_date = self.ret_date
-        # self.ret_volume = self.ret_volume
+        # self.count = File().count
+        # self.ret_data = File().ret_data
+        # self.ret_low = File().ret_low
+        # self.ret_high = File().ret_high
+        # self.ret_date = File().ret_date
+        # self.ret_volume = File().ret_volume
+        # self.ret_close = File().ret_close
+        self.average_message = {}
+        self.indicator_message = {}
+
+    # def __new__(cls, *args, **kwargs):
+    #     if not hasattr(cls, "_instance"):
+    #         obj = super(Indicator, cls)
+    #         cls._instance = obj.__new__(cls, *args, **kwargs)
+    #     return cls._instance
 
     def sma(self):
         for c in self.ret_data:
@@ -33,7 +86,7 @@ class Indicator(File):
         """
         pass
 
-    @classmethod
+    @getAverageName
     def SimpleMovingAverage(self, data:object,  period=15):
         """
         sma
@@ -49,7 +102,7 @@ class Indicator(File):
             self.sma_data[i] = sum(close_line[i - period + 1:i + 1]) / period
         return self.sma_data
 
-    @classmethod
+    @getAverageName
     def ExponentialMovingAverage(self, data:object, period:int, alpha=None):
         """
         ema
@@ -74,7 +127,7 @@ class Indicator(File):
             self.ema_data[i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
         return self.ema_data
 
-    @classmethod
+    @getAverageName
     def WeightedMovingAverage(self, data:object, period=30):
         '''
         加权移动平均线
@@ -96,7 +149,7 @@ class Indicator(File):
             self.wma_data[i] = coef * math.fsum(map(operator.mul, data, weights))
         return self.wma_data
 
-    @classmethod
+    @getIndicatorName
     def StochasticSlow(self, data:object, period:int, period_dfast=3):
         """
         随机振荡器 随机指标(KD) : K给出预期信号，以底部或之前的 D给出周转信号，以 D-Slow给出周转确认信号
@@ -135,7 +188,7 @@ class Indicator(File):
         self.percD = self.SimpleMovingAverage(self.d, period=period_dfast)
         return self.percD
 
-    @classmethod
+    @getIndicatorName
     def MACDHisto(self, data:object, period_me1=12, period_me2=26, period_signal=9):
         """
         移动平均趋同/偏离(异同移动平均线)
@@ -155,7 +208,7 @@ class Indicator(File):
         self.histo = np.array(self.macd) - np.array(self.signal)
         return self.histo
 
-    @classmethod
+    @getAverageName
     def RSI(self, data:object,  period=14, lookback=1):
         """
         rsi 相对强度指数
@@ -195,7 +248,7 @@ class Indicator(File):
             self.rsi_list.append(rsi)
         return self.rsi_list
 
-    @classmethod
+    @getAverageName
     def SmoothedMovingAverage(self, data:object, period:int, alpha=15):
         """
         smma 平滑移动平均值
@@ -217,7 +270,7 @@ class Indicator(File):
             self.ema_data[i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
         return self.ema_data
 
-    @classmethod
+    @getIndicatorName
     def ATR(self, data:object, period=14):
         """
         平均真实范围
@@ -239,7 +292,7 @@ class Indicator(File):
         atr = self.SimpleMovingAverage(tr, period=period)
         return atr
 
-    @classmethod
+    @getIndicatorName
     def StandardDeviation(self, data:object, period=20):
         """
         StandardDeviation 标准偏差 (StdDev)
@@ -262,7 +315,7 @@ class Indicator(File):
         self.stddev = pow(np.array(meansquared)-np.array(squaredmean), 0.5)
         return self.stddev
 
-    @classmethod
+    @getAverageName
     def BollingerBands(self, data:object, period=20, devfactor=2):
         """
         布林带 ( boll  。中轨为股价的平均成本，上轨和下轨可分别视为股价的压力线和支撑线。)
@@ -279,12 +332,11 @@ class Indicator(File):
         """
         self.mid = self.SimpleMovingAverage(data, period)
         self.top = np.array(self.mid) + devfactor * np.array(self.StandardDeviation(data, period))
-        self.bot = np.array(self.mid) - devfactor * np.array(self.StandardDeviation(data, period))
-        print(self.top)
-        print(self.mid.tolist())
-        print(self.bot)
+        self.bottom = np.array(self.mid) - devfactor * np.array(self.StandardDeviation(data, period))
 
-    @classmethod
+        return self.bottom
+
+    @getIndicatorName
     def AroonIndicator(self, data:object, period:int):
         """
         Formula:
@@ -298,7 +350,7 @@ class Indicator(File):
         """
         pass
 
-    @classmethod
+    @getAverageName
     def UltimateOscillator(self, data: object, period: int):
         '''
             终极振荡器
@@ -322,7 +374,7 @@ class Indicator(File):
         '''
         pass
 
-    @classmethod
+    @getIndicatorName
     def Trix(self, data: object, period: int, rocperiod=1):
         '''
             三重指数平滑移动平均 技术分析(Triple Exponentially Smoothed Moving Average) TR
@@ -351,10 +403,9 @@ class Indicator(File):
         self.trix_list = ema3
         for i in range(period, end):
             self.trix_list[i] = 100.0 * (ema3[i]/ema3[i-rocperiod] - 1.0)
-        print(self.trix_list)
         return self.trix_list
 
-    @classmethod
+    @getIndicatorName
     def ROC(self, data: object, period=12):
         """
         Formula:
@@ -372,7 +423,7 @@ class Indicator(File):
             self.roc_list[i] = (data[i] - data[i-period]) / data[i-period]
         return self.roc_list
 
-    @classmethod
+    @getIndicatorName
     def Momentum(self, data: object, period: int):
         """
         动量指标(MTM)
@@ -391,7 +442,7 @@ class Indicator(File):
             self.momentum_list[i] = data[i] - data[i-period]
         return self.momentum_list
 
-    @classmethod
+    @getIndicatorName
     def TEMA(self, data: object, period: int):
         """
          TripleExponentialMovingAverage(TEMA 试图减少与移动平均数相关的固有滞后)
@@ -410,7 +461,7 @@ class Indicator(File):
         self.tema = 3 * np.array(ema1) - 3 * ema2 + ema3
         return self.tema
 
-    @classmethod
+    @getIndicatorName
     def WilliamsR(self, data:object, period=14):
         """
 
@@ -433,14 +484,16 @@ class Indicator(File):
         for i in range(period, end):
             den[i] = min(self.ret_low[i - period + 1: i + 1])
         self.percR = -100 * (np.array(num) / np.array(data)) / (np.array(num) - np.array(den))
-        print(self.percR)
         return self.percR
+
+
+indicator = Indicator
 
 # s = indicator()
 # ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
 # SMA = s.SimpleMovingAverage(ret, 15)
 # WMA = s.WeightedMovingAverage(ret, 25)
-#print(s.ret_date)
+# print(s.ret_date)
 # s.RSI(ret, 14)
 # s.ATR(ret, 14)
 # s.StochasticSlow(ret, 14)

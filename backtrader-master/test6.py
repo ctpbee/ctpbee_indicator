@@ -43,13 +43,13 @@ class TestStrategy(bt.Strategy):
         print(self.sma, '-----------------')
         self.log("%s, %s, %s, %s, %s" % (self.datas[0].open[0], self.datas[0].high[0], self.datas[0].low[0], self.datas[0].close[0], self.datas[0].volume))
 
-        bt.indicators.MACDHisto(self.datas[0])
+        # bt.indicators.MACDHisto(self.datas[0])
         # rsi = bt.indicators.RSI(self.datas[0])
         # bt.indicators.Stochastic(self.datas[0])
         # bt.indicators.SmoothedMovingAverage(rsi, period=10)
-        # bt.indicators.ATR(self.datas[0], plot=False)
+        bt.indicators.ATR(self.datas[0], plot=False)
 
-        # bt.indicators.BollingerBands(self.datas[0], period=25)
+        bt.indicators.BollingerBands(self.datas[0], period=25)
         # bt.indicators.UltimateOscillator(self.datas[0])
         # bt.indicators.Trix(self.datas[0], period=25)
         # bt.indicators.ADXR(self.datas[0])

@@ -3,13 +3,14 @@ import sys
 import pandas as pd
 
 
-class ReadFile(object):
+class ReadFile:
     def __init__(self):
         self.count = int
         self.ret_data = None
         self.ret_low = None
         self.ret_high = None
         self.ret_date = None
+        self.ret_close = None
         self.ret_volume = None
 
     def __new__(cls, *args, **kwargs):
@@ -18,7 +19,6 @@ class ReadFile(object):
             cls._instance = obj.__new__(cls, *args, **kwargs)
         return cls._instance
 
-    @classmethod
     def open(self, file: str, startTime: str, endTime: str):
         """
         读取文件
@@ -38,8 +38,8 @@ class ReadFile(object):
         self.ret_volume = self.ret_data['Volume']
         self.ret_low = self.ret_data['Low']
         self.ret_high = self.ret_data['High']
-
-        return self.ret_data["Close"]
+        self.ret_close = self.ret_data['Close']
+        return self.ret_close
 
 
 File = ReadFile
