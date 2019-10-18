@@ -17,7 +17,6 @@ def getAverageName(func):
     """
     @wraps(func)
     def wrapper(self, *args, **kwargs):
-        print(func, '----=====')
         line = func(self, *args, **kwargs)
         func_name = func.__name__
         self.average_message[func_name] = line
@@ -55,21 +54,14 @@ def getIndicatorName(func):
 class Indicator(File):
     def __init__(self):
         super().__init__()
-        # self.count = File().count
-        # self.ret_data = File().ret_data
-        # self.ret_low = File().ret_low
-        # self.ret_high = File().ret_high
-        # self.ret_date = File().ret_date
-        # self.ret_volume = File().ret_volume
-        # self.ret_close = File().ret_close
         self.average_message = {}
         self.indicator_message = {}
 
-    # def __new__(cls, *args, **kwargs):
-    #     if not hasattr(cls, "_instance"):
-    #         obj = super(Indicator, cls)
-    #         cls._instance = obj.__new__(cls, *args, **kwargs)
-    #     return cls._instance
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, "_instance"):
+            obj = super(Indicator, cls)
+            cls._instance = obj.__new__(cls, *args, **kwargs)
+        return cls._instance
 
     def sma(self):
         for c in self.ret_data:
@@ -85,6 +77,7 @@ class Indicator(File):
         :return:
         """
         pass
+
 
     @getAverageName
     def SimpleMovingAverage(self, data:object,  period=15):
@@ -485,21 +478,3 @@ class Indicator(File):
             den[i] = min(self.ret_low[i - period + 1: i + 1])
         self.percR = -100 * (np.array(num) / np.array(data)) / (np.array(num) - np.array(den))
         return self.percR
-
-
-indicator = Indicator
-
-# s = indicator()
-# ret = s.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
-# SMA = s.SimpleMovingAverage(ret, 15)
-# WMA = s.WeightedMovingAverage(ret, 25)
-# print(s.ret_date)
-# s.RSI(ret, 14)
-# s.ATR(ret, 14)
-# s.StochasticSlow(ret, 14)
-# s.Momentum(ret, 12)
-# s.ROC(ret)
-# s.BollingerBands(ret)
-# s.TEMA(ret, 25)
-# WR = s.WilliamsR(ret)
-# print(dir(Indicator))

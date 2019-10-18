@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/indicator2/data/data_sources.py" line="17" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/AP001.CZCE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/CF001.CZCE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/ag1911.SHFE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/ag1912.SHFE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/al2001.SHFE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/au1911.SHFE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/b1911.DCE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/user_account.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1911.SHFE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1912.SHFE.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtrader-master/test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtrader-master/test6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indicator/indicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/indicator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indicator/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indicator/readfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/readfile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indicator/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,177 +37,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/williams.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state>
-                    <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/kst.py">
-                <provider selected="true" editor-type-id="text-editor" />
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/rsi.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="2156">
-                    <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
-                    <folding>
-                      <element signature="e#916#1024#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/momentum.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="2530">
-                    <caret line="118" column="24" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/deviation.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1232">
-                    <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/dema.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1518">
-                    <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/plot.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="222">
-                    <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-                    <folding>
-                      <element signature="e#916#1024#0" expanded="true" />
-                      <element signature="e#1792#3064#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/metabase.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="22">
-                    <caret line="202" column="6" selection-start-line="202" selection-start-column="6" selection-end-line="202" selection-end-column="6" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$USER_HOME$/Downloads/temp.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="352">
-                    <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indicator/readfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indicator/plot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-              <folding>
-                <element signature="e#153#456#0" />
-                <element signature="e#238#248#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/indicator/test1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="e#1041#1066#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backtrader-master/test6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1306">
-              <caret line="186" column="15" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#108#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/indicator/indicator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#230#511#0" />
-                <element signature="e#546#1400#0" />
-                <element signature="e#1437#1790#0" />
-                <element signature="e#2019#2062#0" />
-                <element signature="e#2098#2141#0" />
-                <element signature="e#2176#2234#0" />
-                <element signature="e#2782#3498#0" />
-                <element signature="e#3589#4359#0" />
-                <element signature="e#4462#5907#0" />
-                <element signature="e#6024#6669#0" />
-                <element signature="e#6755#7975#0" />
-                <element signature="e#15420#16117#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -248,115 +82,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/backtraders/backtrader/analyzers/annualreturn.py" />
-        <option value="$PROJECT_DIR$/backtrader/test1.py" />
-        <option value="$PROJECT_DIR$/backtrader/strategy.py" />
-        <option value="$PROJECT_DIR$/backtrader2/test6.py" />
-        <option value="$PROJECT_DIR$/backtrader/backtrader/analyzers/annualreturn.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/test7.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/test8.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/test9.py" />
-        <option value="$PROJECT_DIR$/backtrader/order.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/feed.py" />
-        <option value="$PROJECT_DIR$/backtrader/indicator.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/test10.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/change_test1.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/sma.py" />
-        <option value="$PROJECT_DIR$/backtrader/lineseries.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/lineseries.py" />
-        <option value="$PROJECT_DIR$/backtrader/indicators/basicops.py" />
-        <option value="$PROJECT_DIR$/backtrader/indicators/macd.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/macd.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/basicops.py" />
-        <option value="$PROJECT_DIR$/indicator/rsi.py" />
-        <option value="$PROJECT_DIR$/indicator/Indicator.py" />
-        <option value="$PROJECT_DIR$/indicator/data.py" />
-        <option value="$PROJECT_DIR$/indicator/data/data_sources.py" />
-        <option value="$PROJECT_DIR$/indicator/exprs/exprenv.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/atr.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/linebuffer.py" />
-        <option value="$PROJECT_DIR$/indicator2/data/data_sources.py" />
-        <option value="$PROJECT_DIR$/indicator2/exprs/exprenv.py" />
-        <option value="$PROJECT_DIR$/indicator2/__init__.py" />
-        <option value="$PROJECT_DIR$/indicator2/data/__init__.py" />
-        <option value="$PROJECT_DIR$/indicator2/indicator.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/stochastic.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/rsi.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/momentum.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/percentchange.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/deviation.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/indicators/bollinger.py" />
-        <option value="$PROJECT_DIR$/indicator/show.py" />
-        <option value="$PROJECT_DIR$/indicator/__init__.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/plot/locator.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/plot/scheme.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/cerebro.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/backtrader/plot/plot.py" />
-        <option value="$PROJECT_DIR$/backtrader-master/test6.py" />
-        <option value="$USER_HOME$/Downloads/temp.js" />
-        <option value="$PROJECT_DIR$/indicator/plot.py" />
-        <option value="$PROJECT_DIR$/indicator/readfile.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
-        <option value="$PROJECT_DIR$/indicator/indicator.py" />
-        <option value="$PROJECT_DIR$/indicator/test1.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="82" />
-    <option name="width" value="1437" />
-    <option name="height" value="926" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ctpbee_indicator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ctpbee_indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="indicator" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1SJcSM1LZSjNMSVPfM1KVEyhFfx" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VUE/test-kline" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backtrader-master" />
-      <recent name="$PROJECT_DIR$/backtrader" />
-      <recent name="$PROJECT_DIR$/backtrader1" />
-      <recent name="$PROJECT_DIR$/rqalpha" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/indicator" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backtrader-master" />
       <recent name="$PROJECT_DIR$/backtrader" />
       <recent name="$PROJECT_DIR$/backtraders/backtrader" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backtrader-master" />
+      <recent name="$PROJECT_DIR$/backtrader" />
+      <recent name="$PROJECT_DIR$/backtrader1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -371,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test1 (1)">
+  <component name="RunManager" selected="Python.readfile">
     <configuration name="indicator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -506,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.indicator (1)" />
-        <item itemvalue="Python.test1" />
-        <item itemvalue="Python.plot" />
         <item itemvalue="Python.readfile" />
         <item itemvalue="Python.test6" />
+        <item itemvalue="Python.indicator (1)" />
+        <item itemvalue="Python.plot" />
+        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -558,6 +306,18 @@
       <workItem from="1571013614599" duration="21799000" />
       <workItem from="1571100995667" duration="421000" />
       <workItem from="1571105035884" duration="35885000" />
+      <workItem from="1571152068732" duration="337000" />
+      <workItem from="1571188731440" duration="18056000" />
+      <workItem from="1571239216585" duration="27000" />
+      <workItem from="1571280738761" duration="1251000" />
+      <workItem from="1571282803127" duration="86000" />
+      <workItem from="1571282908982" duration="224000" />
+      <workItem from="1571283238838" duration="1241000" />
+      <workItem from="1571285148313" duration="45000" />
+      <workItem from="1571285225750" duration="81000" />
+      <workItem from="1571285462283" duration="191000" />
+      <workItem from="1571291050961" duration="112000" />
+      <workItem from="1571380446926" duration="11109000" />
     </task>
     <servers />
   </component>
@@ -593,9 +353,6 @@
       <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="458353000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -605,554 +362,100 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="64" y="82" width="1437" height="926" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21166307" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Alibaba Cloud Explorer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.325887" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.34296978" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990025" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32898173" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="7" weight="0.32898173" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32996207" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36031333" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053364" side_tool="true" weight="0.22156398" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.29697767" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32898173" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="15" visible="true" weight="0.26895735" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Alibaba Log Console" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.329277" />
-      <window_info anchor="right" auto_hide="true" content_ui="combo" x="648" y="90" width="584" height="511" id="SciView" order="5" show_stripe_button="false" side_tool="true" type="FLOATING" weight="0.3758053" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21247563" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Alibaba Cloud Explorer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32869786" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30973452" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32996207" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32869786" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32996207" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Alibaba Log Console" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3294347" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$data_sources.coverage" NAME="data_sources Coverage Results" MODIFIED="1570693070308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator2/data" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test10.coverage" NAME="test10 Coverage Results" MODIFIED="1570713332400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$signals.coverage" NAME="signals Coverage Results" MODIFIED="1569222442746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1569591618859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/docs" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1569760837559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$read_csv_as_df.coverage" NAME="read_csv_as_df Coverage Results" MODIFIED="1569678691278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples/data_source" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold__1_.coverage" NAME="buy_and_hold (1) Coverage Results" MODIFIED="1569674492433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1571150306629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$easy_install.coverage" NAME="easy_install Coverage Results" MODIFIED="1569663685241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/local/python37/lib/python3.7/site-packages" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5__1_.coverage" NAME="test5 (1) Coverage Results" MODIFIED="1569761737024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1__1_.coverage" NAME="test1 (1) Coverage Results" MODIFIED="1571151635298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1569663064071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$carray_ext_pxd.coverage" NAME="carray_ext.pxd Coverage Results" MODIFIED="1569650743971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bcolz/bcolz" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569682395755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtraders" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1569760837559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1569813905519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test10.coverage" NAME="test10 Coverage Results" MODIFIED="1570713332400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$strategy.coverage" NAME="strategy Coverage Results" MODIFIED="1569760556009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$atr.coverage" NAME="atr Coverage Results" MODIFIED="1570612607294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569719562021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1570591974234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_temaosc.coverage" NAME="test_ind_temaosc Coverage Results" MODIFIED="1569378620133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1571150306629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation.coverage" NAME="test_tradesimulation Coverage Results" MODIFIED="1569597289641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$lineseries.coverage" NAME="lineseries Coverage Results" MODIFIED="1570072273243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$teststrader.coverage" NAME="teststrader Coverage Results" MODIFIED="1569204763887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_pt.coverage" NAME="test_pt Coverage Results" MODIFIED="1569678514756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$basicops.coverage" NAME="basicops Coverage Results" MODIFIED="1569981926874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_resample.coverage" NAME="test_data_resample Coverage Results" MODIFIED="1569327940272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_macd.coverage" NAME="test_f_macd Coverage Results" MODIFIED="1569663038296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569682395755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtraders" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test8.coverage" NAME="test8 Coverage Results" MODIFIED="1570696614248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$ksignal.coverage" NAME="ksignal Coverage Results" MODIFIED="1569293525122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/samples/kselrsi" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$trading_calendar.coverage" NAME="trading_calendar Coverage Results" MODIFIED="1569597142354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trading_calendars" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$indicator__1_.coverage" NAME="indicator (1) Coverage Results" MODIFIED="1571151266674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation__1_.coverage" NAME="test_tradesimulation (1) Coverage Results" MODIFIED="1569591892853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/zipline" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$change_test1.coverage" NAME="change_test1 Coverage Results" MODIFIED="1569913953213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__2_.coverage" NAME="backTester (2) Coverage Results" MODIFIED="1569575621686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1569759926585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_algorithm.coverage" NAME="test_algorithm Coverage Results" MODIFIED="1569563803687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$setup.coverage" NAME="setup Coverage Results" MODIFIED="1569597030507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru-0.1" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1569663064071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_aroonoscillator.coverage" NAME="test_ind_aroonoscillator Coverage Results" MODIFIED="1569327971808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1569813905519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_finance.coverage" NAME="test_finance Coverage Results" MODIFIED="1569578259530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_lru_py.coverage" NAME="Unittests in lru.py Coverage Results" MODIFIED="1569595456616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$plot.coverage" NAME="plot Coverage Results" MODIFIED="1571149761911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$annualreturn.coverage" NAME="annualreturn Coverage Results" MODIFIED="1569761082352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/backtrader/analyzers" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_for_test_testing_TestParameterSpace.coverage" NAME="Unittests for test_testing.TestParameterSpace Coverage Results" MODIFIED="1569559294246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline-master/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$run_code_demo.coverage" NAME="run_code_demo Coverage Results" MODIFIED="1569674569250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold.coverage" NAME="buy_and_hold Coverage Results" MODIFIED="1569663193647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/rqalpha/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_strategy_unoptimized.coverage" NAME="test_strategy_unoptimized Coverage Results" MODIFIED="1569337765992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_study_fractal.coverage" NAME="test_study_fractal Coverage Results" MODIFIED="1569378503980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_replay.coverage" NAME="test_data_replay Coverage Results" MODIFIED="1569327896238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__1_.coverage" NAME="backTester (1) Coverage Results" MODIFIED="1569563637547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$googleCrawler.coverage" NAME="googleCrawler Coverage Results" MODIFIED="1569574414524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance/module" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$indicator.coverage" NAME="indicator Coverage Results" MODIFIED="1570695116341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator2" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_multiframe.coverage" NAME="test_data_multiframe Coverage Results" MODIFIED="1569327557928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test9.coverage" NAME="test9 Coverage Results" MODIFIED="1570713315808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1570591974234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__1_.coverage" NAME="backTester (1) Coverage Results" MODIFIED="1569563637547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__2_.coverage" NAME="backTester (2) Coverage Results" MODIFIED="1569575621686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$make_conda_packages.coverage" NAME="make_conda_packages Coverage Results" MODIFIED="1569591658059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/ci" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1571125319684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__1_.coverage" NAME="test6 (1) Coverage Results" MODIFIED="1569760948144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_blotter.coverage" NAME="test_blotter Coverage Results" MODIFIED="1569575993656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_trade.coverage" NAME="test_trade Coverage Results" MODIFIED="1569206993041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_buy_and_hold.coverage" NAME="test_f_buy_and_hold Coverage Results" MODIFIED="1569663027000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold_hs300.coverage" NAME="buy_and_hold_hs300 Coverage Results" MODIFIED="1569678632230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1569761729170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_highest.coverage" NAME="test_ind_highest Coverage Results" MODIFIED="1569378480892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$readfile.coverage" NAME="readfile Coverage Results" MODIFIED="1571143698489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold.coverage" NAME="buy_and_hold Coverage Results" MODIFIED="1569663193647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold__1_.coverage" NAME="buy_and_hold (1) Coverage Results" MODIFIED="1569674492433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_replay.coverage" NAME="test_data_replay Coverage Results" MODIFIED="1569327896238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_finance.coverage" NAME="test_finance Coverage Results" MODIFIED="1569578259530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester.coverage" NAME="backTester Coverage Results" MODIFIED="1569562870733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance-master/examples" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569761039423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$main.coverage" NAME="main Coverage Results" MODIFIED="1569678661168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$carray_ext_pxd.coverage" NAME="carray_ext.pxd Coverage Results" MODIFIED="1569650743971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bcolz/bcolz" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_test_api_shim_py.coverage" NAME="Unittests in test_api_shim.py Coverage Results" MODIFIED="1569596578901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_ema.coverage" NAME="test_ind_ema Coverage Results" MODIFIED="1569378435094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_bar_data.coverage" NAME="test_bar_data Coverage Results" MODIFIED="1569574281798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_writer.coverage" NAME="test_writer Coverage Results" MODIFIED="1569378543588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$easy_install.coverage" NAME="easy_install Coverage Results" MODIFIED="1569663685241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/local/python37/lib/python3.7/site-packages" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_study_fractal.coverage" NAME="test_study_fractal Coverage Results" MODIFIED="1569378503980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$change_test1.coverage" NAME="change_test1 Coverage Results" MODIFIED="1569913953213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test8.coverage" NAME="test8 Coverage Results" MODIFIED="1570696614248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$setup.coverage" NAME="setup Coverage Results" MODIFIED="1569597030507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru-0.1" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$indicator__1_.coverage" NAME="indicator (1) Coverage Results" MODIFIED="1571189079681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1569759926585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_lru_py.coverage" NAME="Unittests in lru.py Coverage Results" MODIFIED="1569595456616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$plot.coverage" NAME="plot Coverage Results" MODIFIED="1571151851660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_macd.coverage" NAME="test_f_macd Coverage Results" MODIFIED="1569663038296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__2_.coverage" NAME="test6 (2) Coverage Results" MODIFIED="1569760339063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/trix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/priceoscillator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/pivotpoint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4277">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/percentchange.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/percentrank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1980" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/ols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2310" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/oscillator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2244" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/ultimateoscillator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/atr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
-          <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/feeds/pandafeed.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/lineroot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7216">
-          <caret line="335" column="4" selection-start-line="335" selection-start-column="4" selection-end-line="335" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/test8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/stochastic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2750">
-          <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4422" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/pandas-0.25.1-py3.7-linux-x86_64.egg/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="678" column="11" selection-start-line="678" selection-start-column="11" selection-end-line="678" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/matplotlib/backends/backend_wxagg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/utils/py3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/pandas-0.25.1-py3.7-linux-x86_64.egg/pandas/plotting/_matplotlib/converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/datas/orcl-2014.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/linebuffer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
-          <folding>
-            <element signature="e#1542#2384#1" />
-            <element signature="e#16944#19256#0" />
-            <element signature="e#19290#19466#0" />
-            <element signature="e#19537#20948#0" />
-            <element signature="e#20990#21089#0" />
-            <element signature="e#22157#23028#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/pandas-0.25.1-py3.7-linux-x86_64.egg/pandas/core/indexes/datetimes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="1447" column="40" lean-forward="true" selection-start-line="1447" selection-start-column="40" selection-end-line="1447" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/finance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/scheme.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/locator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator2/indicator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/basicops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/bollinger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-            <element signature="e#1859#1988#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/williams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/kst.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/rsi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
-          <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/momentum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="118" column="24" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/deviation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/indicators/dema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/temp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/matplotlib/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1474" column="53" selection-start-line="1474" selection-start-column="48" selection-end-line="1474" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/metabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="202" column="6" selection-start-line="202" selection-start-column="6" selection-end-line="202" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/python37/lib/python3.7/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-            <element signature="e#1792#3064#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/cerebro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15692">
-          <caret line="987" column="5" selection-start-line="987" selection-start-column="5" selection-end-line="987" selection-end-column="5" />
-          <folding>
-            <element signature="e#35181#36300#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/multicursor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="167" column="44" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/readfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/backtrader/plot/formatters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="e#916#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding>
-            <element signature="e#153#456#0" />
-            <element signature="e#238#248#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/indicator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#230#511#0" />
-            <element signature="e#546#1400#0" />
-            <element signature="e#1437#1790#0" />
-            <element signature="e#2019#2062#0" />
-            <element signature="e#2098#2141#0" />
-            <element signature="e#2176#2234#0" />
-            <element signature="e#2782#3498#0" />
-            <element signature="e#3589#4359#0" />
-            <element signature="e#4462#5907#0" />
-            <element signature="e#6024#6669#0" />
-            <element signature="e#6755#7975#0" />
-            <element signature="e#15420#16117#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backtrader-master/test6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
-          <caret line="186" column="15" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indicator/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#1041#1066#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$signals.coverage" NAME="signals Coverage Results" MODIFIED="1569222442746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$annualreturn.coverage" NAME="annualreturn Coverage Results" MODIFIED="1569761082352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/backtrader/analyzers" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_strategy_unoptimized.coverage" NAME="test_strategy_unoptimized Coverage Results" MODIFIED="1569337765992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$readfile.coverage" NAME="readfile Coverage Results" MODIFIED="1571413843986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$googleCrawler.coverage" NAME="googleCrawler Coverage Results" MODIFIED="1569574414524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance/module" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_temaosc.coverage" NAME="test_ind_temaosc Coverage Results" MODIFIED="1569378620133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$trading_calendar.coverage" NAME="trading_calendar Coverage Results" MODIFIED="1569597142354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trading_calendars" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$atr.coverage" NAME="atr Coverage Results" MODIFIED="1570612607294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$teststrader.coverage" NAME="teststrader Coverage Results" MODIFIED="1569204763887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_algorithm.coverage" NAME="test_algorithm Coverage Results" MODIFIED="1569563803687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_for_test_testing_TestParameterSpace.coverage" NAME="Unittests for test_testing.TestParameterSpace Coverage Results" MODIFIED="1569559294246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline-master/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569719562021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_blotter.coverage" NAME="test_blotter Coverage Results" MODIFIED="1569575993656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$run_code_demo.coverage" NAME="run_code_demo Coverage Results" MODIFIED="1569674569250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1__1_.coverage" NAME="test1 (1) Coverage Results" MODIFIED="1571382802563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_multiframe.coverage" NAME="test_data_multiframe Coverage Results" MODIFIED="1569327557928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_bar_data.coverage" NAME="test_bar_data Coverage Results" MODIFIED="1569574281798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$ksignal.coverage" NAME="ksignal Coverage Results" MODIFIED="1569293525122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/samples/kselrsi" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5__1_.coverage" NAME="test5 (1) Coverage Results" MODIFIED="1569761737024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_writer.coverage" NAME="test_writer Coverage Results" MODIFIED="1569378543588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test9.coverage" NAME="test9 Coverage Results" MODIFIED="1570713315808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$data_sources.coverage" NAME="data_sources Coverage Results" MODIFIED="1570693070308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator2/data" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$main.coverage" NAME="main Coverage Results" MODIFIED="1569678661168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1571382822671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_trade.coverage" NAME="test_trade Coverage Results" MODIFIED="1569206993041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$basicops.coverage" NAME="basicops Coverage Results" MODIFIED="1569981926874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_highest.coverage" NAME="test_ind_highest Coverage Results" MODIFIED="1569378480892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_aroonoscillator.coverage" NAME="test_ind_aroonoscillator Coverage Results" MODIFIED="1569327971808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__1_.coverage" NAME="test6 (1) Coverage Results" MODIFIED="1569760948144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_buy_and_hold.coverage" NAME="test_f_buy_and_hold Coverage Results" MODIFIED="1569663027000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_pt.coverage" NAME="test_pt Coverage Results" MODIFIED="1569678514756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation__1_.coverage" NAME="test_tradesimulation (1) Coverage Results" MODIFIED="1569591892853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/zipline" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_ema.coverage" NAME="test_ind_ema Coverage Results" MODIFIED="1569378435094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569761039423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$read_csv_as_df.coverage" NAME="read_csv_as_df Coverage Results" MODIFIED="1569678691278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples/data_source" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_resample.coverage" NAME="test_data_resample Coverage Results" MODIFIED="1569327940272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1569591618859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/docs" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold_hs300.coverage" NAME="buy_and_hold_hs300 Coverage Results" MODIFIED="1569678632230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_test_api_shim_py.coverage" NAME="Unittests in test_api_shim.py Coverage Results" MODIFIED="1569596578901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
   </component>
   <component name="masterDetails">
     <states>

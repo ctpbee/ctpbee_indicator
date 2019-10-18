@@ -6,10 +6,10 @@ from matplotlib.widgets import MultiCursor
 from indicator import Indicator
 import matplotlib.dates as mdate
 
-color = {
+colors = {
     "SimpleMovingAverage": "b",
     "ExponentialMovingAverage": "r",
-    "WeightedMovingAverage": "b",
+    "WeightedMovingAverage": "c",
     "RSI": "g",
     "SmoothedMovingAverage": "r",
     "ATR": "w",
@@ -30,6 +30,12 @@ color = {
 
 
 class ShowLine(Indicator):
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, "_instance"):
+            obj = super(ShowLine, cls)
+            cls._instance = obj.__new__(cls, *args, **kwargs)
+        return cls._instance
+
     def __init__(self):
         super().__init__()
         # self.count = indicator().count
@@ -83,7 +89,7 @@ class ShowLine(Indicator):
         # pl2.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
         # plt.show()
 
-    def plot(self, width=16, height=9, color="k", lw=0.5):
+    def plot(self, width=8, height=6, color="k", lw=0.5):
         # 一个画布
         fig = plt.figure(figsize=(width, height))
         # 画布分块 块1
@@ -91,6 +97,7 @@ class ShowLine(Indicator):
         datetime = self.ret_date
         volume = self.ret_volume
         close = self.ret_close
+
         # 柱
         ax1.bar(datetime, volume, color='y', label='volume')
         ax1.set_ylabel('volume')
@@ -98,8 +105,8 @@ class ShowLine(Indicator):
 
         # 线
         ax2.plot(datetime, close, "#000000", label="CLOSE")
-        for average_line in self.average_message.items():
-            ax2.plot(datetime, average_line[1], color[average_line[0]], label=average_line[0])
+        for average_line in self.average_message:
+            ax2.plot(datetime, self.average_message[average_line], colors[average_line], label=average_line)
 
         ax2.set_ylabel('price')
         # 标题
@@ -108,23 +115,22 @@ class ShowLine(Indicator):
         plt.grid(True)
         # 图列
         plt.legend()
+        # 显示时间间隔
+        ax1.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
 
         # 块2
-        ax2 = plt.subplot(212)
+        ax3 = plt.subplot(212)
         # 柱形图
-        for indicator_line in self.indicator_message.items():
-            plt.plot(datetime, indicator_line[1], color=color[indicator_line[0]], label=indicator_line[0])
+        for indicator_line in self.indicator_message:
+            plt.plot(datetime, self.indicator_message[indicator_line], colors[indicator_line], label=indicator_line)
         # 网格
         plt.grid(True)
         plt.title("indicator")
+        plt.legend()
+        ax3.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
 
-        # 显示时间间隔
-        ax1.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
-        ax2.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
-
-        multi = MultiCursor(fig.canvas, (ax1, ax2), color=color, lw=lw, useblit=False, linestyle=':', horizOn=True)
+        multi = MultiCursor(fig.canvas, (ax1, ax3), color=color, lw=lw, useblit=True, linestyle=':', horizOn=True)
         plt.show()
 
 
-show = ShowLine
-
+show = ShowLine()
