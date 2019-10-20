@@ -78,7 +78,6 @@ class Indicator(File):
         """
         pass
 
-
     @getAverageName
     def SimpleMovingAverage(self, data:object,  period=15):
         """

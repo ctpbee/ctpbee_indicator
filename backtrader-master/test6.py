@@ -31,13 +31,12 @@ class TestStrategy(bt.Strategy):
         self.buycomm = None
         print(self.datas[0], '555555555555555555555===================')
         # Add a MovingAverageSimple indicator
-        # self.sma = bt.indicators.SimpleMovingAverage(
-        #     self.datas[0], period=self.params.maperiod)
+        self.sma = bt.indicators.SimpleMovingAverage(
+             self.datas[0], period=self.params.maperiod)
 
-        # print(self.sma, '7777777777777777777777777')
         # Indicators for the plotting show
 
-        self.sma = bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
+        # self.sma = bt.indicators.ExponentialMovingAverage(self.datas[0], period=25)
         # bt.indicators.WeightedMovingAverage(self.datas[0], period=25,
         #                                    subplot=True)
         print(self.sma, '-----------------')
@@ -47,9 +46,9 @@ class TestStrategy(bt.Strategy):
         # rsi = bt.indicators.RSI(self.datas[0])
         # bt.indicators.Stochastic(self.datas[0])
         # bt.indicators.SmoothedMovingAverage(rsi, period=10)
-        bt.indicators.ATR(self.datas[0], plot=False)
+        # bt.indicators.ATR(self.datas[0], plot=False)
 
-        bt.indicators.BollingerBands(self.datas[0], period=25)
+        # bt.indicators.BollingerBands(self.datas[0], period=25)
         # bt.indicators.UltimateOscillator(self.datas[0])
         # bt.indicators.Trix(self.datas[0], period=25)
         # bt.indicators.ADXR(self.datas[0])

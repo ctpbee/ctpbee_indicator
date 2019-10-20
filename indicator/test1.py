@@ -16,24 +16,32 @@
 
 from plot import show
 
-close = show.open('./datas/orcl-2014.txt', '2014-01-01', '2014-12-31')
+close = show.openJSON('./ctpbee_desktop/ag1911.SHFE.json', '2019-10-16', '2019-10-17')
+# close = show.openCSV('./datas/orcl-2014.txt', '2014-01-01', '')
 SMA = show.SimpleMovingAverage(close, 15)
 WMA = show.WeightedMovingAverage(close, 25)
 stdv = show.StandardDeviation(close)
 
+print(type(SMA))
+s = SMA.tolist()
+s.append(3333)
+print(show.ret_data)
 
-def f(n):
-    for i in n:
-        yield i
+# def f(n):
+#     for i in n:
+#         yield i
+#
+# g = f(SMA)
+#
+#
+#
+# print(next(g))
+# print(g.__next__())
+# print(g.__next__())
+# print(g.__next__())
+# print(g.__next__())
+# n = (i for i in SMA)
+# print(next(n))
+# print(next(n))
 
-g = f(SMA)
-
-
-
-print(next(g))
-print(g.__next__())
-print(g.__next__())
-print(g.__next__())
-print(g.__next__())
-
-show.plot()
+# show.plot()

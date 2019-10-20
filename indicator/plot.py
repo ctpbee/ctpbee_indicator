@@ -3,8 +3,9 @@
 """
 from matplotlib import pyplot as plt
 from matplotlib.widgets import MultiCursor
-from indicator import Indicator
 import matplotlib.dates as mdate
+from indicator import Indicator
+import pandas as pd
 
 colors = {
     "SimpleMovingAverage": "b",
@@ -97,7 +98,6 @@ class ShowLine(Indicator):
         datetime = self.ret_date
         volume = self.ret_volume
         close = self.ret_close
-
         # 柱
         ax1.bar(datetime, volume, color='y', label='volume')
         ax1.set_ylabel('volume')
@@ -116,7 +116,8 @@ class ShowLine(Indicator):
         # 图列
         plt.legend()
         # 显示时间间隔
-        ax1.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
+        ax1.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d %H:%M:%S'))
+        # plt.xticks(pd.date_range(datetime[0], datetime[-1]))
 
         # 块2
         ax3 = plt.subplot(212)
@@ -127,8 +128,8 @@ class ShowLine(Indicator):
         plt.grid(True)
         plt.title("indicator")
         plt.legend()
-        ax3.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d'))  # %H:%M:%S
-
+        ax3.xaxis.set_major_formatter(mdate.DateFormatter('%Y-%m-%d %H:%M:%S'))  # %H:%M:%S
+        # plt.xticks(pd.date_range(datetime[0], datetime[-1]))
         multi = MultiCursor(fig.canvas, (ax1, ax3), color=color, lw=lw, useblit=True, linestyle=':', horizOn=True)
         plt.show()
 

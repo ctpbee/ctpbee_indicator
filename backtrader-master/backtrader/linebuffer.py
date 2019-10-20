@@ -667,7 +667,6 @@ class _LineDelay(LineActions):
         dst = self.array
         src = self.a.array
         ago = self.ago
-        print('age===', ago)
         print('start and end', start, end)
         for i in range(start, end):
             dst[i] = src[i + ago]
