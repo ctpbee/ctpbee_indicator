@@ -1,11 +1,10 @@
 """
-    指标线
+    plot显示线
 """
 from matplotlib import pyplot as plt
 from matplotlib.widgets import MultiCursor
 import matplotlib.dates as mdate
-from indicator import Indicator
-import pandas as pd
+from .indicator import Indicator
 
 colors = {
     "SimpleMovingAverage": "b",

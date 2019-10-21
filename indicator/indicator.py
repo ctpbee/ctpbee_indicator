@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd
 import numpy as np
-from readfile import File
+from .readfile import File
 import math
 import operator
 from copy import deepcopy
