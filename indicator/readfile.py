@@ -19,30 +19,28 @@ class ReadFile:
         self.open_file_name = None          # 文件名
         self.open_file_start = None         # 开始时间
 
-    # def __new__(cls, *args, **kwargs):
-    #     if not hasattr(cls, "_instance"):
-    #         obj = super(ReadFile, cls)
-    #         cls._instance = obj.__new__(cls, *args, **kwargs)
-    #     return cls._instance
-
-    def new_bar(self, data, open=True):
+    def update_bar(self, datas, opens=True):
         """
         :param data: 数据类型
                         [time, open, high, low, close, volume]
                         [1883823344, 22, 44, 55, 55, 6666]
-        :param open: 开关
+        :param opens: 开关
         :return:
         """
+        if not datas:
+            assert "type error or type is None"
+        data = [datas["datetime"], datas["open_price"], datas["high_price"], datas["low_price"], datas["close_price"],
+                554]
 
-        if data and open:
-            if isinstance(data[0], datetime):
-                data[0] = data[0].strftime('%Y-%m-%d %H:%M:%S')
-            elif isinstance(data[0], date):
-                data[0] = data[0].strftime('%Y-%m-%d')
-            else:
-                time_local = time.localtime(float(data[0]) / 1000)
-                data[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
+        if isinstance(data[0], datetime):
+            data[0] = data[0].strftime('%Y-%m-%d %H:%M:%S')
+        elif isinstance(data[0], date):
+            data[0] = data[0].strftime('%Y-%m-%d')
+        else:
+            time_local = time.localtime(float(data[0]) / 1000)
+            data[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
 
+        if opens:
             if self.open_file_name.endswith(".csv"):
                 with open(self.open_file_name, 'a+', newline='') as f:
                     w_data = csv.writer(f)
@@ -50,15 +48,18 @@ class ReadFile:
             if self.open_file_name.endswith(".json"):
                 with open(self.open_file_name, 'r') as jr:
                     r_json = json.loads(jr.read())
-                    r_json[self.open_file_name].append(data)
+                    r_name = [name for name in r_json][0]
+                    r_json[r_name].append(data)
                 with open(self.open_file_name, 'w') as jw:
-                    jw.write(r_json)
+
+                    json.dump(r_json, jw)
+
             if self.open_file_name.endswith(".txt"):
                 with open(self.open_file_name, 'a+') as t:
-                    txt = "\n" + ",".join(data)
+                    txt = "\n" + str(data).strip("[]")
                     t.write(txt)
 
-        if data and open == False:
+        else:
             self.count += 1
             self.ret_data.loc[data[0]] = data[1:]
             self.ret_close = self.ret_data["Close"]
@@ -73,17 +74,17 @@ class ReadFile:
 
     def path(self, file):
         modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
-        # datapath = os.path.join(modpath, './datas/orcl-2014.txt')
         datapath = os.path.join(modpath, file)
         self.open_file_name = datapath
         return datapath
 
-    def data_columns(self, data: str, start_time: str, end_time=None) -> object:
+    def data_columns(self, data: str, start_time: str, end_time=None):
         self.open_file_start = start_time
         if end_time:
             self.ret_data = data[start_time:end_time]
         else:
             self.ret_data = data
+
         self.ret_date = self.ret_data.index
         self.count = len(self.ret_data)
         self.ret_volume = self.ret_data['Volume']
@@ -111,11 +112,9 @@ class ReadFile:
         data_loads = json.loads(data_str)
         for data_name, data_all in data_loads.items():
             data_lines = data_all
-
             # for col in data_lines:
             #     time_local = time.localtime(float(col[0])/1000)
             #     col[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
-
         data = pd.DataFrame(data_lines)
         data.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
         data.set_index(["Date"], inplace=True)

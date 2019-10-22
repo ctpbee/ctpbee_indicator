@@ -34,14 +34,14 @@ def getIndicatorName(func):
     def wrapper(self, *args, **kwargs):
         line = func(self, *args, **kwargs)
         func_name = func.__name__
-        if func_name == "MACDHisto":
-            self.indicator_message["macd"] = self.macd
+        if func_name == "macd":
+            self.indicator_message["MACD"] = self.macd
             self.indicator_message["signal"] = self.signal
-            self.indicator_message[func_name] = line
-        elif func_name == "StochasticSlow":
+            self.indicator_message[func_name] = self.histo
+        elif func_name == "kd":
             self.indicator_message["K"] = self.k
-            self.indicator_message["D"] = line
-        elif func_name == "BollingerBands":
+            self.indicator_message["D"] = self.percD
+        elif func_name == "boll":
             self.indicator_message["mid"] = self.mid
             self.indicator_message["top"] = self.top
             self.indicator_message["bottom"] = self.bottom
@@ -63,14 +63,6 @@ class Indicator(File):
             cls._instance = obj.__new__(cls, *args, **kwargs)
         return cls._instance
 
-    def sma(self):
-        for c in self.ret_data:
-            yield c
-
-    def CloseValue(self):
-        for i in self.sma_data:
-            yield i
-
     def calculate(self):
         """
         计算指标
@@ -79,9 +71,9 @@ class Indicator(File):
         pass
 
     @getAverageName
-    def SimpleMovingAverage(self, data:object,  period=15):
+    def sma(self, data:object, period=15):
         """
-        sma
+        sma  SimpleMovingAverage
         简单移动平均线
         :param period:距离
         :param data:数据 object
@@ -95,9 +87,9 @@ class Indicator(File):
         return self.sma_data
 
     @getAverageName
-    def ExponentialMovingAverage(self, data:object, period:int, alpha=None):
+    def ema(self, data:object, period:int, alpha=None):
         """
-        ema
+        ema ExponentialMovingAverage
         指数移动平均(period一般取12和26天)
             - self.smfactor -> 2 / (1 + period)
             - self.smfactor1 -> `1 - self.smfactor`
@@ -120,9 +112,9 @@ class Indicator(File):
         return self.ema_data
 
     @getAverageName
-    def WeightedMovingAverage(self, data:object, period=30):
+    def wma(self, data:object, period=30):
         '''
-        加权移动平均线
+        WeightedMovingAverage 加权移动平均线
             A Moving Average which gives an arithmetic weighting to values with the
             newest having the more weight
 
@@ -142,7 +134,7 @@ class Indicator(File):
         return self.wma_data
 
     @getIndicatorName
-    def StochasticSlow(self, data:object, period:int, period_dfast=3):
+    def kd(self, data:object, period:int, period_dfast=3):
         """
         随机振荡器 随机指标(KD) : K给出预期信号，以底部或之前的 D给出周转信号，以 D-Slow给出周转确认信号
             The regular (or slow version) adds an additional moving average layer and
@@ -176,14 +168,14 @@ class Indicator(File):
         knum = np.array(data) - lowest.tolist()
         kden = np.array(highest) - np.array(lowest)
         self.k = 100 * (knum/kden)
-        self.d = self.SimpleMovingAverage(self.k, period=period_dfast)
-        self.percD = self.SimpleMovingAverage(self.d, period=period_dfast)
-        return self.percD
+        self.d = self.sma(self.k, period=period_dfast)
+        self.percD = self.sma(self.d, period=period_dfast)
+        return self.k, self.percD
 
     @getIndicatorName
-    def MACDHisto(self, data:object, period_me1=12, period_me2=26, period_signal=9):
+    def macd(self, data:object, period_me1=12, period_me2=26, period_signal=9):
         """
-        移动平均趋同/偏离(异同移动平均线)
+        移动平均趋同/偏离(异同移动平均线) MACDHisto
         Formula:
             - macd = ema(data, me1_period) - ema(data, me2_period)
             - signal = ema(macd, signal_period)
@@ -193,15 +185,15 @@ class Indicator(File):
         :return:
         """
 
-        me1 = self.ExponentialMovingAverage(data, period=period_me1)
-        me2 = self.ExponentialMovingAverage(data, period=period_me2)
+        me1 = self.ema(data, period=period_me1)
+        me2 = self.ema(data, period=period_me2)
         self.macd = np.array(me1) - np.array(me2)
-        self.signal = self.ExponentialMovingAverage(self.macd.tolist(), period=period_signal)
+        self.signal = self.ema(self.macd.tolist(), period=period_signal)
         self.histo = np.array(self.macd) - np.array(self.signal)
         return self.histo
 
     @getAverageName
-    def RSI(self, data:object,  period=14, lookback=1):
+    def rsi(self, data:object,  period=14, lookback=1):
         """
         rsi 相对强度指数
         Formula:
@@ -231,8 +223,8 @@ class Indicator(File):
             upday[i] = max(data[i]-data[i-1], 0.0)
         for i in range(period, end):
             downday[i] = max(data[i-1]-data[i], 0.0)
-        maup = self.ExponentialMovingAverage(upday, period=period)
-        madown = self.ExponentialMovingAverage(downday, period=period)
+        maup = self.ema(upday, period=period)
+        madown = self.ema(downday, period=period)
         rs = np.array(maup) / np.array(madown)
         self.rsi_list = []
         for i in rs:
@@ -241,7 +233,7 @@ class Indicator(File):
         return self.rsi_list
 
     @getAverageName
-    def SmoothedMovingAverage(self, data:object, period:int, alpha=15):
+    def smma(self, data:object, period:int, alpha=15):
         """
         smma 平滑移动平均值
         SmoothedMovingAverage
@@ -263,7 +255,7 @@ class Indicator(File):
         return self.ema_data
 
     @getIndicatorName
-    def ATR(self, data:object, period=14):
+    def atr(self, data:object, period=14):
         """
         平均真实范围
         AverageTrueRange
@@ -281,13 +273,13 @@ class Indicator(File):
         for l in range(period+1, end):
             truelow.append(min(data[l-1], self.ret_low[l]))
         tr = np.array(truehigh) - np.array(truelow)
-        atr = self.SimpleMovingAverage(tr, period=period)
+        atr = self.sma(tr, period=period)
         return atr
 
     @getIndicatorName
-    def StandardDeviation(self, data:object, period=20):
+    def stdDev(self, data:object, period=20):
         """
-        StandardDeviation 标准偏差 (StdDev)
+        StandardDeviation 标准偏差 (StdDev) StandardDeviation
             If 2 datas are provided as parameters, the 2nd is considered to be the
             mean of the first
            Formula:
@@ -301,16 +293,16 @@ class Indicator(File):
         :param period:
         :return:
         """
-        meansquared = self.SimpleMovingAverage(pow(np.array(data), 2), period)
-        mead_data = self.SimpleMovingAverage(data, period)
+        meansquared = self.sma(pow(np.array(data), 2), period)
+        mead_data = self.sma(data, period)
         squaredmean = pow(mead_data, 2)
         self.stddev = pow(np.array(meansquared)-np.array(squaredmean), 0.5)
         return self.stddev
 
     @getAverageName
-    def BollingerBands(self, data:object, period=20, devfactor=2):
+    def boll(self, data:object, period=20, devfactor=2):
         """
-        布林带 ( boll  。中轨为股价的平均成本，上轨和下轨可分别视为股价的压力线和支撑线。)
+        布林带 (BollingerBands boll  。中轨为股价的平均成本，上轨和下轨可分别视为股价的压力线和支撑线。)
         Formula:
           - midband = SimpleMovingAverage(close, period)
           - topband = midband + devfactor * StandardDeviation(data, period)
@@ -320,13 +312,13 @@ class Indicator(File):
           - http://en.wikipedia.org/wiki/Bollinger_Bands
         :param data:
         :param period:
-        :return:
+        :return: top mid bottom
         """
-        self.mid = self.SimpleMovingAverage(data, period)
-        self.top = np.array(self.mid) + devfactor * np.array(self.StandardDeviation(data, period))
-        self.bottom = np.array(self.mid) - devfactor * np.array(self.StandardDeviation(data, period))
+        self.mid = self.sma(data, period)
+        self.top = np.array(self.mid) + devfactor * np.array(self.stdDev(data, period))
+        self.bottom = np.array(self.mid) - devfactor * np.array(self.stdDev(data, period))
 
-        return self.bottom
+        return self.top, self.mid, self.bottom
 
     @getIndicatorName
     def AroonIndicator(self, data:object, period:int):
@@ -367,7 +359,7 @@ class Indicator(File):
         pass
 
     @getIndicatorName
-    def Trix(self, data: object, period: int, rocperiod=1):
+    def trix(self, data: object, period: int, rocperiod=1):
         '''
             三重指数平滑移动平均 技术分析(Triple Exponentially Smoothed Moving Average) TR
            Defined by Jack Hutson in the 80s and shows the Rate of Change (%) or slope
@@ -388,9 +380,9 @@ class Indicator(File):
              - https://en.wikipedia.org/wiki/Trix_(technical_analysis)
              - http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:trix
         '''
-        ema1 = self.ExponentialMovingAverage(data, period=period)
-        ema2 = self.ExponentialMovingAverage(ema1, period=period)
-        ema3 = self.ExponentialMovingAverage(ema2, period=period)
+        ema1 = self.ema(data, period=period)
+        ema2 = self.ema(ema1, period=period)
+        ema3 = self.ema(ema2, period=period)
         end = len(ema3)
         self.trix_list = ema3
         for i in range(period, end):
@@ -398,7 +390,7 @@ class Indicator(File):
         return self.trix_list
 
     @getIndicatorName
-    def ROC(self, data: object, period=12):
+    def roc(self, data: object, period=12):
         """
         Formula:
           - roc = (data - data_period) / data_period
@@ -416,9 +408,9 @@ class Indicator(File):
         return self.roc_list
 
     @getIndicatorName
-    def Momentum(self, data: object, period: int):
+    def mtm(self, data: object, period: int):
         """
-        动量指标(MTM)
+        动量指标(MTM) Momentum
             Formula:
               - momentum = data - data_period
 
@@ -435,7 +427,7 @@ class Indicator(File):
         return self.momentum_list
 
     @getIndicatorName
-    def TEMA(self, data: object, period: int):
+    def tema(self, data: object, period: int):
         """
          TripleExponentialMovingAverage(TEMA 试图减少与移动平均数相关的固有滞后)
         Formula:
@@ -447,16 +439,16 @@ class Indicator(File):
         :param period:
         :return:
         """
-        ema1 = self.ExponentialMovingAverage(data, period)
-        ema2 = self.ExponentialMovingAverage(ema1, period)
-        ema3 = self.ExponentialMovingAverage(ema2, period)
+        ema1 = self.ema(data, period)
+        ema2 = self.ema(ema1, period)
+        ema3 = self.ema(ema2, period)
         self.tema = 3 * np.array(ema1) - 3 * ema2 + ema3
         return self.tema
 
     @getIndicatorName
-    def WilliamsR(self, data:object, period=14):
+    def wr(self, data:object, period=14):
         """
-
+        WilliamsR
         Formula:
           - num = highest_period - close
           - den = highestg_period - lowest_period

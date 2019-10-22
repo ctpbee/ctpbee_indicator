@@ -16,7 +16,7 @@ from datetime import datetime, date
 
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from indicator.plot import show
+from indicator.plot import Cerebro
 
 
 def get_data(start, end, symbol, exchange, level):
@@ -76,14 +76,21 @@ def get_a_strategy():
         def on_bar(self, bar):
             # todo: 双均线
             """ """
-            close = show.open_csv('./indicator/datas/orcl-2014.txt', '2014-01-01')
 
-            data = [bar["datetime"], bar["open_price"],bar["high_price"], bar["low_price"], bar["close_price"], 554]
-            show.new_bar(data)
-            SMA = show.SimpleMovingAverage(close, 15)
-            WMA = show.WeightedMovingAverage(close, 25)
-            stdv = show.StandardDeviation(close)
-            print(SMA, '-----=========-------')
+            close = Cerebro.open_csv('indicator/datas/orcl-2014.txt', '2014-01-01')
+
+            Cerebro.update_bar(bar)
+            # 简单移动平均线
+            sma = Cerebro.sma(close, 15)
+            # 加权移动
+            wma = Cerebro.wma(close, 25)
+            print(sma)
+
+            if close[-1] > sma[-1]:
+                print("True")
+
+            else:
+                print("False")
 
             am = self.am
             am.update_bar(bar)
@@ -157,7 +164,6 @@ def get_a_strategy():
             self.pos = 0
 
         def on_bar(self, bar):
-            print("-------------")
             am = self.am
             am.update_bar(bar)
             if not am.inited:
