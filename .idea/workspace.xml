@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/annualreturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/calmar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/drawdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/leverage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/logreturnsrolling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/periodstats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/positions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/pyfolio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/returns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/sharpe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/sqn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/timereturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/tradeanalyzer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/transactions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/analyzers/vwr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/broker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/brokers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/brokers/bbroker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/brokers/ibbroker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/brokers/oandabroker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/brokers/vcbroker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/btrun/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/btrun/btrun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/cerebro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/comminfo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/commissions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/dataseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/blaze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/btcsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/chainer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/csvgeneric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/ibdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/influxfeed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/mt4csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/oanda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/pandafeed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/quandl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/rollover.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/sierrachart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/vcdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/vchart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/vchartcsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/vchartfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/feeds/yahoo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/fillers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/bsplitter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/calendardays.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/datafiller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/datafilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/daysteps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/heikinashi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/renko.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/filters/session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/flt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/accdecoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/aroon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/atr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/awesomeoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/basicops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/bollinger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/cci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/contrib/vortex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/crossover.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/dema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/deviation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/directionalmove.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/dma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/dpo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/dv2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/ema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/envelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/hadelta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/heikinashi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/hma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/hurst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/ichimoku.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/kama.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/kst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/lrsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/mabase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/macd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/momentum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/ols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/oscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/percentchange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/percentrank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/pivotpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/prettygoodoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/priceoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/psar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/rmi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/rsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/sma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/smma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/stochastic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/trix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/tsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/ultimateoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/vortex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/williams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/wma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/zlema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/indicators/zlind.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/linebuffer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/lineiterator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/lineroot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/lineseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/mathsupport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/metabase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/benchmark.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/broker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/buysell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/drawdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/logreturns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/timereturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/observers/trades.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/finance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/formatters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/multicursor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/plot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/scheme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/plot/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/position.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/resamplerfilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/signal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/signals/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/sizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/sizers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/sizers/fixedsize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/sizers/percents_sizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/stores/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/stores/ibstore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/stores/oandastore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/stores/vchartfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/stores/vcstore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/strategies/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/strategies/sma_crossover.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/strategy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/studies/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/studies/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/studies/contrib/fractal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/talib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/timer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/trade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/tradingcal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/autodict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/dateintern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/flushfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/ordereddefaultdict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/utils/py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/backtrader/writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/change_test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/contrib/datas/daily-KO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/contrib/datas/daily-PEP.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/contrib/samples/pair-trading/pair-trading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/contrib/utils/influxdb-import.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/contrib/utils/iqfeed-to-influxdb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2005-2006-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-01-02-volume-min-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-day-001-optix.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-day-002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-min-005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-month-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-volume-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-week-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/2006-week-002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/bidask.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/bidask2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/nvda-1999-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/nvda-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/orcl-1995-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/orcl-2003-2005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/orcl-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/ticksample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/yhoo-1996-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/yhoo-1996-2015.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/yhoo-2003-2005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/datas/yhoo-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/pypi.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/analyzer-annualreturn/analyzer-annualreturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/bidask-to-ohlc/bidask-to-ohlc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/bracket/bracket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/btfd/btfd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/calendar-days/calendar-days.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/calmar/calmar-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/cheat-on-open/cheat-on-open.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/commission-schemes/commission-schemes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/credit-interest/credit-interest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-bid-ask/bidask.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-filler/data-filler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-filler/relativevolume.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-multitimeframe/data-multitimeframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-pandas/data-pandas-optix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-pandas/data-pandas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-replay/data-replay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/data-resample/data-resample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/daysteps/daysteps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/future-spot/future-spot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/gold-vs-sp500/gold-vs-sp500.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/ibtest/ibtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/kselrsi/ksignal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/lineplotter/lineplotter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/lrsi/lrsi-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/macd-settings/macd-settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/memory-savings/memory-savings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/mixing-timeframes/mixing-timeframes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multi-copy/multi-copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multi-example/mult-values.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multidata-strategy/multidata-strategy-unaligned.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multidata-strategy/multidata-strategy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multitrades/mtradeobserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/multitrades/multitrades.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/oandatest/oandatest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/observer-benchmark/observer-benchmark.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/observers/observers-default-drawdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/observers/observers-default.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/observers/observers-orderobserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/observers/orderobserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/oco/oco.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/optimization/optimization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/order-close/close-daily.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/order-close/close-minute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/order-execution/order-execution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/order-history/order-history.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/order_target/order_target.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/partial-plot/partial-plot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pinkfish-challenge/pinkfish-challenge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pivot-point/pivotpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pivot-point/ppsample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/plot-same-axis/plot-same-axis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/psar/psar-intraday.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/psar/psar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pyfolio2/backtrader-pyfolio.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pyfolio2/pyfoliotest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pyfoliotest/backtrader-pyfolio.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/pyfoliotest/pyfoliotest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/relative-volume/relative-volume.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/relative-volume/relvolbybar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/renko/renko.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/resample-tickdata/resample-tickdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/rollover/rollover.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/sharpe-timereturn/sharpe-timereturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/signals-strategy/signals-strategy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/sigsmacross/sigsmacross.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/sigsmacross/sigsmacross2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/sizertest/sizertest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/slippage/slippage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/sratio/sratio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/stop-trading/stop-loss-approaches.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/stoptrail/trail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/strategy-selection/strategy-selection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/talib/talibtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/timers/scheduled-min.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/timers/scheduled.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/tradingcalendar/tcal-intra.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/tradingcalendar/tcal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/vctest/vctest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/volumefilling/volumefilling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/vwr/vwr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/weekdays-filler/weekdaysaligner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/weekdays-filler/weekdaysfiller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/writer-test/writer-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/samples/yahoo-test/yahoo-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/test9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_analyzer-sqn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_analyzer-timereturn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_comminfo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_data_multiframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_data_replay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_data_resample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_accdecosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_aroonoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_aroonupdown.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_atr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_awesomeoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_bbands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_cci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_dema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_demaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_demaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_dm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_dma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_downmove.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_dpo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_dv2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_ema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_emaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_emaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_envelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_heikinashi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_highest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_hma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_ichimoku.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_kama.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_kamaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_kamaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_kst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_lowest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_lrsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_macdhisto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_minperiod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_momentum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_momentumoscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_oscillator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_pctchange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_pctrank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_pgo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_ppo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_pposhort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_priceosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_rmi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_roc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_rsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_rsi_safe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_sma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_smaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_smaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_smma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_smmaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_smmaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_stochastic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_stochasticfull.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_sumn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_tema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_temaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_temaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_trix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_tsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_ultosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_upmove.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_vortex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_williamsad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_williamsr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_wma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_wmaenvelope.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_wmaosc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_zlema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_ind_zlind.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_position.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_strategy_optimized.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_strategy_unoptimized.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_study_fractal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_trade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/test_writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tests/testcommon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tools/bt-run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tools/rewrite-data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader-master/tools/yahoodownload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtrader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/ag1911.SHFE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/ag1912.SHFE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/au1911.SHFE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1912.SHFE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1912.SHFE.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2005-2006-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-01-02-volume-min-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-day-001-optix.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-day-002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-min-005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-month-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-volume-day-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-week-001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/2006-week-002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/bidask.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/bidask2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/nvda-1999-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/nvda-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/orcl-1995-2014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/orcl-2014.txt" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/datas/orcl-2014.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/ticksample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/yhoo-1996-2015.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/datas/yhoo-2003-2005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/indicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/indicator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/readfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/readfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/data/data_sources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/exprs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/exprs/exprenv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator2/indicator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SJcSM1LZSjNMSVPfM1KVEyhFfx" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$/backtrader-master" />
+      <recent name="$PROJECT_DIR$/backtrader" />
+      <recent name="$PROJECT_DIR$/backtrader1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backtrader-master" />
+      <recent name="$PROJECT_DIR$/backtrader" />
+      <recent name="$PROJECT_DIR$/backtraders/backtrader" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.backtrader">
+    <configuration name="backtrader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="indicator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/indicator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/readfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader-master/test6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.backtrader" />
+        <item itemvalue="Python.plot" />
+        <item itemvalue="Python.test6" />
+        <item itemvalue="Python.readfile" />
+        <item itemvalue="Python.indicator (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="" />
+      <created>1569139348308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569139348308</updated>
+      <workItem from="1569139349710" duration="8715000" />
+      <workItem from="1569203717750" duration="22128000" />
+      <workItem from="1569287018487" duration="20913000" />
+      <workItem from="1569338682918" duration="631000" />
+      <workItem from="1569376892485" duration="11579000" />
+      <workItem from="1569461952157" duration="11623000" />
+      <workItem from="1569548662113" duration="21130000" />
+      <workItem from="1569633903424" duration="22737000" />
+      <workItem from="1569718616012" duration="27537000" />
+      <workItem from="1569809789185" duration="15744000" />
+      <workItem from="1569898491710" duration="14884000" />
+      <workItem from="1569979246470" duration="9980000" />
+      <workItem from="1570067111609" duration="20809000" />
+      <workItem from="1570153496543" duration="18752000" />
+      <workItem from="1570240628872" duration="10098000" />
+      <workItem from="1570332765930" duration="1475000" />
+      <workItem from="1570334893833" duration="416000" />
+      <workItem from="1570335325383" duration="516000" />
+      <workItem from="1570335860729" duration="194000" />
+      <workItem from="1570336071965" duration="282000" />
+      <workItem from="1570336371567" duration="263000" />
+      <workItem from="1570336653833" duration="1191000" />
+      <workItem from="1570411722813" duration="12315000" />
+      <workItem from="1570495722024" duration="16480000" />
+      <workItem from="1570586075158" duration="24884000" />
+      <workItem from="1570672609193" duration="20768000" />
+      <workItem from="1570755590036" duration="13250000" />
+      <workItem from="1570779918094" duration="24181000" />
+      <workItem from="1570844567680" duration="20686000" />
+      <workItem from="1570930392891" duration="23574000" />
+      <workItem from="1571010285596" duration="2513000" />
+      <workItem from="1571013614599" duration="21799000" />
+      <workItem from="1571100995667" duration="421000" />
+      <workItem from="1571105035884" duration="35885000" />
+      <workItem from="1571152068732" duration="337000" />
+      <workItem from="1571188731440" duration="18056000" />
+      <workItem from="1571239216585" duration="27000" />
+      <workItem from="1571280738761" duration="1251000" />
+      <workItem from="1571282803127" duration="86000" />
+      <workItem from="1571282908982" duration="224000" />
+      <workItem from="1571283238838" duration="1241000" />
+      <workItem from="1571285148313" duration="45000" />
+      <workItem from="1571285225750" duration="81000" />
+      <workItem from="1571285462283" duration="191000" />
+      <workItem from="1571291050961" duration="112000" />
+      <workItem from="1571380446926" duration="11976000" />
+      <workItem from="1571449248126" duration="7011000" />
+      <workItem from="1571534134583" duration="813000" />
+      <workItem from="1571541811744" duration="15143000" />
+      <workItem from="1571578487527" duration="3259000" />
+      <workItem from="1571621768720" duration="20415000" />
+      <workItem from="1571660105779" duration="5735000" />
+      <workItem from="1571705373352" duration="15848000" />
+      <workItem from="1571731790913" duration="5017000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_testing_TestParameterSpace - 2019.09.27 at 12h 41m 34s.xml">
+      <configuration name="Unittests for test_testing.TestParameterSpace" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 21h 50m 30s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 21h 50m 34s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_lru_py - 2019.09.27 at 22h 43m 57s.xml">
+      <configuration name="Unittests in lru.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_lru_py - 2019.09.27 at 22h 44m 16s.xml">
+      <configuration name="Unittests in lru.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 49m 50s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 50m 06s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 22h 56m 53s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 23h 01m 08s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_api_shim_py - 2019.09.27 at 23h 02m 59s.xml">
+      <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1569663064071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$carray_ext_pxd.coverage" NAME="carray_ext.pxd Coverage Results" MODIFIED="1569650743971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bcolz/bcolz" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569682395755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtraders" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1569760837559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1569813905519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test10.coverage" NAME="test10 Coverage Results" MODIFIED="1570713332400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$strategy.coverage" NAME="strategy Coverage Results" MODIFIED="1569760556009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1571150306629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation.coverage" NAME="test_tradesimulation Coverage Results" MODIFIED="1569597289641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$lineseries.coverage" NAME="lineseries Coverage Results" MODIFIED="1570072273243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backtrader.coverage" NAME="backtrader Coverage Results" MODIFIED="1571745863258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$indicator.coverage" NAME="indicator Coverage Results" MODIFIED="1570695116341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator2" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1570591974234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__1_.coverage" NAME="backTester (1) Coverage Results" MODIFIED="1569563637547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester__2_.coverage" NAME="backTester (2) Coverage Results" MODIFIED="1569575621686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$make_conda_packages.coverage" NAME="make_conda_packages Coverage Results" MODIFIED="1569591658059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/ci" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1569761729170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold.coverage" NAME="buy_and_hold Coverage Results" MODIFIED="1569663193647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold__1_.coverage" NAME="buy_and_hold (1) Coverage Results" MODIFIED="1569674492433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_replay.coverage" NAME="test_data_replay Coverage Results" MODIFIED="1569327896238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_finance.coverage" NAME="test_finance Coverage Results" MODIFIED="1569578259530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$backTester.coverage" NAME="backTester Coverage Results" MODIFIED="1569562870733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance-master/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$easy_install.coverage" NAME="easy_install Coverage Results" MODIFIED="1569663685241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/local/python37/lib/python3.7/site-packages" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_study_fractal.coverage" NAME="test_study_fractal Coverage Results" MODIFIED="1569378503980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$change_test1.coverage" NAME="change_test1 Coverage Results" MODIFIED="1569913953213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test8.coverage" NAME="test8 Coverage Results" MODIFIED="1570696614248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$setup.coverage" NAME="setup Coverage Results" MODIFIED="1569597030507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru-0.1" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$indicator__1_.coverage" NAME="indicator (1) Coverage Results" MODIFIED="1571189079681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1569759926585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_lru_py.coverage" NAME="Unittests in lru.py Coverage Results" MODIFIED="1569595456616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$plot.coverage" NAME="plot Coverage Results" MODIFIED="1571644131153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_macd.coverage" NAME="test_f_macd Coverage Results" MODIFIED="1569663038296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__2_.coverage" NAME="test6 (2) Coverage Results" MODIFIED="1569760339063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$signals.coverage" NAME="signals Coverage Results" MODIFIED="1569222442746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$annualreturn.coverage" NAME="annualreturn Coverage Results" MODIFIED="1569761082352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/backtrader/analyzers" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_strategy_unoptimized.coverage" NAME="test_strategy_unoptimized Coverage Results" MODIFIED="1569337765992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$readfile.coverage" NAME="readfile Coverage Results" MODIFIED="1571414653161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$googleCrawler.coverage" NAME="googleCrawler Coverage Results" MODIFIED="1569574414524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ultrafinance/ultrafinance/module" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_temaosc.coverage" NAME="test_ind_temaosc Coverage Results" MODIFIED="1569378620133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$trading_calendar.coverage" NAME="trading_calendar Coverage Results" MODIFIED="1569597142354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trading_calendars" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$atr.coverage" NAME="atr Coverage Results" MODIFIED="1570612607294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$teststrader.coverage" NAME="teststrader Coverage Results" MODIFIED="1569204763887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_algorithm.coverage" NAME="test_algorithm Coverage Results" MODIFIED="1569563803687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_for_test_testing_TestParameterSpace.coverage" NAME="Unittests for test_testing.TestParameterSpace Coverage Results" MODIFIED="1569559294246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline-master/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569719562021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_blotter.coverage" NAME="test_blotter Coverage Results" MODIFIED="1569575993656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$run_code_demo.coverage" NAME="run_code_demo Coverage Results" MODIFIED="1569674569250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test1__1_.coverage" NAME="test1 (1) Coverage Results" MODIFIED="1571710087821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_multiframe.coverage" NAME="test_data_multiframe Coverage Results" MODIFIED="1569327557928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_bar_data.coverage" NAME="test_bar_data Coverage Results" MODIFIED="1569574281798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$ksignal.coverage" NAME="ksignal Coverage Results" MODIFIED="1569293525122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/samples/kselrsi" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5__1_.coverage" NAME="test5 (1) Coverage Results" MODIFIED="1569761737024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_writer.coverage" NAME="test_writer Coverage Results" MODIFIED="1569378543588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test9.coverage" NAME="test9 Coverage Results" MODIFIED="1570713315808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$data_sources.coverage" NAME="data_sources Coverage Results" MODIFIED="1570693070308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator2/data" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$main.coverage" NAME="main Coverage Results" MODIFIED="1569678661168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6.coverage" NAME="test6 Coverage Results" MODIFIED="1571562350106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_trade.coverage" NAME="test_trade Coverage Results" MODIFIED="1569206993041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$basicops.coverage" NAME="basicops Coverage Results" MODIFIED="1569981926874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader/indicators" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_highest.coverage" NAME="test_ind_highest Coverage Results" MODIFIED="1569378480892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_aroonoscillator.coverage" NAME="test_ind_aroonoscillator Coverage Results" MODIFIED="1569327971808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__1_.coverage" NAME="test6 (1) Coverage Results" MODIFIED="1569760948144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_buy_and_hold.coverage" NAME="test_f_buy_and_hold Coverage Results" MODIFIED="1569663027000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_pt.coverage" NAME="test_pt Coverage Results" MODIFIED="1569678514756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation__1_.coverage" NAME="test_tradesimulation (1) Coverage Results" MODIFIED="1569591892853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/zipline" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_ema.coverage" NAME="test_ind_ema Coverage Results" MODIFIED="1569378435094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1569761039423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$read_csv_as_df.coverage" NAME="read_csv_as_df Coverage Results" MODIFIED="1569678691278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/examples/data_source" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_data_resample.coverage" NAME="test_data_resample Coverage Results" MODIFIED="1569327940272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1569591618859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/docs" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_hold_hs300.coverage" NAME="buy_and_hold_hs300 Coverage Results" MODIFIED="1569678632230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_test_api_shim_py.coverage" NAME="Unittests in test_api_shim.py Coverage Results" MODIFIED="1569596578901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
