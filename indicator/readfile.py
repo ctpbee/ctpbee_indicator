@@ -19,7 +19,7 @@ class ReadFile:
         self.open_file_name = None          # 文件名
         self.open_file_start = None         # 开始时间
 
-    def update_bar(self, datas, opens=True):
+    def update_bar(self, datas: dict, opens=True):
         """
         :param data: 数据类型
                         [time, open, high, low, close, volume]
@@ -78,12 +78,14 @@ class ReadFile:
         self.open_file_name = datapath
         return datapath
 
-    def data_columns(self, data: str, start_time: str, end_time=None):
+    def data_columns(self, data: str, start_time=None, end_time=None):
         self.open_file_start = start_time
-        if end_time:
-            self.ret_data = data[start_time:end_time]
-        else:
+        if not start_time and not end_time:
             self.ret_data = data
+        elif end_time and not start_time:
+            self.ret_data = data[:end_time]
+        else:
+            self.ret_data = data[start_time:end_time]
 
         self.ret_date = self.ret_data.index
         self.count = len(self.ret_data)
@@ -93,7 +95,7 @@ class ReadFile:
         self.ret_close = self.ret_data['Close']
         return self.ret_close
 
-    def open_csv(self, file: str, start_time: str, end_time=None):
+    def open_csv(self, file: str, start_time=None, end_time=None):
         """
         读取文件
         :param file: 文件名
@@ -106,7 +108,7 @@ class ReadFile:
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 
-    def open_json(self, file: str, start_time: str, end_time=None):
+    def open_json(self, file: str, start_time=None, end_time=None):
         datapath = self.path(file)
         data_str = open(datapath).read()
         data_loads = json.loads(data_str)
@@ -117,7 +119,7 @@ class ReadFile:
             #     col[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
         data = pd.DataFrame(data_lines)
         data.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
-        data.set_index(["Date"], inplace=True)
+        data.set_index(["Date"], inplace=True, append=True)
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 

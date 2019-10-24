@@ -16,7 +16,7 @@ from datetime import datetime, date
 
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from indicator.plot import Cerebro
+from indicator.interface import api
 
 
 def get_data(start, end, symbol, exchange, level):
@@ -77,15 +77,13 @@ def get_a_strategy():
             # todo: 双均线
             """ """
 
-            close = Cerebro.open_csv('indicator/datas/orcl-2014.txt', '2014-01-01')
+            close = api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
 
-            Cerebro.update_bar(bar)
+            api.add_bar(bar)
             # 简单移动平均线
-            sma = Cerebro.sma(close, 15)
+            sma = api.sma()
             # 加权移动
-            wma = Cerebro.wma(close, 25)
-            print(sma)
-
+            wma = api.wma()
             if close[-1] > sma[-1]:
                 print("True")
 

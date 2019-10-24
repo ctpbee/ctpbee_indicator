@@ -83,4 +83,4 @@ class ShowLine(Indicator):
         plt.show()
 
 
-Cerebro = ShowLine()
+Scheduler = ShowLine()
