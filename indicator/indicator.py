@@ -134,7 +134,7 @@ class Indicator(File):
         return self.wma_data
 
     @getIndicatorName
-    def kd(self, data:object, period:int, period_dfast=3):
+    def kd(self, data:object, period=14, period_dfast=3):
         """
         随机振荡器 随机指标(KD) : K给出预期信号，以底部或之前的 D给出周转信号，以 D-Slow给出周转确认信号
             The regular (or slow version) adds an additional moving average layer and
