@@ -19,16 +19,16 @@ class ReadFile:
         self.open_file_name = None          # 文件名
         self.open_file_start = None         # 开始时间
 
-    def update_bar(self, datas: dict, opens=True):
+    def update_bar(self, datas: dict, switch=True):
         """
         :param data: 数据类型
                         [time, open, high, low, close, volume]
                         [1883823344, 22, 44, 55, 55, 6666]
-        :param opens: 开关
+        :param switch: 开关
         :return:
         """
         if not datas:
-            assert "type error or type is None"
+            raise Warning("type error or type is None")
         data = [datas["datetime"], datas["open_price"], datas["high_price"], datas["low_price"], datas["close_price"],
                 554]
 
@@ -40,7 +40,7 @@ class ReadFile:
             time_local = time.localtime(float(data[0]) / 1000)
             data[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
 
-        if opens:
+        if switch:
             if self.open_file_name.endswith(".csv"):
                 with open(self.open_file_name, 'a+', newline='') as f:
                     w_data = csv.writer(f)
@@ -73,6 +73,8 @@ class ReadFile:
         pass
 
     def path(self, file):
+        if not file:
+            raise FileExistsError("文件名不能为空")
         modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
         datapath = os.path.join(modpath, file)
         self.open_file_name = datapath

@@ -73,7 +73,7 @@ class Indicator(File):
     @getAverageName
     def sma(self, data:object, period=15):
         """
-        sma  SimpleMovingAverage
+        sma or ma SimpleMovingAverage
         简单移动平均线
         :param period:距离
         :param data:数据 object
