@@ -72,19 +72,20 @@ def get_a_strategy():
             self.count = 1
             self.am = ArrayManager()
             self.pos = 0
+            api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
+            # api.open_csv('indicator/datas/orcl-2014.txt')
 
         def on_bar(self, bar):
             # todo: 双均线
             """ """
-
-            close = api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
-
-            api.add_bar(bar)
+            api.add_bar(bar, opens=False)
+            close = api.close
+            print(close[-1])
             # 简单移动平均线
-            sma = api.sma()
+            # sma = api.sma()
             # 加权移动
             wma = api.wma()
-            if close[-1] > sma[-1]:
+            if close[-1] > wma[-1]:
                 print("True")
 
             else:

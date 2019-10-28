@@ -3,6 +3,10 @@ from .plot import Scheduler
 
 class Interface:
 
+    @property
+    def close(self):
+        return Scheduler.ret_close
+
     def open_csv(self, file: str, start_time=None, end_time=None):
         return Scheduler.open_csv(file, start_time, end_time)
 
@@ -64,7 +68,7 @@ class Interface:
         data = Scheduler.ret_close
         return Scheduler.mtm(data, n)
 
-    def tema(self, n=12):
+    def tema(self, n=25):
         data = Scheduler.ret_close
         return Scheduler.tema(data, n)
 
