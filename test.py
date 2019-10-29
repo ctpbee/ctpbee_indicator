@@ -80,11 +80,11 @@ def get_a_strategy():
             """ """
             api.add_bar(bar, opens=False)
             close = api.close
-            print(close[-1])
             # 简单移动平均线
             # sma = api.sma()
             # 加权移动
             wma = api.wma()
+            print(wma[-1], close[-1], '---')
             if close[-1] > wma[-1]:
                 print("True")
 

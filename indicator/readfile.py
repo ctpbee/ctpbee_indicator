@@ -62,12 +62,11 @@ class ReadFile:
 
         else:
             self.count += 1
-            print(self.ret_close)
-            self.ret_close = self.ret_close.append(pd.Series(data[4]), ignore_index=True)
-            print(self.ret_close, '------------')
-            self.ret_high = self.ret_high.append(pd.Series(data[2]), ignore_index=True)
-            self.ret_low = self.ret_low.append(pd.Series(data[3]), ignore_index=True)
-            self.ret_volume = self.ret_volume.append(pd.Series(data[5]), ignore_index=True)
+            self.ret_close.loc[data[0]] = data[4]
+            self.ret_high.loc[data[0]] = data[2]
+            self.ret_low.loc[data[0]] = data[3]
+            self.ret_volume.loc[data[0]] = data[5]
+            # self.ret_date.loc[data[0]] = data[0]
 
     def save_file(self, data):
         """保存数据"""
