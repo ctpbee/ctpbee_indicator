@@ -1,9 +1,6 @@
 """
     plot显示线
 """
-from matplotlib import pyplot as plt
-from matplotlib.widgets import MultiCursor
-import matplotlib.dates as mdate
 from .indicator import Indicator
 
 colors = {
@@ -40,6 +37,12 @@ class ShowLine(Indicator):
         super().__init__()
 
     def plot(self, width=8, height=6, color="k", lw=0.5):
+        try:
+            from matplotlib import pyplot as plt
+            from matplotlib.widgets import MultiCursor
+            import matplotlib.dates as mdatev
+        except ImportError:
+            raise ImportError("please pip install matplotlib")
         # 一个画布
         fig = plt.figure(figsize=(width, height))
         # 画布分块 块1

@@ -23,11 +23,17 @@ ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值
   t, m, b = api.boll()
   
   smma = api.smma()
+  # 真实平均范围
   atr = api.atr()
+  # 标准偏差
   stdDev = api.stdDev()
+  # 三重指数平滑移动平均
   trix = api.trix()
+  # 变化率
   roc = api.roc()
+  # 动量指标
   mtm = api.mtm()
+  # 三式移动平均
   tema = api.tema()
 
   if close[-1] > sma[-1]:

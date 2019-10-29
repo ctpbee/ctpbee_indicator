@@ -11,6 +11,7 @@ class ReadFile:
     def __init__(self):
         self.count = int                    # 数量
         self.ret_data = None                # 总数据
+        self.ret_open = None                # 开盘价
         self.ret_low = None                 # 最低价
         self.ret_high = None                # 最高价
         self.ret_date = None                # 时间
@@ -61,12 +62,11 @@ class ReadFile:
 
         else:
             self.count += 1
-            self.ret_data.loc[data[0]] = data[1:]
-            self.ret_close = self.ret_data["Close"]
-            self.ret_high = self.ret_data["High"]
-            self.ret_low = self.ret_data["Low"]
-            self.ret_date = self.ret_data["Date"]
-            self.ret_volume = self.ret_data["Volume"]
+            self.ret_close.loc[data[0]] = data[4]
+            self.ret_high.loc[data[0]] = data[2]
+            self.ret_low.loc[data[0]] = data[3]
+            self.ret_volume.loc[data[0]] = data[5]
+            # self.ret_date.loc[data[0]] = data[0]
 
     def save_file(self, data):
         """保存数据"""
@@ -88,10 +88,10 @@ class ReadFile:
             self.ret_data = data[:end_time]
         else:
             self.ret_data = data[start_time:end_time]
-
         self.ret_date = self.ret_data.index
         self.count = len(self.ret_data)
         self.ret_volume = self.ret_data['Volume']
+        self.ret_open = self.ret_data['Open']
         self.ret_low = self.ret_data['Low']
         self.ret_high = self.ret_data['High']
         self.ret_close = self.ret_data['Close']
@@ -121,7 +121,7 @@ class ReadFile:
             #     col[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
         data = pd.DataFrame(data_lines)
         data.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
-        data.set_index(["Date"], inplace=True, append=True)
+        data.set_index("Date", inplace=True, append=True)
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 
