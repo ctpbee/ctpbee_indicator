@@ -4,7 +4,8 @@ ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值
 ```python
   from indicator.interface import api
   close = api.open_csv('indicator/datas/orcl-2014.txt')
-  api.update_bar(bar)
+  #  opens是否要保存数据(默认保存)
+  api.add_bar(bar, opens=True)
   # 简单移动平均 
   sma = api.sma()
   # 加权移动平均

@@ -72,8 +72,8 @@ def get_a_strategy():
             self.count = 1
             self.am = ArrayManager()
             self.pos = 0
-            api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
-            # api.open_csv('indicator/datas/orcl-2014.txt')
+            # api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
+            api.open_csv('indicator/datas/orcl-2014.txt')
 
         def on_bar(self, bar):
             # todo: 双均线
@@ -84,7 +84,29 @@ def get_a_strategy():
             # sma = api.sma()
             # 加权移动
             wma = api.wma()
-            print(wma[-1], close[-1], '---')
+            # k d
+            # k, d = api.kd()
+            # std
+            # std = api.stdDev()
+            # boll
+            # t, m, b = api.boll()
+            # roc
+            # roc = api.roc()
+            # mtm
+            # mtm = api.mtm(), me2
+            # wr
+            # wr = api.wr()
+            # macd
+            # macd = api.rsi()
+
+            # rsi = api.rsi()
+
+            # smma = api.smma()
+
+            # atr = api.atr()
+
+            # tema = api.tema()
+            # ema = api.ema()
             if close[-1] > wma[-1]:
                 print("True")
 
