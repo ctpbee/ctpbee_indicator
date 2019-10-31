@@ -83,7 +83,7 @@ def get_a_strategy():
             # 简单移动平均线
             # sma = api.sma()
             # 加权移动
-            wma = api.wma()
+            # wma = api.wma()
             # k d
             # k, d = api.kd()
             # std
@@ -93,25 +93,28 @@ def get_a_strategy():
             # roc
             # roc = api.roc()
             # mtm
-            # mtm = api.mtm(), me2
+            # mtm = api.mtm()
             # wr
             # wr = api.wr()
             # macd
-            # macd = api.rsi()
-
+            # macd = api.macd()
+            # rsi
             # rsi = api.rsi()
-
-            # smma = api.smma()
-
+            # atr
             # atr = api.atr()
-
+            # tema
             # tema = api.tema()
+            # ema
             # ema = api.ema()
-            if close[-1] > wma[-1]:
-                print("True")
+            trix = api.trix()
+            ## smma = api.smma()
+            print(trix[-1])
 
-            else:
-                print("False")
+            # if close[-1] > wma[-1]:
+            #     print("True")
+            #
+            # else:
+            #     print("False")
 
             am = self.am
             am.update_bar(bar)
