@@ -105,7 +105,6 @@ class Indicator(File):
         if self.alpha is None:
             self.alpha = 2.0 / (1.0 + period)
         self.alpha1 = 1.0 - self.alpha
-
         prev = close_line[period-1]
         for i in range(period, end):
             self.ema_data[i] = prev = prev * self.alpha1 + close_line[i] * self.alpha
@@ -165,7 +164,7 @@ class Indicator(File):
             highest[i] = max(self.ret_high[i - period + 1: i + 1])
         for i in range(period, end):
             lowest[i] = min(self.ret_low[i - period + 1: i + 1])
-        knum = np.array(data) - lowest.tolist()
+        knum = np.array(data) - lowest
         kden = np.array(highest) - np.array(lowest)
         self.k = 100 * (knum/kden)
         self.d = self.sma(self.k, period=period_dfast)
@@ -188,7 +187,7 @@ class Indicator(File):
         me1 = self.ema(data, period=period_me1)
         me2 = self.ema(data, period=period_me2)
         self.macd = np.array(me1) - np.array(me2)
-        self.signal = self.ema(self.macd.tolist(), period=period_signal)
+        self.signal = self.ema(self.macd, period=period_signal)
         self.histo = np.array(self.macd) - np.array(self.signal)
         return self.histo
 
@@ -217,8 +216,8 @@ class Indicator(File):
             ('lookback', 1),
         )
         end = len(data)
-        upday = data.tolist()
-        downday = data.tolist()
+        upday = deepcopy(data)
+        downday = deepcopy(data)
         for i in range(period, end):
             upday[i] = max(data[i]-data[i-1], 0.0)
         for i in range(period, end):
@@ -401,7 +400,7 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.roc_list = data.tolist()
+        self.roc_list = deepcopy(data)
         end = len(data)
         for i in range(period, end):
             self.roc_list[i] = (data[i] - data[i-period]) / data[i-period]
@@ -420,7 +419,7 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.momentum_list = data.tolist()
+        self.momentum_list = deepcopy(data)
         end = len(data)
         for i in range(period, end):
             self.momentum_list[i] = data[i] - data[i-period]

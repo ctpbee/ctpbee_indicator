@@ -3,7 +3,7 @@ import sys
 import csv
 import json
 import time
-import pandas as pd
+import numpy as np
 from datetime import datetime, date
 
 
@@ -32,16 +32,16 @@ class ReadFile:
             raise Warning("type error or type is None")
         data = [datas["datetime"], datas["open_price"], datas["high_price"], datas["low_price"], datas["close_price"],
                 554]
-
-        if isinstance(data[0], datetime):
-            data[0] = data[0].strftime('%Y-%m-%d %H:%M:%S')
-        elif isinstance(data[0], date):
-            data[0] = data[0].strftime('%Y-%m-%d')
-        else:
-            time_local = time.localtime(float(data[0]) / 1000)
-            data[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
-
         if switch:
+
+            if isinstance(data[0], datetime):
+                data[0] = data[0].strftime('%Y-%m-%d %H:%M:%S')
+            elif isinstance(data[0], date):
+                data[0] = data[0].strftime('%Y-%m-%d')
+            else:
+                time_local = time.localtime(float(data[0]) / 1000)
+                data[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
+
             if self.open_file_name.endswith(".csv"):
                 with open(self.open_file_name, 'a+', newline='') as f:
                     w_data = csv.writer(f)
@@ -52,7 +52,6 @@ class ReadFile:
                     r_name = [name for name in r_json][0]
                     r_json[r_name].append(data)
                 with open(self.open_file_name, 'w') as jw:
-
                     json.dump(r_json, jw)
 
             if self.open_file_name.endswith(".txt"):
@@ -62,11 +61,10 @@ class ReadFile:
 
         else:
             self.count += 1
-            self.ret_close.loc[data[0]] = data[4]
-            self.ret_high.loc[data[0]] = data[2]
-            self.ret_low.loc[data[0]] = data[3]
-            self.ret_volume.loc[data[0]] = data[5]
-            # self.ret_date.loc[data[0]] = data[0]
+            self.ret_close = np.append(self.ret_close, data[4])
+            self.ret_high = np.append(self.ret_high, data[2])
+            self.ret_low = np.append(self.ret_low, data[3])
+            self.ret_volume = np.append(self.ret_volume, data[5])
 
     def save_file(self, data):
         """保存数据"""
@@ -81,20 +79,13 @@ class ReadFile:
         return datapath
 
     def data_columns(self, data: str, start_time=None, end_time=None):
-        self.open_file_start = start_time
-        if not start_time and not end_time:
-            self.ret_data = data
-        elif end_time and not start_time:
-            self.ret_data = data[:end_time]
-        else:
-            self.ret_data = data[start_time:end_time]
-        self.ret_date = self.ret_data.index
-        self.count = len(self.ret_data)
-        self.ret_volume = self.ret_data['Volume']
-        self.ret_open = self.ret_data['Open']
-        self.ret_low = self.ret_data['Low']
-        self.ret_high = self.ret_data['High']
-        self.ret_close = self.ret_data['Close']
+        self.ret_data = data
+        self.ret_volume = data[4]
+        self.ret_open = data[0]
+        self.ret_low = data[2]
+        self.ret_high = data[1]
+        self.ret_close = data[3]
+        self.count = len(data[4])
         return self.ret_close
 
     def open_csv(self, file: str, start_time=None, end_time=None):
@@ -106,7 +97,7 @@ class ReadFile:
         :return: dataframe对象
         """
         datapath = self.path(file)
-        data = pd.read_csv(datapath, index_col=0, parse_dates=True)  # , index_col=0
+        data = np.loadtxt(datapath, skiprows=2, dtype=float, delimiter=',', usecols=(1, 2, 3, 4, 5), unpack=True)
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 
@@ -116,12 +107,8 @@ class ReadFile:
         data_loads = json.loads(data_str)
         for data_name, data_all in data_loads.items():
             data_lines = data_all
-            # for col in data_lines:
-            #     time_local = time.localtime(float(col[0])/1000)
-            #     col[0] = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
-        data = pd.DataFrame(data_lines)
-        data.columns = ["Date", "Open", "High", "Low", "Close", "Volume"]
-        data.set_index("Date", inplace=True, append=True)
+        datas = np.array(data_lines)
+        data = np.array([datas[:, 1], datas[:, 2], datas[:, 3], datas[:, 4], datas[:, 5]], dtype=float)
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 
