@@ -70,8 +70,8 @@ def get_a_strategy():
             super().__init__(name)
             self.count = 1
             self.pos = 0
-            # api.open_json('indicator/json/zn1912.SHFE.json')
-            api.open_csv('indicator/txt/orcl-2014.txt')
+            api.open_json('indicator/json/zn1912.SHFE.json')
+            # api.open_csv('indicator/txt/orcl-2014.txt')
 
         def on_bar(self, bar):
             # todo: 简单移动平均线
@@ -189,8 +189,8 @@ def get_a_strategy():
         def on_order(self, order):
             pass
 
-    # return SmaStrategy("double_ma")
-    return MacdStrategy("double_ma")
+    return SmaStrategy("double_ma")
+    # return MacdStrategy("double_ma")
 
 
 def save_data_json(data):
