@@ -35,7 +35,7 @@ def getIndicatorName(func):
         line = func(self, *args, **kwargs)
         func_name = func.__name__
         if func_name == "macd":
-            self.indicator_message["MACD"] = self.macd
+            self.indicator_message["MACD"] = self.macds
             self.indicator_message["signal"] = self.signal
             self.indicator_message[func_name] = self.histo
         elif func_name == "kd":
@@ -186,9 +186,9 @@ class Indicator(File):
 
         me1 = self.ema(data, period=period_me1)
         me2 = self.ema(data, period=period_me2)
-        self.macd = np.array(me1) - np.array(me2)
-        self.signal = self.ema(self.macd, period=period_signal)
-        self.histo = np.array(self.macd) - np.array(self.signal)
+        self.macds = np.array(me1) - np.array(me2)
+        self.signal = self.ema(self.macds, period=period_signal)
+        self.histo = np.array(self.macds) - np.array(self.signal)
         return self.histo
 
     @getAverageName
@@ -441,8 +441,8 @@ class Indicator(File):
         ema1 = self.ema(data, period)
         ema2 = self.ema(ema1, period)
         ema3 = self.ema(ema2, period)
-        self.tema = 3 * np.array(ema1) - 3 * ema2 + ema3
-        return self.tema
+        self.tema_list = 3 * np.array(ema1) - 3 * ema2 + ema3
+        return self.tema_list
 
     @getIndicatorName
     def wr(self, data:object, period=14):

@@ -4,16 +4,61 @@ from .plot import Scheduler
 class Interface:
 
     @property
+    def open(self):
+        """
+        Get open price time series.
+        """
+        return Scheduler.ret_open
+
+    @property
+    def high(self):
+        """
+        Get high price time series.
+        """
+        return Scheduler.ret_high
+
+    @property
+    def low(self):
+        """
+        Get low price time series.
+        """
+        return Scheduler.ret_low
+
+    @property
     def close(self):
+        """
+        Get low price time series
+        :return:
+        """
         return Scheduler.ret_close
 
     def open_csv(self, file: str, start_time=None, end_time=None):
+        """
+        open TXT file
+        :param file: name
+        :param start_time:
+        :param end_time:
+        :return:
+        """
         return Scheduler.open_csv(file, start_time, end_time)
 
     def open_json(self, file: str, start_time=None, end_time=None):
+        """
+        open JSON file
+        :param file: name
+        :param start_time:
+        :param end_time:
+        :return:
+        """
         return Scheduler.open_json(file, start_time, end_time)
 
-    def add_bar(self, data, opens=True):
+    def add_bar(self, data, opens=False):
+        """
+        new bar push in array
+        :param data: bar
+        :param opens: if True save file  else not save (default False)
+        :return:
+        """
         Scheduler.update_bar(data, opens)
 
     def sma(self, n=15):

@@ -20,7 +20,7 @@ class ReadFile:
         self.open_file_name = None          # 文件名
         self.open_file_start = None         # 开始时间
 
-    def update_bar(self, datas: dict, switch=True):
+    def update_bar(self, datas: dict, switch=False):
         """
         :param data: 数据类型
                         [time, open, high, low, close, volume]
@@ -64,6 +64,7 @@ class ReadFile:
             self.ret_close = np.append(self.ret_close, data[4])
             self.ret_high = np.append(self.ret_high, data[2])
             self.ret_low = np.append(self.ret_low, data[3])
+            self.ret_open = np.append(self.ret_open, data[1])
             self.ret_volume = np.append(self.ret_volume, data[5])
 
     def save_file(self, data):
