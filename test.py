@@ -52,9 +52,8 @@ def get_data(start, end, symbol, exchange, level):
 
 
 def get_a_strategy():
-    from ctpbee.looper.ta_lib import ArrayManager
 
-    class DoubleMaStrategy(LooperApi):
+    class SmaStrategy(LooperApi):
         fast_window = 20
         slow_window = 10
 
@@ -70,18 +69,17 @@ def get_a_strategy():
         def __init__(self, name):
             super().__init__(name)
             self.count = 1
-            self.am = ArrayManager()
             self.pos = 0
-            # api.open_json('indicator/ctpbee_desktop/zn1912.SHFE.json')
-            api.open_csv('indicator/datas/orcl-2014.txt')
+            # api.open_json('indicator/json/zn1912.SHFE.json')
+            api.open_csv('indicator/txt/orcl-2014.txt')
 
         def on_bar(self, bar):
-            # todo: 双均线
+            # todo: 简单移动平均线
             """ """
-            api.add_bar(bar, opens=False)
+            api.add_bar(bar)
             close = api.close
             # 简单移动平均线
-            # sma = api.sma()
+            sma = api.sma()
             # 加权移动
             # wma = api.wma()
             # k d
@@ -106,41 +104,19 @@ def get_a_strategy():
             # tema = api.tema()
             # ema
             # ema = api.ema()
-            trix = api.trix()
-            ## smma = api.smma()
-            print(trix[-1])
+            # trix = api.trix()
+            # smma = api.smma()
 
-            # if close[-1] > wma[-1]:
-            #     print("True")
-            #
-            # else:
-            #     print("False")
-
-            am = self.am
-            am.update_bar(bar)
-            if not am.inited:
-                return
-
-            fast_ma = am.sma(self.fast_window, array=True)
-            self.fast_ma0 = fast_ma[-1]
-            self.fast_ma1 = fast_ma[-2]
-
-            slow_ma = am.sma(self.slow_window, array=True)
-            self.slow_ma0 = slow_ma[-1]
-            self.slow_ma1 = slow_ma[-2]
-            # 计算金叉 死叉
-            cross_over = self.fast_ma0 > self.slow_ma0 and self.fast_ma1 < self.slow_ma1
-            cross_below = self.fast_ma0 < self.slow_ma0 and self.fast_ma1 > self.slow_ma1
-            # 金叉做多
-            if cross_over:
+            # 接连两天涨 买进
+            if close[-1] > sma[-1] and close[-2] > sma[-2]:
                 if self.pos == 0:
                     self.action.buy(bar.close_price, 1, bar)
                 # 反向进行开仓
                 elif self.pos < 0:
                     self.action.cover(bar.close_price, 1, bar)
                     self.action.buy(bar.close_price, 1, bar)
-            # 死叉做空
-            elif cross_below:
+            # 接连跌就卖
+            if close[-1] < sma[-1] and close[-2] < sma[-2]:
                 if self.pos == 0:
                     self.action.short(bar.close_price, 1, bar)
                 # 反向进行开仓
@@ -158,8 +134,8 @@ def get_a_strategy():
             """"""
             # print("我在设置策略参数")
 
-    class BollStrategy(LooperApi):
-
+    class MacdStrategy(LooperApi):
+        # todo: 简单异同移动平均 macd
         boll_window = 18
         boll_dev = 3.4
         cci_window = 10
@@ -184,41 +160,25 @@ def get_a_strategy():
 
         def __init__(self, name):
             super().__init__(name)
-            self.am = ArrayManager()
             self.pos = 0
 
         def on_bar(self, bar):
-            am = self.am
-            am.update_bar(bar)
-            if not am.inited:
-                return
-
-            self.boll_up, self.boll_down = am.boll(self.boll_window, self.boll_dev)
-            self.cci_value = am.cci(self.cci_window)
-            self.atr_value = am.atr(self.atr_window)
-
-            if self.pos == 0:
-                self.intra_trade_high = bar.high_price
-                self.intra_trade_low = bar.low_price
-
-                if self.cci_value > 0:
-                    self.action.buy(self.boll_up, self.fixed_size, bar)
-                elif self.cci_value < 0:
-                    self.action.short(self.boll_down, self.fixed_size, bar)
-
-            elif self.pos > 0:
-                self.intra_trade_high = max(self.intra_trade_high, bar.high_price)
-                self.intra_trade_low = bar.low_price
-
-                self.long_stop = self.intra_trade_high - self.atr_value * self.sl_multiplier
-                self.action.sell(self.long_stop, abs(self.pos), bar)
-
-            elif self.pos < 0:
-                self.intra_trade_high = bar.high_price
-                self.intra_trade_low = min(self.intra_trade_low, bar.low_price)
-
-                self.short_stop = self.intra_trade_low + self.atr_value * self.sl_multiplier
-                self.action.cover(self.short_stop, abs(self.pos), bar)
+            api.open_csv('indicator/txt/orcl-2014.txt')
+            api.add_bar(bar, opens=True)
+            close = api.close
+            macd = api.macd()
+            # 如果当前macd大于0就买
+            if macd[-1] > 0:
+                if self.pos == 0:
+                    pass
+                elif self.pos > 0:
+                    self.action.cover(bar.close_price, 1, bar)
+                    self.action.buy(bar.close_price, 1, bar)
+            # 如果小于就卖
+            else:
+                if self.pos > 0:
+                    self.action.sell(bar.close_price, 1, bar)
+                    self.action.short(bar.close_price, 1, bar)
 
         def on_trade(self, trade):
             if trade.direction == Direction.LONG:
@@ -229,7 +189,8 @@ def get_a_strategy():
         def on_order(self, order):
             pass
 
-    return DoubleMaStrategy("double_ma")
+    # return SmaStrategy("double_ma")
+    return MacdStrategy("double_ma")
 
 
 def save_data_json(data):
@@ -284,10 +245,6 @@ def run_main(data):
 if __name__ == '__main__':
     # data = get_data(start="2019-1-5", end="2019-9-1", symbol="ag1912", exchange="SHFE", level="15m")
     # save_data_json(data)
-    try:
-        import talib
-    except ImportError:
-        print("please install talib first")
 
     data = load_data()
     for x in data:

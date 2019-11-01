@@ -40,7 +40,7 @@ class ShowLine(Indicator):
         try:
             from matplotlib import pyplot as plt
             from matplotlib.widgets import MultiCursor
-            import matplotlib.dates as mdatev
+            import matplotlib.dates as mdate
         except ImportError:
             raise ImportError("please pip install matplotlib")
         # 一个画布
