@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/AP001.CZCE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/AP001.CZCE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/CF001.CZCE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/CF001.CZCE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/al2001.SHFE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/al2001.SHFE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/b1911.DCE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/b1911.DCE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/user_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/user_account.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1911.SHFE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/zn1911.SHFE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/ctpbee_desktop/zn1912.SHFE.json" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/json/zn1912.SHFE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/datas/orcl-2003-2005.txt" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/txt/orcl-2003-2005.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/datas/orcl-2014.txt" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/txt/orcl-2014.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/datas/yhoo-1996-2014.txt" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/txt/yhoo-1996-2014.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/datas/yhoo-2014.txt" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/txt/yhoo-2014.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/indicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/indicator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/readfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/readfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -317,7 +301,7 @@
       <workItem from="1572397933442" duration="17839000" />
       <workItem from="1572427722001" duration="12552000" />
       <workItem from="1572484119508" duration="11064000" />
-      <workItem from="1572571316681" duration="10676000" />
+      <workItem from="1572571316681" duration="11135000" />
     </task>
     <servers />
   </component>
