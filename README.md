@@ -16,7 +16,7 @@ ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值
   k, d = api.kd()
   # 相对强度指数
   rsi = api.rsi()
-  # 指数平滑移动平均线
+  # 异同移动平均线
   macd = api.macd()
   # 威廉指标
   wr = api.wr()
