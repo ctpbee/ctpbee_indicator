@@ -63,6 +63,9 @@ def get_a_strategy():
         slow_ma0 = 0.0
         slow_ma1 = 0.0
 
+        allow_max_price = 0  # 设置价格上限 当价格达到这个就卖出 防止突然跌
+        allow_low_price = 0  # 设置价格下限 当价格低出这里就卖 防止巨亏
+
         parameters = ["fast_window", "slow_window"]
         variables = ["fast_ma0", "fast_ma1", "slow_ma0", "slow_ma1"]
 
@@ -70,16 +73,20 @@ def get_a_strategy():
             super().__init__(name)
             self.count = 1
             self.pos = 0
-            api.open_json('indicator/json/zn1912.SHFE.json')
+            self.bar_5 = api()  # 5分钟线
+            self.bar_3 = api()  # 3分钟线
+            self.bar_3.open_json('indicator/json/zn1912.SHFE.json')
+            self.bar_5.open_json('indicator/json/zn1912.SHFE.json')
+
             # api.open_csv('indicator/txt/orcl-2014.txt')
 
         def on_bar(self, bar):
             # todo: 简单移动平均线
             """ """
-            api.add_bar(bar)
-            close = api.close
+            self.bar_3.add_bar(bar)
+            close = self.bar_3.close
             # 简单移动平均线
-            sma = api.sma()
+            sma = self.bar_3.sma()
             # 加权移动
             # wma = api.wma()
             # k d
@@ -118,7 +125,8 @@ def get_a_strategy():
             # 接连跌就卖
             if close[-1] < sma[-1] and close[-2] < sma[-2]:
                 if self.pos == 0:
-                    self.action.short(bar.close_price, 1, bar)
+                    pass
+                    # self.action.short(bar.close_price, 1, bar)
                 # 反向进行开仓
                 elif self.pos > 0:
                     self.action.sell(bar.close_price, 1, bar)

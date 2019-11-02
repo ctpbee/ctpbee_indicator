@@ -91,11 +91,11 @@ class ReadFile:
 
     def open_csv(self, file: str, start_time=None, end_time=None):
         """
-        读取文件
+        读取txt文件
         :param file: 文件名
         :param start_time: 开始读取时间
         :param end_time: 结束时间
-        :return: dataframe对象
+        :return: array对象
         """
         datapath = self.path(file)
         data = np.loadtxt(datapath, skiprows=2, dtype=float, delimiter=',', usecols=(1, 2, 3, 4, 5), unpack=True)
@@ -103,6 +103,13 @@ class ReadFile:
         return ret_close
 
     def open_json(self, file: str, start_time=None, end_time=None):
+        """
+        读取json文件
+        :param file: 文件名
+        :param start_time:
+        :param end_time:
+        :return:
+        """
         datapath = self.path(file)
         data_str = open(datapath).read()
         data_loads = json.loads(data_str)
@@ -112,6 +119,14 @@ class ReadFile:
         data = np.array([datas[:, 1], datas[:, 2], datas[:, 3], datas[:, 4], datas[:, 5]], dtype=float)
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
+
+    def open_cache(self, file:str):
+        """
+        读取cache数据
+        :param file:
+        :return:
+        """
+        pass
 
 
 File = ReadFile

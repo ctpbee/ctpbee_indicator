@@ -131,4 +131,4 @@ class Interface:
         Scheduler.plot(width=width, height=height, color=color, lw=lw)
 
 
-api = Interface()
+api = Interface
