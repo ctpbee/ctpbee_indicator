@@ -54,31 +54,20 @@ def get_data(start, end, symbol, exchange, level):
 def get_a_strategy():
 
     class SmaStrategy(LooperApi):
-        fast_window = 20
-        slow_window = 10
-
-        fast_ma0 = 0.0
-        fast_ma1 = 1.0
-
-        slow_ma0 = 0.0
-        slow_ma1 = 0.0
-
-        allow_max_price = 0  # 设置价格上限 当价格达到这个就卖出 防止突然跌
-        allow_low_price = 0  # 设置价格下限 当价格低出这里就卖 防止巨亏
-
-        parameters = ["fast_window", "slow_window"]
-        variables = ["fast_ma0", "fast_ma1", "slow_ma0", "slow_ma1"]
 
         def __init__(self, name):
             super().__init__(name)
             self.count = 1
             self.pos = 0
-            self.bar_5 = api()  # 5分钟线
-            self.bar_3 = api()  # 3分钟线
-            self.bar_3.open_json('indicator/json/zn1912.SHFE.json')
+            self.bar_5 = api()  # 5分钟bar线
+            self.bar_3 = api()  # 3分钟bar线
+            self.bar_3.open_json('indicator/json/zn1912.SHFE.json')  # 读取本地数据
             self.bar_5.open_json('indicator/json/zn1912.SHFE.json')
 
-            # api.open_csv('indicator/txt/orcl-2014.txt')
+            self.allow_max_price = 5000  # 设置价格上限 当价格达到这个就卖出 防止突然跌
+            self.allow_low_price = 2000  # 设置价格下限 当价格低出这里就卖 防止巨亏
+
+            # self.bar_3.open_csv('indicator/txt/orcl-2014.txt')
 
         def on_bar(self, bar):
             # todo: 简单移动平均线
@@ -114,6 +103,12 @@ def get_a_strategy():
             # trix = api.trix()
             # smma = api.smma()
 
+            if self.allow_max_price < close[-1] and self.pos > 0:
+                self.action.sell(bar.close_price, self.pos, bar)
+
+            if self.allow_low_price > close[-1] and self.pos > 0:
+                self.action.sell(bar.close_price, self.pos, bar)
+
             # 接连两天涨 买进
             if close[-1] > sma[-1] and close[-2] > sma[-2]:
                 if self.pos == 0:
@@ -127,7 +122,6 @@ def get_a_strategy():
                 if self.pos == 0:
                     pass
                     # self.action.short(bar.close_price, 1, bar)
-                # 反向进行开仓
                 elif self.pos > 0:
                     self.action.sell(bar.close_price, 1, bar)
                     self.action.short(bar.close_price, 1, bar)
