@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/readfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/readfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -306,7 +305,7 @@
       <workItem from="1572571316681" duration="14399000" />
       <workItem from="1572658007207" duration="3271000" />
       <workItem from="1572671136963" duration="4591000" />
-      <workItem from="1572744303462" duration="8960000" />
+      <workItem from="1572744303462" duration="9945000" />
     </task>
     <servers />
   </component>
