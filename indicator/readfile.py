@@ -92,6 +92,11 @@ class ReadFile:
     def open_csv(self, file: str, start_time=None, end_time=None):
         """
         读取txt文件
+            data_type:
+                Date,Open,High,Low,Close,Volume
+                '2019-01-07 00:00:00', 3831.0, 3847.0, 3831.0, 3840.0, 554
+                '2019-01-08 00:00:00', 3841.0, 3841.0, 3833.0, 3836.0, 554
+                ...
         :param file: 文件名
         :param start_time: 开始读取时间
         :param end_time: 结束时间
@@ -105,6 +110,13 @@ class ReadFile:
     def open_json(self, file: str, start_time=None, end_time=None):
         """
         读取json文件
+            data_type:
+                {"zn1912.SHFE": [
+                        ["2014-01-01", 18780.0, 18780.0, 18770.0, 18775.0, 266],
+                        ["2014-01-02", 18775.0, 18780.0, 18770.0, 18770.0, 312],
+                            ...
+                        ]
+                }
         :param file: 文件名
         :param start_time:
         :param end_time:
@@ -120,13 +132,17 @@ class ReadFile:
         ret_close = self.data_columns(data, start_time, end_time)
         return ret_close
 
-    def open_cache(self, file:str):
+    def open_cache(self, data:list):
         """
         读取cache数据
-        :param file:
+        :param data:
+            [[1883823344, 22, 44, 55, 55, 6666], [1883823345, 22, 44, 55, 55, 6666], ...]
         :return:
         """
-        pass
+        datas = np.array(data)
+        data_array = np.array([datas[:, 1], datas[:, 2], datas[:, 3], datas[:, 4], datas[:, 5]], dtype=float)
+        ret_close = self.data_columns(data_array)
+        return ret_close
 
 
 File = ReadFile
