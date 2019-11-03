@@ -94,12 +94,6 @@ def get_a_strategy():
 
     class SmaStrategy(LooperApi):
 
-        allow_max_price = 0  # 设置价格上限 当价格达到这个就卖出 防止突然跌
-        allow_low_price = 0  # 设置价格下限 当价格低出这里就卖 防止巨亏
-
-        parameters = ["allow_max_price", "allow_low_price"]
-        variables = ["allow_max_price", "allow_low_price"]
-
         def __init__(self, name):
             super().__init__(name)
             self.count = 1
