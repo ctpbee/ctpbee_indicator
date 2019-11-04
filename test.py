@@ -13,7 +13,6 @@
 
 import json
 from datetime import datetime, date
-
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
 from indicator.interface import api
@@ -75,33 +74,33 @@ def get_a_strategy():
             self.bar_3.add_bar(bar)
             close = self.bar_3.close
             # 简单移动平均线
-            sma = self.bar_3.sma()
+            # sma = self.bar_3.sma()
             # 加权移动
-            # wma = api.wma()
+            # wma = self.bar_3.wma()
             # k d
-            # k, d = api.kd()
+            # k, d = self.bar_3.kd()
             # std
-            # std = api.stdDev()
+            # std = self.bar_3.bar_3.stdDev()
             # boll
-            # t, m, b = api.boll()
+            # t, m, b = self.bar_3.boll()
             # roc
-            # roc = api.roc()
+            # roc = self.bar_3.roc()
             # mtm
-            # mtm = api.mtm()
+            # mtm = self.bar_3.mtm()
             # wr
-            # wr = api.wr()
+            # wr = self.bar_3.wr()
             # macd
-            # macd = api.macd()
+            macd = self.bar_3.macd()
             # rsi
-            # rsi = api.rsi()
+            # rsi = self.bar_3.rsi()
             # atr
-            # atr = api.atr()
+            # atr = self.bar_3.atr()
             # tema
-            # tema = api.tema()
+            # tema = self.bar_3.tema()
             # ema
-            # ema = api.ema()
-            # trix = api.trix()
-            # smma = api.smma()
+            # ema = self.bar_3.ema()
+            # trix = self.bar_3.trix()
+            # smma = self.bar_3.smma()
 
             if self.allow_max_price < close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
@@ -109,20 +108,11 @@ def get_a_strategy():
             if self.allow_low_price > close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
 
-            # 接连两天涨 买进
-            if close[-1] > sma[-1] and close[-2] > sma[-2]:
+            if macd[-1] > 0:
                 if self.pos == 0:
                     self.action.buy(bar.close_price, 1, bar)
-                # 反向进行开仓
-                elif self.pos < 0:
-                    self.action.cover(bar.close_price, 1, bar)
-                    self.action.buy(bar.close_price, 1, bar)
-            # 接连跌就卖
-            if close[-1] < sma[-1] and close[-2] < sma[-2]:
-                if self.pos == 0:
-                    pass
-                    # self.action.short(bar.close_price, 1, bar)
-                elif self.pos > 0:
+            else:
+                if self.pos > 0:
                     self.action.sell(bar.close_price, 1, bar)
                     self.action.short(bar.close_price, 1, bar)
 
