@@ -21,7 +21,7 @@ ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值
       # 相对强度指数 默认 14, 1
       rsi = info.rsi()
       # 异同移动平均线 默认 12, 20, 9
-      macd = info.macd()
+      macd, signal, histo = info.macd()
       # 威廉指标 默认 14
       wr = info.wr()
       # 布林带 默认 20 2
@@ -404,7 +404,7 @@ def get_a_strategy():
             self.bar_3.add_bar(bar)
             close = self.bar_3.close
             # 简单异同移动平均 macd
-            macd = self.bar_3.macd()
+            macd, signal, histo = self.bar_3.macd()
             
             if self.allow_max_price <= close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
@@ -412,7 +412,7 @@ def get_a_strategy():
             if self.allow_low_price >= close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
 
-            if macd[-1] > 0:
+            if histo[-1] > 0:
                 if self.pos == 0:
                     self.action.buy(bar.close_price, 1, bar)
             else:
