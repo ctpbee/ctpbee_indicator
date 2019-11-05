@@ -57,8 +57,9 @@ class ShowLine(Indicator):
 
         # 线
         ax2.plot(datetime, close, "#000000", label="CLOSE")
-        for average_line in self.average_message:
-            ax2.plot(datetime, self.average_message[average_line], colors[average_line], label=average_line)
+        if self.average_message:
+            for average_line in self.average_message:
+                ax2.plot(datetime, self.average_message[average_line], colors[average_line], label=average_line)
 
         ax2.set_ylabel('price')
         # 标题
@@ -74,8 +75,9 @@ class ShowLine(Indicator):
         # 块2
         ax3 = plt.subplot(212)
         # 柱形图
-        for indicator_line in self.indicator_message:
-            plt.plot(datetime, self.indicator_message[indicator_line], colors[indicator_line], label=indicator_line)
+        if self.indicator_message:
+            for indicator_line in self.indicator_message:
+                plt.plot(datetime, self.indicator_message[indicator_line], colors[indicator_line], label=indicator_line)
         # 网格
         plt.grid(True)
         plt.title("indicator")
