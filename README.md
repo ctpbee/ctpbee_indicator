@@ -2,51 +2,64 @@
 ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值 
 
 ```python
-  from indicator.interface import Interface
-  info = Interface()
-  bar_3 = info.open_csv('indicator/datas/orcl-2014.txt')
- 
-  def on_bar(self, bar):
-      # opens是否要保存数据(默认false不保存)
-      info.add_bar(bar)
-      close_price = info.close
-      # 简单移动平均  默认 15
-      sma = info.sma()
-      # 加权移动平均  默认30
-      wma = info.wma()
-      # 指数移动平均 默认12
-      ema = info.ema()
-      # 随机指标 默认参数 14, 3
-      k, d = info.kd()
-      # 相对强度指数 默认 14, 1
-      rsi = info.rsi()
-      # 异同移动平均线 默认 12, 20, 9
-      macd, signal, histo = info.macd()
-      # 威廉指标 默认 14
-      wr = info.wr()
-      # 布林带 默认 20 2
-      t, m, b = info.boll()
-      # 默认 10, 15
-      smma = info.smma()
-      # 真实平均范围 默认 14
-      atr = info.atr()
-      # 标准偏差 默认 20
-      stdDev = info.stdDev()
-      # 三重指数平滑移动平均 默认 15, 1
-      trix = info.trix()
-      # 变化率 默认 12
-      roc = info.roc()
-      # 动量指标 默认 12
-      mtm = info.mtm()
-      # 三式移动平均 默认 25
-      tema = info.tema()
-    
-      if close_price[-1] > sma[-1]:
-          print("True")
-          pass
-      else:
-          print("False")
-          pass
+    from indicator.interface import Interface
+    from ctpbee import LooperApi, Vessel
+
+    class SmaStrategy(LooperApi):
+
+        def __init__(self, name):
+            super().__init__(name)
+            self.count = 1
+            self.pos = 0
+
+            self.info = Interface()  # 3分钟bar线
+            self.info.open_json('indicator/json/zn1912.SHFE.json')  # 读取本地数据
+
+        def on_bar(self, bar):
+            info = self.info
+            # opens是否要保存数据(默认false不保存)
+            info.add_bar(bar)
+            close_price = info.close
+            # 简单移动平均  默认 15
+            sma = info.sma()
+            # 加权移动平均  默认30
+            wma = info.wma()
+            # 指数移动平均 默认12
+            ema = info.ema()
+            # 随机指标 默认参数 14, 3
+            k, d = info.kd()
+            # 相对强度指数 默认 14, 1
+            rsi = info.rsi()
+            # 异同移动平均线 默认 12, 20, 9
+            macd, signal, histo = info.macd()
+            # 威廉指标 默认 14
+            wr = info.wr()
+            # 布林带 默认 20 2
+            t, m, b = info.boll()
+            # 默认 10, 15
+            smma = info.smma()
+            # 真实平均范围 默认 14
+            atr = info.atr()
+            # 标准偏差 默认 20
+            stdDev = info.stdDev()
+            # 三重指数平滑移动平均 默认 15, 1
+            trix = info.trix()
+            # 变化率 默认 12
+            roc = info.roc()
+            # 动量指标 默认 12
+            mtm = info.mtm()
+            # 三式移动平均 默认 25
+            tema = info.tema()
+            # 顺势指标 cci 默认 20
+            cci = info.cci()
+            # 抛物线指标 sar  默认 2, 0.02, 0.20
+            sar = info.sar()
+            if close_price[-1] > sma[-1]:
+              print("True")
+              pass
+            else:
+              print("False")
+              pass
 
 ```
 # example(简单列子)

@@ -89,8 +89,10 @@ def get_a_strategy():
             # mtm = self.bar_3.mtm()
             # wr
             # wr = self.bar_3.wr()
+            # sar
+            # sar = self.bar_3.sar()
             # macd
-            macd = self.bar_3.macd()
+            macd, signal, histo = self.bar_3.macd()
             # rsi
             # rsi = self.bar_3.rsi()
             # atr
@@ -101,6 +103,8 @@ def get_a_strategy():
             # ema = self.bar_3.ema()
             # trix = self.bar_3.trix()
             # smma = self.bar_3.smma()
+            # cci
+            # cci = self.bar_3.cci()
 
             if self.allow_max_price < close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
@@ -108,7 +112,7 @@ def get_a_strategy():
             if self.allow_low_price > close[-1] and self.pos > 0:
                 self.action.sell(bar.close_price, self.pos, bar)
 
-            if macd[-1] > 0:
+            if histo[-1] > 0:
                 if self.pos == 0:
                     self.action.buy(bar.close_price, 1, bar)
             else:
