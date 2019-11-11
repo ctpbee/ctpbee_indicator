@@ -62,6 +62,10 @@ class ReadFile:
         else:
             if self.count > 120:
                 self.ret_close = self.ret_close[-120:]
+                self.ret_high = self.ret_high[-120:]
+                self.ret_low = self.ret_low[-120:]
+                self.ret_open = self.ret_open[-120:]
+                self.ret_volume = self.ret_volume[-120:]
             self.count += 1
             self.ret_close = np.append(self.ret_close, data[4])
             self.ret_high = np.append(self.ret_high, data[2])
