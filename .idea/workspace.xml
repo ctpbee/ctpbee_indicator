@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/examples/atr_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/boll_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/cci_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/close_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/ema_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/kd_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/looper_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/macd_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/mtm_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/roc_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/rsi_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sar_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sma_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/smma_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/stdDev_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/tema_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/trix_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/wma_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/wr_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zn1912.SHFE.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indicator/readfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/readfile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,25 +63,25 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VUE/test-kline" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/indicator/txt" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backtrader-master" />
       <recent name="$PROJECT_DIR$/backtrader" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/indicator" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/indicator/txt" />
+      <recent name="$PROJECT_DIR$/indicator" />
       <recent name="$PROJECT_DIR$/backtrader-master" />
       <recent name="$PROJECT_DIR$/backtrader" />
-      <recent name="$PROJECT_DIR$/backtraders/backtrader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.backtrader">
+  <component name="RunManager" selected="Python.wr_strategy">
     <configuration name="backtrader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="boll_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,12 +127,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/plot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/boll_strategy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="readfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="looper_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,12 +149,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indicator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indicator/readfile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/looper_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="wr_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,12 +215,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backtrader-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtrader-master/test6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/wr_strategy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.wr_strategy" />
+        <item itemvalue="Python.looper_example" />
+        <item itemvalue="Python.boll_strategy" />
         <item itemvalue="Python.backtrader" />
         <item itemvalue="Python.test1" />
-        <item itemvalue="Python.readfile" />
-        <item itemvalue="Python.plot" />
-        <item itemvalue="Python.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -315,6 +334,8 @@
       <workItem from="1573275560699" duration="1216000" />
       <workItem from="1573449283272" duration="5551000" />
       <workItem from="1573458902580" duration="50000" />
+      <workItem from="1573634912603" duration="3427000" />
+      <workItem from="1573695953769" duration="287000" />
     </task>
     <servers />
   </component>
@@ -350,15 +371,6 @@
       <configuration name="Unittests in test_api_shim.py" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -386,6 +398,7 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$strategy.coverage" NAME="strategy Coverage Results" MODIFIED="1569760556009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$wr_strategy.coverage" NAME="wr_strategy Coverage Results" MODIFIED="1573696450328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1572433426106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation.coverage" NAME="test_tradesimulation Coverage Results" MODIFIED="1569597289641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$lineseries.coverage" NAME="lineseries Coverage Results" MODIFIED="1570072273243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master/backtrader" />
@@ -410,8 +423,10 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1569759926585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_in_lru_py.coverage" NAME="Unittests in lru.py Coverage Results" MODIFIED="1569595456616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lru" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$plot.coverage" NAME="plot Coverage Results" MODIFIED="1571644131153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/indicator" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$boll_strategy.coverage" NAME="boll_strategy Coverage Results" MODIFIED="1573635745683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_f_macd.coverage" NAME="test_f_macd Coverage Results" MODIFIED="1569663038296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test6__2_.coverage" NAME="test6 (2) Coverage Results" MODIFIED="1569760339063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$looper_example.coverage" NAME="looper_example Coverage Results" MODIFIED="1573635803981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$signals.coverage" NAME="signals Coverage Results" MODIFIED="1569222442746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_ind_cci.coverage" NAME="test_ind_cci Coverage Results" MODIFIED="1569378639060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$annualreturn.coverage" NAME="annualreturn Coverage Results" MODIFIED="1569761082352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/backtrader/analyzers" />
