@@ -80,7 +80,7 @@ def get_a_strategy():
             # 跌
             elif bar.close_price <= middle[-1]:
                 if self.pos == 0:
-                    pass
+                    self.action.sell(bar.close_price, 1, bar)
                 elif self.pos > 0:
                     self.action.sell(bar.close_price, 1, bar)
                     self.action.short(bar.close_price, 1, bar)

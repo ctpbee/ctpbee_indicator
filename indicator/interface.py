@@ -4,6 +4,14 @@ from .plot import Scheduler
 class Interface:
 
     @property
+    def inited(self):
+        """
+        用户判断是否满足计算指标
+        :return: bool
+        """
+        return Scheduler.inited
+
+    @property
     def open(self):
         """
         Get open price time series.

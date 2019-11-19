@@ -91,14 +91,13 @@ def get_a_strategy():
             if histo[-1] > 0:
                 if self.pos == 0:
                     self.action.buy(bar.close_price, 1, bar)
-                # 反向进行开仓
                 elif self.pos < 0:
                     self.action.cover(bar.close_price, 1, bar)
                     self.action.buy(bar.close_price, 1, bar)
             # 死叉做空
             elif histo[-1] < 0:
                 if self.pos == 0:
-                    pass
+                    self.action.sell(bar.close_price, 1, bar)
                 # 反向进行开仓
                 elif self.pos > 0:
                     self.action.sell(bar.close_price, 1, bar)
@@ -129,12 +128,12 @@ def save_data_json(data):
             else:
                 return json.JSONEncoder.default(self, obj)
 
-    with open("../data.json", "w") as f:
+    with open("data.json", "w") as f:
         json.dump(result, f, cls=CJsonEncoder)
 
 
 def load_data():
-    with open("../data.json", "r") as f:
+    with open("data.json", "r") as f:
         data = json.load(f)
     return data.get("result")
 
