@@ -2,7 +2,7 @@
 ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值 
 
 ```python
-    from indicator.interface import Interface
+    from indicator.interface import Indicator
     from ctpbee import LooperApi, Vessel
 
     class SmaStrategy(LooperApi):
@@ -12,7 +12,7 @@ ctpbee里面实现的指标库, 能让你快速实现指标的计算和拿到值
             self.count = 1
             self.pos = 0
 
-            self.info = Interface()  # 3分钟bar线
+            self.info = Indicator()  # 3分钟bar线
             self.info.open_json('indicator/json/zn1912.SHFE.json')  # 读取本地数据
 
         def on_bar(self, bar):
@@ -70,7 +70,7 @@ import json
 from datetime import datetime, date
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from indicator.interface import Interface
+from indicator.interface import Indicator
 
 
 def get_data(start, end, symbol, exchange, level):
@@ -113,7 +113,7 @@ def get_a_strategy():
             self.count = 1
             self.pos = 0
 
-            self.bar_3 = Interface()  # 3分钟bar线
+            self.bar_3 = Indicator()  # 3分钟bar线
             self.bar_3.open_json('indicator/json/zn1912.SHFE.json')  # 读取本地数据
 
             self.allow_max_price = 5000  # 设置价格上限 当价格达到这个就卖出 防止突然跌
@@ -208,7 +208,7 @@ import json
 from datetime import datetime, date
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from indicator.interface import Interface
+from indicator.interface import Indicator
 
 def get_data(start, end, symbol, exchange, level):
     """ using rqdatac to make an example """
@@ -249,7 +249,7 @@ def get_a_strategy():
             super().__init__(name)
             self.count = 1
             self.pos = 0
-            self.bar_3 = Interface()  # 3分钟线
+            self.bar_3 = Indicator()  # 3分钟线
             
             self.allow_max_price = 5000  # 设置价格上限 当价格达到这个就卖出 防止突然跌
             self.allow_low_price = 4100  # 设置价格下限 当价格低出这里就卖 防止巨亏
@@ -360,7 +360,7 @@ import json
 from datetime import datetime, date
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from indicator.interface import Interface
+from indicator.interface import Indicator
 
 def get_data(start, end, symbol, exchange, level):
     """ using rqdatac to make an example """
@@ -402,7 +402,7 @@ def get_a_strategy():
             self.count = 1
             self.pos = 0
 
-            self.bar_3 = Interface()  # 3分钟线
+            self.bar_3 = Indicator()  # 3分钟线
             
             self.allow_max_price = 5000  # 设置价格上限 当价格达到这个就卖出 防止突然跌
             self.allow_low_price = 4100  # 设置价格下限 当价格低出这里就卖 防止巨亏
