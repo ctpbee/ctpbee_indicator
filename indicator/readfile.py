@@ -33,12 +33,15 @@ class ReadFile:
             raise Warning("type error or type is None")
         if isinstance(datas, dict):
             data = [datas["datetime"], datas["open_price"], datas["high_price"], datas["low_price"], datas["close_price"],
-                    554]
+                    1]
         else:
-            datas = datas._to_dict()
+            try:
+                datas = datas._to_dict()
+            except:
+                raise TypeError("只支持 dict和BarData这个两种数据")
             data = [datas["datetime"], datas["open_price"], datas["high_price"], datas["low_price"],
                     datas["close_price"],
-                    554]
+                    1]
         if switch:
 
             if isinstance(data[0], datetime):
