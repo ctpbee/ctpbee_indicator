@@ -7,7 +7,7 @@ from datetime import datetime, date
 
 from ctpbee import LooperApi, Vessel
 from ctpbee.constant import Direction
-from ctpbee.indicator import Indicator
+from indicator.interface import Indicator
 
 
 # def get_data(start, end, symbol, exchange, level):
