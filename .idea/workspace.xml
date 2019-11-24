@@ -2,23 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/funcat/.github/issue_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/CHANGELOG.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/MANIFEST.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/VERSION.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/rqalpha_data_backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/rqdata_data_backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/tushare_backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/indicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/time_series.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/funcat/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/notebooks/funcat-tutorial.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funcat/tests/test_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/atr_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/atr_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/boll_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/boll_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cci_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cci_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/close_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/close_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/ema_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/ema_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/kd_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/kd_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/macd_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/macd_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/mtm_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/mtm_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/roc_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/roc_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/rsi_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/rsi_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/sar_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sar_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/sma_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sma_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/smma_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/smma_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/stdDev_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/stdDev_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/tema_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tema_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/trix_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/trix_strategy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,25 +67,25 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/examples" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/indicator/txt" />
-      <recent name="$PROJECT_DIR$/indicator" />
-      <recent name="$PROJECT_DIR$/backtrader-master" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/indicator" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backtrader-master" />
       <recent name="$PROJECT_DIR$/backtrader" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/examples" />
+      <recent name="$PROJECT_DIR$/indicator/txt" />
+      <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$/backtrader-master" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -332,7 +340,8 @@
       <workItem from="1573458902580" duration="50000" />
       <workItem from="1573634912603" duration="3427000" />
       <workItem from="1573695953769" duration="925000" />
-      <workItem from="1574146744332" duration="8938000" />
+      <workItem from="1574146744332" duration="9576000" />
+      <workItem from="1574583800580" duration="1910000" />
     </task>
     <servers />
   </component>
