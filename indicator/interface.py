@@ -40,6 +40,14 @@ class Indicator:
         """
         return Scheduler.ret_close
 
+    @property
+    def volume(self):
+        """
+        Get volume number
+        :return:
+        """
+        return Scheduler.ret_volume
+
     def open_csv(self, file: str, start_time=None, end_time=None):
         """
         open TXT file

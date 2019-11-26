@@ -2,31 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/funcat/.github/issue_template.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/CHANGELOG.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/VERSION.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/context.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/rqalpha_data_backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/rqdata_data_backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/data/tushare_backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/func.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/indicators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/time_series.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/funcat/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/notebooks/funcat-tutorial.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcat/tests/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/LICENSE_Python.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/MANIFEST.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/_line_profiler.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/dev_requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/kernprof.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/line_profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/line_profiler_py35.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/python25.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/tests/_test_kernprof_py35.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/tests/test_kernprof.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/tests/test_line_profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/timers.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/timers.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/unset_trace.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/line_profiler/unset_trace.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/.github/issue_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/CHANGELOG.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/VERSION.txt" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/VERSION.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/context.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/rqalpha_data_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/rqalpha_data_backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/rqdata_data_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/rqdata_data_backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/tushare_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/tushare_backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/indicators.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/indicators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/time_series.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/funcat/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/notebooks/funcat-tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/funcat-tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcat/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,19 +95,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/examples" />
-      <recent name="$PROJECT_DIR$/indicator" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backtrader-master" />
-      <recent name="$PROJECT_DIR$/backtrader" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/indicator/txt" />
       <recent name="$PROJECT_DIR$/indicator" />
       <recent name="$PROJECT_DIR$/backtrader-master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/examples" />
+      <recent name="$PROJECT_DIR$/indicator" />
+      <recent name="$PROJECT_DIR$/backtrader-master" />
+      <recent name="$PROJECT_DIR$/backtrader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,51 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.close_strategy">
-    <configuration name="atr_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ctpbee_indicator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/atr_strategy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="backtrader" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ctpbee_indicator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="cci_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,6 +167,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test1 (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,7 +211,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_api (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ctpbee_indicator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -219,12 +219,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/funcat1/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcat1/tests/test_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_api (2)" type="PythonConfigurationType" factoryName="Python">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ctpbee_indicator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/funcat/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcat/tests/test_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test_api (1)" />
+        <item itemvalue="Python.test_api" />
         <item itemvalue="Python.close_strategy" />
         <item itemvalue="Python.cci_strategy" />
-        <item itemvalue="Python.atr_strategy" />
-        <item itemvalue="Python.backtrader" />
-        <item itemvalue="Python.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +385,10 @@
       <workItem from="1573634912603" duration="3427000" />
       <workItem from="1573695953769" duration="925000" />
       <workItem from="1574146744332" duration="9576000" />
-      <workItem from="1574583800580" duration="1910000" />
+      <workItem from="1574583800580" duration="3481000" />
+      <workItem from="1574655355548" duration="594000" />
+      <workItem from="1574660458255" duration="599000" />
+      <workItem from="1574742382964" duration="8517000" />
     </task>
     <servers />
   </component>
@@ -394,18 +441,20 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1569663064071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rqalpha" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1574751213001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$carray_ext_pxd.coverage" NAME="carray_ext.pxd Coverage Results" MODIFIED="1569650743971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bcolz/bcolz" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569682395755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtraders" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1569760837559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader2" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1569813905519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_api.coverage" NAME="test_api Coverage Results" MODIFIED="1574744460205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/funcat/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$atr_strategy.coverage" NAME="atr_strategy Coverage Results" MODIFIED="1574156200122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test10.coverage" NAME="test10 Coverage Results" MODIFIED="1570713332400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader-master" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_sqn.coverage" NAME="test_analyzer-sqn Coverage Results" MODIFIED="1569325078273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$close_strategy.coverage" NAME="close_strategy Coverage Results" MODIFIED="1574161950585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$strategy.coverage" NAME="strategy Coverage Results" MODIFIED="1569760556009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_analyzer_timereturn.coverage" NAME="test_analyzer-timereturn Coverage Results" MODIFIED="1569327399609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_api__1_.coverage" NAME="test_api (1) Coverage Results" MODIFIED="1574744561125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/funcat1/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$wr_strategy.coverage" NAME="wr_strategy Coverage Results" MODIFIED="1573696450328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1574152882217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_tradesimulation.coverage" NAME="test_tradesimulation Coverage Results" MODIFIED="1569597289641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
@@ -447,6 +496,7 @@
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_comminfo.coverage" NAME="test_comminfo Coverage Results" MODIFIED="1569327549332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$teststrader.coverage" NAME="teststrader Coverage Results" MODIFIED="1569204763887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$rewrite_data.coverage" NAME="rewrite-data Coverage Results" MODIFIED="1569151004152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tools" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test_api__2_.coverage" NAME="test_api (2) Coverage Results" MODIFIED="1574750204783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_algorithm.coverage" NAME="test_algorithm Coverage Results" MODIFIED="1569563803687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$Unittests_for_test_testing_TestParameterSpace.coverage" NAME="Unittests for test_testing.TestParameterSpace Coverage Results" MODIFIED="1569559294246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zipline-master/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$buy_and_sell.coverage" NAME="buy_and_sell Coverage Results" MODIFIED="1569719562021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader" />

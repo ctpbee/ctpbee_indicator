@@ -1,5 +1,0 @@
-*.egg-info/
-.cache/
-dist/
-.idea/
-__pycache__

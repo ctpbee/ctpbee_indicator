@@ -24,3 +24,5 @@ def test_000001():
     assert np.equal(round(HHV(HIGH, 5).value, 2), 3245.09)
     assert np.equal(round(LLV(LOW, 5).value, 2), 3100.91)
     assert COUNT(CLOSE > OPEN, 5) == 2
+
+test_000001()
