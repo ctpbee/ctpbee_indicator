@@ -23,6 +23,4 @@ T("2016-06-01")   # 设置当前观察日期
 
 print(O, H, L, C, V)
 print(C / C[1] - 1)
-print(MA(C, 60))
-print(C > MA(C, 60))
 

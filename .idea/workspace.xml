@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/line_profiler/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/LICENSE_Python.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/README.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/_line_profiler.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/dev_requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/kernprof.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/line_profiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/line_profiler_py35.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/python25.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/tests/_test_kernprof_py35.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/tests/test_kernprof.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/tests/test_line_profiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/timers.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/timers.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/unset_trace.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_profiler/unset_trace.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/.github/issue_template.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/CHANGELOG.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/MANIFEST.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/VERSION.txt" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/VERSION.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/context.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/context.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/rqalpha_data_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/rqalpha_data_backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/rqdata_data_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/rqdata_data_backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/data/tushare_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/data/tushare_backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/indicators.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/indicators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/time_series.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/funcat/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcat/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/notebooks/funcat-tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/funcat-tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcat/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +44,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VUE/vue-Kline" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -388,7 +343,8 @@
       <workItem from="1574583800580" duration="3481000" />
       <workItem from="1574655355548" duration="594000" />
       <workItem from="1574660458255" duration="599000" />
-      <workItem from="1574742382964" duration="8517000" />
+      <workItem from="1574742382964" duration="11304000" />
+      <workItem from="1574815323695" duration="1275000" />
     </task>
     <servers />
   </component>
@@ -441,7 +397,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1574751213001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/ctpbee_indicator$test.coverage" NAME="test Coverage Results" MODIFIED="1574820975347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$carray_ext_pxd.coverage" NAME="carray_ext.pxd Coverage Results" MODIFIED="1569650743971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bcolz/bcolz" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$target_and_order.coverage" NAME="target_and_order Coverage Results" MODIFIED="1569682395755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtraders" />
     <SUITE FILE_PATH="coverage/ctpbee_indicator$test_position.coverage" NAME="test_position Coverage Results" MODIFIED="1569206931991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backtrader/tests" />
