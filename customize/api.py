@@ -253,7 +253,11 @@ class Indicator:
         status = K - D
         return status
 
-    def MAX(self):
+    def SUM(self, data, n=7):
+        return sum(data[-n:])
+
+    def ZIG(self, data, n):
+
         pass
 
     def MIN(self):
