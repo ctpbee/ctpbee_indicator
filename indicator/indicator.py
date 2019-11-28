@@ -62,6 +62,20 @@ class Indicator(File):
         pass
 
     @getAverageName
+    def ma(self, data: object, period=5):
+        """
+        均线
+        :param data:
+        :param period:
+        :return:
+        """
+        self.ma_data = deepcopy(data)
+        end = len(data)
+        for i in range(period, end):
+            self.ma_data = sum(data[i-period:i+1])/period
+        return self.ma_data
+
+    @getAverageName
     def sma(self, data:object, period=15):
         """
         sma or ma SimpleMovingAverage
