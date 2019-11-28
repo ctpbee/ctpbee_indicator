@@ -1,4 +1,4 @@
-from .plot import Scheduler
+from indicator.plot import Scheduler
 
 
 class Indicator:
@@ -12,28 +12,28 @@ class Indicator:
         return Scheduler.inited
 
     @property
-    def open(self):
+    def O(self):
         """
         Get open price time series.
         """
         return Scheduler.ret_open
 
     @property
-    def high(self):
+    def H(self):
         """
         Get high price time series.
         """
         return Scheduler.ret_high
 
     @property
-    def low(self):
+    def L(self):
         """
         Get low price time series.
         """
         return Scheduler.ret_low
 
     @property
-    def close(self):
+    def C(self):
         """
         Get low price time series
         :return:
@@ -99,115 +99,162 @@ class Indicator:
         """
         Scheduler.update_bar(data, opens)
 
-    def sma(self, n=15):
+    def MA(self, data, n=5):
         if not self.inited:
             return
-        data = Scheduler.ret_close
+        return Scheduler.ma(data, n)
+
+    def SMA(self, data, n=15):
+        if not self.inited:
+            return
         return Scheduler.sma(data, n)
 
-    def ema(self, n=12, alpha=None):
+    def EMA(self, data, n=12, alpha=None):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.ema(data, n, alpha)
 
-    def wma(self, n=30):
+    def WMA(self, data, n=30):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.wma(data, n)
 
-    def kd(self, n=14, f=3):
+    def KD(self, data, n=14, f=3):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.kd(data, n, f)
 
-    def macd(self, n=12, m=20, f=9):
+    def MACD(self, data, n=12, m=20, f=9):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.macd(data, n, m, f)
 
-    def rsi(self, n=14, l=1):
+    def RSI(self, data, n=14, l=1):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.rsi(data, n, l)
 
-    def smma(self, n=10, alpha=15):
+    def SMMA(self, data, n=10, alpha=15):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.smma(data, n, alpha)
 
-    def atr(self, n=14):
+    def ATR(self, data, n=14):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.atr(data, n)
 
-    def stdDev(self, n=20):
+    def STD(self, data, n=20):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.stdDev(data, n)
 
-    def boll(self, n=20, m=2):
+    def BOLL(self, data, n=20, m=2):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.boll(data, n, m)
 
-    def trix(self, n=15, m=1):
+    def TRIX(self, data, n=15, m=1):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.trix(data, n, m)
 
-    def roc(self, n=12):
+    def ROC(self, data, n=12):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.roc(data, n)
 
-    def mtm(self, n=12):
+    def MTM(self, data, n=12):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.mtm(data, n)
 
-    def tema(self, n=25):
+    def TEMA(self, data, n=25):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.tema(data, n)
 
-    def wr(self, n=14):
+    def WR(self, data, n=14):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.wr(data, n)
 
-    def cci(self, n=20, f=0.015):
+    def CCI(self, n=20, f=0.015):
         if not self.inited:
             return
         return Scheduler.cci(n, f)
 
-    def sar(self, n=2, af=0.02, afmax=0.20):
+    def SAR(self, data, n=2, af=0.02, afmax=0.20):
         if not self.inited:
             return
-        data = Scheduler.ret_close
         return Scheduler.sar(data, n, af, afmax)
 
-    def UltimateOscillator(self):
+    def HHV(self, data, n=10):
+        """
+        在一定周期内某一项数据的最大值
+        :param data:
+        :param n:
+        :return:
+        """
+        if data.lower() == "l" or data.lower() == "low":
+            return max(Scheduler.ret_low[-1 - n:])
+        elif data.lower() == "v" or data.lower() == "volume":
+            return max(Scheduler.ret_volume[-1 - n:])
+        elif data.lower() == "h" or data.lower() == "high":
+            return max(Scheduler.ret_high[-1 - n:])
+        elif data.lower() == "c" or data.lower() == "close":
+            return max(Scheduler.ret_close[-1 - n:])
+        else:
+            return max(data[-1 - n:])
+
+    def LLV(self, data, n=10):
+        """
+        在一定周期内某一项数据的最小值
+        :param data:
+        :param n:
+        :return:
+        """
+        if data.lower() == "l" or data.lower() == "low":
+            return min(Scheduler.ret_low[-1 - n:])
+        elif data.lower() == "v" or data.lower() == "volume":
+            return min(Scheduler.ret_volume[-1 - n:])
+        elif data.lower() == "h" or data.lower() == "high":
+            return min(Scheduler.ret_high[-1 - n:])
+        elif data.lower() == "c" or data.lower() == "close":
+            return min(Scheduler.ret_close[-1 - n:])
+        else:
+            return min(data[-1 - n:])
+
+    def REF(self, data, n=1):
+        """
+        昨日收盘价 ref(c,1)表示昨天的收盘价, ref(v,1)表示昨天的成交量
+        :param data:
+        :param n:
+        :return:
+        """
+        if data.lower() == "l" or data.lower() == "low":
+            return Scheduler.ret_low[-1 - n]
+        elif data.lower() == "v" or data.lower() == "volume":
+            return Scheduler.ret_volume[-1 - n]
+        elif data.lower() == "h" or data.lower() == "high":
+            return Scheduler.ret_high[-1 - n]
+        elif data.lower() == "c" or data.lower() == "close":
+            return Scheduler.ret_close[-1 - n]
+        else:
+            return data[-1 - n]
+
+    def CROSS(self, K, D):
+        """
+        金叉 死叉
+        :param K: 预信号
+        :param D: 周转信号
+        :return:
+        """
+        status = K - D
+        return status
+
+    def MAX(self):
         pass
 
-    def AroonIndicator(self):
+    def MIN(self):
         pass
-
-    def plot(self, width=8, height=6, color="k", lw=0.5):
-        Scheduler.plot(width=width, height=height, color=color, lw=lw)
-
-
-api = Indicator

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customize/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customize/customize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customize/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/indicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/indicator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicator/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/indicator/interface.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +346,8 @@
       <workItem from="1574655355548" duration="594000" />
       <workItem from="1574660458255" duration="599000" />
       <workItem from="1574742382964" duration="11304000" />
-      <workItem from="1574815323695" duration="11679000" />
+      <workItem from="1574815323695" duration="13671000" />
+      <workItem from="1574914364392" duration="9903000" />
     </task>
     <servers />
   </component>
