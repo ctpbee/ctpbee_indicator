@@ -19,7 +19,7 @@ class ReadFile:
         self.ret_volume = []                # 成交量
         self.open_file_name = None          # 文件名
         self.open_file_start = None         # 开始时间
-        self.inited = False                 # 是否满足计算要求
+        # self.inited = False                 # 是否满足计算要求
 
     def update_bar(self, datas: dict, switch=False):
         """
@@ -78,8 +78,9 @@ class ReadFile:
                 self.ret_open = self.ret_open[-max_value:]
                 self.ret_volume = self.ret_volume[-max_value:]
             self.count += 1
-            if self.count > 30:
-                self.inited = True
+            # if not self.inited:
+            #     if self.count > 30:
+            #         self.inited = True
             self.ret_close = np.append(self.ret_close, data[4])
             self.ret_high = np.append(self.ret_high, data[2])
             self.ret_low = np.append(self.ret_low, data[3])

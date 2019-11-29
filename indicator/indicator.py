@@ -51,6 +51,7 @@ def getIndicatorName(func):
 class Indicator(File):
     def __init__(self):
         super().__init__()
+        self.inited = False  # 是否满足计算要求
         self.average_message = {}
         self.indicator_message = {}
 
@@ -69,8 +70,13 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.ma_data = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.ma_data = deepcopy(data)
         for i in range(period, end):
             self.ma_data = sum(data[i-period:i+1])/period
         return self.ma_data
@@ -84,8 +90,13 @@ class Indicator(File):
         :param data:数据 object
         :return:计算值
         """
-        self.sma_data = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.sma_data = deepcopy(data)
         close_line = data
         for i in range(period, end):
             self.sma_data[i] = sum(close_line[i - period + 1:i + 1]) / period
@@ -103,8 +114,13 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.ema_data = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.ema_data = deepcopy(data)
         close_line = data
         self.alpha = alpha
         if self.alpha is None:
@@ -127,8 +143,13 @@ class Indicator(File):
               - coef = 2 / (period * (period + 1))
               - movav = coef * Sum(weight[i] * data[period - i] for i in range(period))
             '''
-        self.wma_data = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.wma_data = deepcopy(data)
         close_line = data
         coef = 2.0 / (period * (period + 1.0))
         weights = tuple(float(x) for x in range(1, period + 1))
@@ -163,6 +184,12 @@ class Indicator(File):
             :return:
         """
         end = len(data)
+        if not self.inited:
+            period = max(period, period_dfast)
+            if end < period:
+                return
+            else:
+                self.inited = True
         highest = deepcopy(data)
         lowest = deepcopy(data)
         for i in range(period, end):
@@ -188,7 +215,13 @@ class Indicator(File):
         :param period:
         :return:
         """
-
+        end = len(data)
+        if not self.inited:
+            period = max(period_me1, period_me2, period_signal)
+            if end < period:
+                return
+            else:
+                self.inited = True
         me1 = self.ema(data, period=period_me1)
         me2 = self.ema(data, period=period_me2)
         self.macds = np.array(me1) - np.array(me2)
@@ -221,6 +254,11 @@ class Indicator(File):
             ('lookback', 1),
         )
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         upday = deepcopy(data)
         downday = deepcopy(data)
         for i in range(period, end):
@@ -245,8 +283,14 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.ema_data = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            period = max(period, alpha)
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.ema_data = deepcopy(data)
         close_line = data
         self.alpha = alpha
         if self.alpha is None:
@@ -267,9 +311,14 @@ class Indicator(File):
         :param period:
         :return:
         """
+        end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         truehigh = []
         truelow = []
-        end = len(data)
         truehigh = truehigh + [0] * period
         for h in range(period+1, end):
             truehigh.append(max(data[h-1], self.ret_high[h]))
@@ -297,6 +346,12 @@ class Indicator(File):
         :param period:
         :return:
         """
+        end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         meansquared = self.sma(pow(np.array(data), 2), period)
         mead_data = self.sma(data, period)
         squaredmean = pow(mead_data, 2)
@@ -318,6 +373,13 @@ class Indicator(File):
         :param period:
         :return: top mid bottom
         """
+        end = len(data)
+        if not self.inited:
+            period = max(period, devfactor)
+            if end < period:
+                return
+            else:
+                self.inited = True
         self.mid = self.sma(data, period)
         self.top = np.array(self.mid) + devfactor * np.array(self.stdDev(data, period))
         self.bottom = np.array(self.mid) - devfactor * np.array(self.stdDev(data, period))
@@ -384,6 +446,12 @@ class Indicator(File):
              - https://en.wikipedia.org/wiki/Trix_(technical_analysis)
              - http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:trix
         '''
+        end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         ema1 = self.ema(data, period=period)
         ema2 = self.ema(ema1, period=period)
         ema3 = self.ema(ema2, period=period)
@@ -405,8 +473,13 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.roc_list = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.roc_list = deepcopy(data)
         for i in range(period, end):
             self.roc_list[i] = (data[i] - data[i-period]) / data[i-period]
         return self.roc_list
@@ -424,8 +497,13 @@ class Indicator(File):
         :param period:
         :return:
         """
-        self.momentum_list = deepcopy(data)
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
+        self.momentum_list = deepcopy(data)
         for i in range(period, end):
             self.momentum_list[i] = data[i] - data[i-period]
         return self.momentum_list
@@ -443,6 +521,12 @@ class Indicator(File):
         :param period:
         :return:
         """
+        end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         ema1 = self.ema(data, period)
         ema2 = self.ema(ema1, period)
         ema3 = self.ema(ema2, period)
@@ -465,6 +549,11 @@ class Indicator(File):
         :return:
         """
         end = len(data)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         num = deepcopy(data)
         den = deepcopy(data)
         for i in range(period, end):
@@ -510,6 +599,12 @@ class Indicator(File):
           - https://en.wikipedia.org/wiki/Commodity_channel_index
             :return:
         """
+        end = len(self.ret_close)
+        if not self.inited:
+            if end < period:
+                return
+            else:
+                self.inited = True
         tp = (self.ret_high + self.ret_low + self.ret_close) / 3
         tpmean = self.sma(tp, period)
         dev = np.array(tp) - np.array(tpmean)

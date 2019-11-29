@@ -72,8 +72,8 @@ def get_a_strategy():
             # todo: 简单移动平均线
             """ """
             self.bar_3.add_bar(bar)
-            if not self.bar_3.inited:
-                return
+            # if not self.bar_3.inited:
+            #     return
             close = self.bar_3.close
             # 简单移动平均线
             # sma = self.bar_3.sma()
