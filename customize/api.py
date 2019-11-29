@@ -257,8 +257,26 @@ class Indicator:
         return sum(data[-n:])
 
     def ZIG(self, data, n):
-
-        pass
+        """
+        转向率
+        :param data: 0:开盘价,1:最高价,2:最低价,3:收盘价,其余:数组信息
+        :param n: 变化率
+        :return:
+        """
+        if data == 0:
+            steering_rate = (Scheduler.ret_open[-1]-Scheduler.ret_open[-2])/Scheduler.ret_open[-2]*100
+        elif data == 1:
+            steering_rate = (Scheduler.ret_high[-1] - Scheduler.ret_high[-2]) / Scheduler.ret_high[-2] * 100
+        elif data == 2:
+            steering_rate = (Scheduler.ret_low[-1] - Scheduler.ret_low[-2]) / Scheduler.ret_low[-2] * 100
+        elif data == 3:
+            steering_rate = (Scheduler.ret_close[-1] - Scheduler.ret_close[-2]) / Scheduler.ret_close[-2] * 100
+        else:
+            steering_rate = (data[-1]-data[-2])/data[-2]
+        if steering_rate > n:
+            return True
+        else:
+            return False
 
     def MIN(self):
         pass

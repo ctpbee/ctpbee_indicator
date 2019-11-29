@@ -99,104 +99,76 @@ class Indicator:
         """
         Scheduler.update_bar(data, opens)
 
-    def sma(self, n=15):
+    def ma(self, n=15):
         if not self.inited:
             return
+        data = Scheduler.ret_close
+        return Scheduler.ma(data, n)
+
+    def sma(self, n=15):
         data = Scheduler.ret_close
         return Scheduler.sma(data, n)
 
     def ema(self, n=12, alpha=None):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.ema(data, n, alpha)
 
     def wma(self, n=30):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.wma(data, n)
 
     def kd(self, n=14, f=3):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.kd(data, n, f)
 
     def macd(self, n=12, m=20, f=9):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.macd(data, n, m, f)
 
     def rsi(self, n=14, l=1):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.rsi(data, n, l)
 
     def smma(self, n=10, alpha=15):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.smma(data, n, alpha)
 
     def atr(self, n=14):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.atr(data, n)
 
     def stdDev(self, n=20):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.stdDev(data, n)
 
     def boll(self, n=20, m=2):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.boll(data, n, m)
 
     def trix(self, n=15, m=1):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.trix(data, n, m)
 
     def roc(self, n=12):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.roc(data, n)
 
     def mtm(self, n=12):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.mtm(data, n)
 
     def tema(self, n=25):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.tema(data, n)
 
     def wr(self, n=14):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.wr(data, n)
 
     def cci(self, n=20, f=0.015):
-        if not self.inited:
-            return
         return Scheduler.cci(n, f)
 
     def sar(self, n=2, af=0.02, afmax=0.20):
-        if not self.inited:
-            return
         data = Scheduler.ret_close
         return Scheduler.sar(data, n, af, afmax)
 
