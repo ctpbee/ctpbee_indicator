@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/false.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unwav.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wav.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customize/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/customize/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,6 +42,7 @@
   </component>
   <component name="ProjectId" id="1SJcSM1LZSjNMSVPfM1KVEyhFfx" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -45,7 +50,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DJango/Website/Website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -246,6 +251,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -351,7 +359,9 @@
       <workItem from="1574815323695" duration="13671000" />
       <workItem from="1574914364392" duration="14246000" />
       <workItem from="1574995421725" duration="13562000" />
-      <workItem from="1575102026442" duration="1621000" />
+      <workItem from="1575102026442" duration="1965000" />
+      <workItem from="1575176741078" duration="4793000" />
+      <workItem from="1575186529634" duration="755000" />
     </task>
     <servers />
   </component>
