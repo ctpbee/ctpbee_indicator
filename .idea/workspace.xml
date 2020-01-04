@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07be7933-af45-490e-9362-3d63e057bbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/false.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unwav.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wav.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +45,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DJango/homework" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -361,7 +356,10 @@
       <workItem from="1574995421725" duration="13562000" />
       <workItem from="1575102026442" duration="1965000" />
       <workItem from="1575176741078" duration="4793000" />
-      <workItem from="1575186529634" duration="755000" />
+      <workItem from="1575186529634" duration="1561000" />
+      <workItem from="1575251541929" duration="1269000" />
+      <workItem from="1575336554310" duration="593000" />
+      <workItem from="1575369561940" duration="67000" />
     </task>
     <servers />
   </component>
